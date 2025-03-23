@@ -1,0 +1,23 @@
+---
+title: "MP2"
+author: "Gwynnie and Aria"
+format: pdf
+editor: visual
+---
+
+For this project, you and your partner will find data on the web that’s not available as a neat .csv file or .xls spreadsheet (it maybe even be spread across multiple webpages), and you will acquire it using techniques from class and tidy it so it’s suitable for a future data analysis (including text analysis!).
+
+You must use one (or multiple) of these approaches to data acquisition:
+
+APIs (using httr or httr2)
+An API wrapper package (that requires an API key)
+Harvesting data that appears in table form on a webpage (using rvest with html_table)
+Harvesting pieces of data that could appear anywhere on a webpage (using rvest with html_text)
+Before you begin acquiring data, describe your motivations for obtaining the data you plan to gather, including questions you hope to answer. After collecting and tidying your data, describe how you might use your data to investigate questions of interest.
+
+Your quarto file should contain at least one custom function and possibly iteration techniques as well. Be sure that it is well commented and that it conforms to style guidelines.
+
+Submission and Rubric
+Mini-Project 2 must be submitted on Moodle by 11:00 PM on Fri, Mar 21. You should submit a rendered pdf.
+
+Check out this rubric for Mini-Project 2.
