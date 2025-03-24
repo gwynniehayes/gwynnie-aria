@@ -3,7 +3,24 @@ title: "MP2"
 author: "Gwynnie and Aria"
 format: pdf
 editor: visual
+editor_options: 
+  chunk_output_type: console
 ---
+
+```{r}
+#| include: FALSE
+
+library(tidyverse)
+library(stringr)
+library(rvest)
+library(polite)
+library(sf)
+library(maps)
+library(viridis)
+library(leaflet)
+library(htmltools)
+```
+
 
 For this project, you and your partner will find data on the web that’s not available as a neat .csv file or .xls spreadsheet (it maybe even be spread across multiple webpages), and you will acquire it using techniques from class and tidy it so it’s suitable for a future data analysis (including text analysis!).
 
@@ -20,4 +37,27 @@ Your quarto file should contain at least one custom function and possibly iterat
 Submission and Rubric
 Mini-Project 2 must be submitted on Moodle by 11:00 PM on Fri, Mar 21. You should submit a rendered pdf.
 
-Check out this rubric for Mini-Project 2.
+Check out this rubric for Mini-Project 
+
+```{r}
+old_growth <- read_html("https://en.wikipedia.org/wiki/List_of_old-growth_forests")
+
+tables <- html_nodes(old_growth, css = "table") 
+tables
+
+html_table(tables, header = TRUE, fill = TRUE)    # find the right table
+og_data1 <- html_table(tables, header = TRUE, fill = TRUE)[[11]]  
+og_data1
+```
+
+```{r}
+national_forest <- read_html("https://en.wikipedia.org/wiki/List_of_national_forests_of_the_United_States")
+
+tables <- html_nodes(national_forest, css = "table") 
+tables
+
+html_table(tables, header = TRUE, fill = TRUE)    # find the right table
+nf_data1 <- html_table(tables, header = TRUE, fill = TRUE)[[1]]  
+nf_data1
+```
+
