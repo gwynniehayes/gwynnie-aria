@@ -65,11 +65,21 @@ wildfiretables <- html_nodes(wildfires, css = "table")
 wildfiretables
 
 html_table(wildfiretables, header = TRUE, fill = TRUE)    # find the right table
-twenties <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[2]]  
+twenties <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[2]] |> janitor::clean_names()
+
+  twenties |> mutate(structureslost = parse_number(structureslost),
+                     size_acres = parse_number(size_acres))
+  
+  twenties |> mutate(across(c(structureslost,size_acres, deaths, injuries), parse_number))
+  
+  
+  
 tens <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[3]]
 aughts <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[4]]
 nintys <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[5]]
 minors <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[6]]
+
+rbind(twenties,tens,aughts,nintys)
 
 ```
 
