@@ -40,6 +40,8 @@ html_table(wildfiretables, header = TRUE, fill = TRUE)
 ```
 
 ```{r}
+#| warning: FALSE
+
 # Since we had so many tables from one scrape to use, we created a small 
 # function to choose the table from the list using its subset number, cleaned 
 # the names, remove unnecessary columns, and rename a common variables. Due to 
@@ -73,6 +75,8 @@ majors['fire_type'] = "Major"
 
 # Joins all fires together
 fires <- rbind(majors, minors)
+
+head(fires)
 ```
 
 ```{r}
@@ -110,6 +114,8 @@ forest_cover <- tibble(county = county_title,
 # fire size. 
 fullfires <- fires |> left_join(forest_cover) |>
   drop_na(forest_coverage_acres) 
+
+head(fullfires)
 ```
 
 ```{r}
@@ -134,6 +140,8 @@ countysize <- html_table(countytable, header = TRUE, fill = TRUE)[[2]] |>
 final_fires <- fullfires |> left_join(countysize)
   
 final_fires
+
+head(final_fires)
 
 ```
 
