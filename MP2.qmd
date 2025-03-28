@@ -32,30 +32,31 @@ minors <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[6]]
 
 ```{r}
 cleaninggg <- function(table, i) {
-  html_table(table, header = TRUE, fill = TRUE)[[i]]|> janitor::clean_names() |> select(-notes, -image, -injuries, -complex_name)
+  html_table(table, header = TRUE, fill = TRUE)[[i]]|> janitor::clean_names() |> select(-notes, -image, -injuries, -complex_name) |>
+    rename("fire_size_acres" = "size_acres")
 }
 
 twenty <- cleaninggg(wildfiretables, 2) |> 
-  mutate(across(c(structureslost,size_acres, deaths), parse_number)) |>
+  mutate(across(c(structureslost,fire_size_acres, deaths), parse_number)) |>
   rename("start_date" = "start_date_cause")
 
 ten <- cleaninggg(wildfiretables, 3) |>
-  mutate(across(c(structureslost,size_acres), parse_number))
+  mutate(across(c(structureslost,fire_size_acres), parse_number))
 
 thousand <- cleaninggg(wildfiretables, 4)|> 
-  mutate(across(c(size_acres), parse_number))
+  mutate(across(c(fire_size_acres), parse_number))
 
 nines <- cleaninggg(wildfiretables, 5) |> 
-  mutate(across(c(structureslost,size_acres, deaths), parse_number))
+  mutate(across(c(structureslost,fire_size_acres, deaths), parse_number))
 
 minors <- cleaninggg(wildfiretables, 6) |>
-  mutate(across(c(size_acres), parse_number)) 
+  mutate(across(c(fire_size_acres), parse_number)) 
 
 majors <- rbind(twenty, ten, thousand, nines) |>
   select(-deaths)
 
-minors['Size'] = "Minor"
-majors['Size'] = "Major"
+minors['fire_type'] = "Minor"
+majors['fire_type'] = "Major"
 
 fires <- rbind(majors, minors)
 ```
@@ -74,10 +75,30 @@ forest_cov <- scrape(session) |>
 forest_cov
 
 forest_cover <- tibble(county = county_title, 
-                    tree_coverage = forest_cov) |>
-  mutate(county = str_remove(county, " County"))
+                    forest_coverage_acres = forest_cov) |>
+  mutate(county = str_remove(county, " County"),
+         forest_coverage_acres = parse_number(forest_coverage_acres))
 
-fire <- fires |> left_join(forest_cover) |>
-  drop_na(tree_coverage)
+fullfires <- fires |> left_join(forest_cover) |>
+  drop_na(forest_coverage_acres) 
+```
+
+```{r}
+
+counties <- read_html("https://en.wikipedia.org/wiki/List_of_counties_in_Washington")
+
+countytable <- html_nodes(counties, css = "table") 
+countytable
+
+countysize <- html_table(countytable, header = TRUE, fill = TRUE)[[2]] |> 
+  janitor::clean_names() |>
+  mutate(county = str_remove(county, " County"),
+         county_size_acres =  parse_number(land_area_11) * 640) |>
+    select(county, county_size_acres)
+
+final_fires <- fullfires |> left_join(countysize)
+  
+final_fires
+
 ```
 
