@@ -13,10 +13,17 @@ library(tidyverse)
 library(stringr)
 library(rvest)
 library(polite)
-library(maps)
 library(htmltools)
 library(robotstxt)
 ```
+
+## Motivations Behind our Data
+
+After doing our amazing research on salmon we wanted to look at more data from Washington, and one thing that is becoming very prevalent is wildfires, both of us have been in very close proximity to wildfires and have seen the aftermath of many of them. We want to look at the amount of forest land that was lost or affected by forest fires. Thinking through this data we quickly found a data set of the land area affected by fires, we then realized that it would be interesting to see the amount of forested area that was affected by the fires and then also the total land area that was affected in the county as a whole.
+
+## Research Questions
+
+We are interested in looking at the total land area that is affected by forest fires in our home state. We wanted to not only look at the forest land that was effected by also the amount of land area that is forested and then also affected by the fire. 
 
 ```{r}
 # Our first table came from wikipedia, which is an allowed source
@@ -48,8 +55,7 @@ cleaninggg <- function(table, i) {
     rename("fire_size_acres" = "size_acres")
 }
 
-# We would have loved to turn this into a for-loop but we didn't know how to 
-# create an empty tibble, so we just ran the function for each of the times to 
+# Running the function for each of the times to 
 # pull the data out of the list from wikipedia into 5 (nearly) uniform datasets
 twenty <- cleaninggg(wildfiretables, 2) |> rename("start_date" = "start_date_cause")
 ten <- cleaninggg(wildfiretables, 3) 
@@ -131,3 +137,6 @@ final_fires
 
 ```
 
+## Future Uses of this Data
+
+For future uses of this data we have a lot of things that we want to clean with string functions. We were also looking into census data for each county in Washington, which would be interesting to see if there is higher population in a county that has more forest fire activity. It would also be interesting to add spatial data to this to map the percentage of forest area affected by fires or other percentage maps. 
