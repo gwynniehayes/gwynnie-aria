@@ -46,25 +46,6 @@ minors <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[6]]
 ```
 
 ```{r}
-twenties <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[2]] |> janitor::clean_names() |> 
-  mutate(across(c(structureslost,size_acres, deaths), parse_number)) |>
-    select(-notes,-image,-injuries) |>
-  rename("start_date" = "start_date_cause")
-
-tens <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[3]]|> janitor::clean_names() |> 
-  mutate(across(c(structureslost,size_acres), parse_number)) |>
-    select(-notes,-image,-injuries)
-
-aughts <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[4]]|> janitor::clean_names() |> 
-  mutate(across(c(size_acres), parse_number)) |>
-    select(-notes,-image,-injuries)
-
-nintys <- html_table(wildfiretables, header = TRUE, fill = TRUE)[[5]]|> janitor::clean_names() |> 
-  mutate(across(c(structureslost,size_acres, deaths), parse_number)) |>
-    select(-notes,-image,-injuries)
-
-
-
 allyears <- rbind(twenties,tens,aughts,nintys)
 
 allyears |> distinct(county)
@@ -73,10 +54,20 @@ cleaninggg <- function(table, i) {
   html_table(table, header = TRUE, fill = TRUE)[[i]]|> janitor::clean_names() |> select(-notes,-image,-injuries)
 }
 
-twenty <- cleaninggg(wildfiretables, 2)
-ten <- cleaninggg(wildfiretables, 3)
-thousand <- cleaninggg(wildfiretables, 4)
-nines <- cleanninggg(wildfiretables, 5)
+twenty <- cleaninggg(wildfiretables, 2) |> 
+  mutate(across(c(structureslost,size_acres, deaths), parse_number)) |>
+  rename("start_date" = "start_date_cause")
+
+ten <- cleaninggg(wildfiretables, 3) |>
+    mutate(across(c(structureslost,size_acres), parse_number))
+
+thousand <- cleaninggg(wildfiretables, 4)|> 
+  mutate(across(c(size_acres), parse_number))
+
+nines <- cleaninggg(wildfiretables, 5) |> 
+  mutate(across(c(structureslost,size_acres, deaths), parse_number))
+
+allyears <- rbind(twenty, ten, thousand, nines)
 
 
 ```
