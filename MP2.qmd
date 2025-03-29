@@ -19,11 +19,11 @@ library(robotstxt)
 
 ## Motivations Behind our Data
 
-After doing our amazing research on salmon we wanted to look at more data from Washington, and one thing that is becoming very prevalent is wildfires, both of us have been in very close proximity to wildfires and have seen the aftermath of many of them. We want to look at the amount of forest land that was lost or affected by forest fires. Thinking through this data we quickly found a data set of the land area affected by fires, we then realized that it would be interesting to see the amount of forested area that was affected by the fires and then also the total land area that was affected in the county as a whole.
+After doing our amazing research on salmon we wanted to look at more data from Washington, and one thing that is becoming very prevalent is wildfires. Both of us have been in very close proximity to wildfires and have seen the aftermath of many of them. We want to look at the amount of forest land that was lost or affected by forest fires. Thinking through this data we quickly found a data set of the land area affected by fires, we then realized that it would be interesting to see the amount of forested area that was affected by the fires and then also the total land area that was affected in the county as a whole.
 
 ## Research Questions
 
-We are interested in looking at the total land area that is affected by forest fires in our home state. We wanted to not only look at the forest land that was effected by also the amount of land area that is forested and then also affected by the fire. 
+We are interested in looking at the total land area that is affected by forest fires in our home state. We wanted to not only look at the forest land that was affected by also the amount of land area that is forested and then also affected by the fire. 
 
 ```{r}
 # Our first table came from wikipedia, which is an allowed source
