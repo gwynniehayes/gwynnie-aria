@@ -1,0 +1,17 @@
+---
+title: "examples"
+format: html
+---
+
+```{r}
+
+library(ggplot)
+library(tidyverse)
+
+forest_county |>
+  filter(state == "Washington") |>
+  ggplot(aes(y = forest_cover_acres, x = county)) +
+  geom_col() +
+  theme(axis.text.x = element_text(angle = 75, hjust = 1))
+```
+
