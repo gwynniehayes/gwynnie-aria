@@ -1,44 +1,15 @@
 ---
-title: "Final Project Proposal"
-author: "Gwynnie and Aria"
-format: pdf
-editor: source
-editor_options: 
-  chunk_output_type: console
+title: "gwynnies super useful functions"
+format: html
 ---
 
 ```{r}
-#| include: FALSE
-
 library(tidyverse)
 library(stringr)
 library(rvest)
 library(polite)
 library(htmltools)
 library(robotstxt)
-```
-
-1. Website(s) you plan to scrape or data sets you plan to merge
-2. Variables you plan to acquire, including variables you plan to generate from your raw data
-3. Questions you plan to address
-4. Visualizations you envision (include photos of plot sketches!)
-5. Whether you plan to build an interactive shiny app (using shiny in R, flexdashboard in Rmd, or quarto dashboard in qmd), or a scrollytelling document using closeread in qmd. 
-
-
-Fires 
-```{r}
-# Our first table came from wikipedia, which is an allowed source
-is_valid_robotstxt("https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024")
-
-#reading the html of the website
-wildfires2024 <- read_html("https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024")
-
-fires2024 <- html_table(wildfires2024, header = TRUE, fill = TRUE)[[3]]
-```
-
-```{r}
-county_name <- county_name |> 
-  filter(county != "Land Area ▼", county != "County / Population")
 ```
 
 ```{r}
@@ -86,4 +57,3 @@ for (i in 1:16) {
 }
 county_areas <- bind_rows(page)
 ```
-

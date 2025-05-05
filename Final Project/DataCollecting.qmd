@@ -1,0 +1,68 @@
+---
+title: "Data Collecting"
+author: "Gwynnie and Aria"
+format: pdf
+editor: source
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: FALSE
+
+library(tidyverse)
+library(stringr)
+library(rvest)
+library(polite)
+library(htmltools)
+library(robotstxt)
+```
+
+```{r}
+county_data <- read_csv("~/Desktop/15/SDS264/projects/Project_2/Final Project/COUNTYDATA.csv") |>
+  janitor::clean_names() |>
+  rename(state = state_name, county = name) |>
+  select(c("county", "state", "population_2020", "sqmi"))
+
+percent_forest <- read_csv("~/Desktop/15/SDS264/projects/Project_2/Final Project/percentforestcover.csv") |>
+  janitor::clean_names() 
+
+county_data <- county_data |>
+  mutate(county = str_remove(county, "\\sCounty"))
+
+percent_forest <- percent_forest |>
+  mutate(county = str_remove(county, "\\d{5}\\s[A-Z][A-Z]\\s"))
+
+forest_county <- percent_forest |>
+  left_join(county_data) |>
+  mutate(county_size_acres = sqmi * 640, forest_cover_acres = (percent_forest_cover / 100 * county_size_acres)) |> select(!sqmi)
+```
+
+Fires 
+```{r}
+# Our first table came from wikipedia, which is an allowed source
+is_valid_robotstxt("https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024")
+
+#reading the html of the website
+wildfires2024 <- read_html("https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024")
+
+fires2024 <- html_table(wildfires2024, header = TRUE, fill = TRUE)[[3]]
+```
+
+
+
+```{r}
+fires <- fires2024 |>
+  select(c("Name", "State", "County", "Acres", "Start date", "Containment date", "Notes")) |>
+  mutate(County = str_replace(County, "&", ",")) |>
+  mutate(State = str_split(State, ","), County = str_split(County, ",")) |>
+  unnest(State) |>
+  unnest(County) |>
+  mutate(State = str_replace(State, " ", ""), County = str_replace(County, " ", "")) 
+
+
+states <- c("TX", "OK", "VA", "WV", "CO", "UT", "MT", "WY")
+
+please_work <- fires |>
+  filter(str_detect(County, "([A-Z][A-Z])")) 
+```

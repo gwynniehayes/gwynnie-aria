@@ -1,0 +1,50 @@
+---
+title: "Final Project Proposal"
+author: "Gwynnie and Aria"
+format: pdf
+editor: source
+editor_options: 
+  chunk_output_type: console
+---
+
+1. Website(s) you plan to scrape or data sets you plan to merge
+We are planning on scraping from this wikipedia page:
+ https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024
+
+Then we also found a dataset from Fish and Wildlife that is an excel file that we converted into a csv file.
+https://www.fws.gov/sites/default/files/documents/2024-08/percent-forest-cover-by-county-update-2024.xlsx 
+
+Finally we found a data set from ESRI that contains the states and counties, square miles and population of each county, that we could download as a csv file.
+https://www.arcgis.com/home/item.html?id=14c5450526a8430298b2fa74da12c2f4#data
+
+2. Variables you plan to acquire, including variables you plan to generate from your raw data
+
+From the data set we scraped we got variables that were: 
+- name of fire
+- state of fire
+- county of fire
+- size of fire
+- start date of fire
+- containment date of fire
+- notes on the fire
+
+We want to obtain:
+- county size 
+- forest coverage
+- population of county
+
+Variables we plan to generate: 
+- the forest coverage is in percent coverage so we plan to find the number of acres that is forested in each county
+
+3. Questions you plan to address
+- How much of each state got burned?
+- How much of each county got burned?
+- States with most wildfire activity?
+- What fires had the longest duration?
+
+4. Visualizations you envision (include photos of plot sketches!)
+We want to include interactive maps for each state that within the shinyapp can choose a state and have the visuals for each of the individual states. Then an overview of the entire US.
+
+5. Whether you plan to build an interactive shiny app 
+We are planning on doing a flexdashboard
+

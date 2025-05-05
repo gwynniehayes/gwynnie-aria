@@ -1,0 +1,3109 @@
+State,County,Percent Forest Cover
+Alabama,01001 AL Autauga,61.05
+Alabama,01003 AL Baldwin,61.55
+Alabama,01005 AL Barbour,67.07
+Alabama,01007 AL Bibb,76.29
+Alabama,01009 AL Blount,54.39
+Alabama,01011 AL Bullock,66.73
+Alabama,01013 AL Butler,70.94
+Alabama,01015 AL Calhoun,56.42
+Alabama,01017 AL Chambers,62.43
+Alabama,01019 AL Cherokee,50.62
+Alabama,01021 AL Chilton,63.27
+Alabama,01023 AL Choctaw,78.52
+Alabama,01025 AL Clarke,79.62
+Alabama,01027 AL Clay,65.91
+Alabama,01029 AL Cleburne,70.41
+Alabama,01031 AL Coffee,57.41
+Alabama,01033 AL Colbert,49.34
+Alabama,01035 AL Conecuh,72.99
+Alabama,01037 AL Coosa,69.6
+Alabama,01039 AL Covington,65.13
+Alabama,01041 AL Crenshaw,65.94
+Alabama,01043 AL Cullman,48.04
+Alabama,01045 AL Dale,61.33
+Alabama,01047 AL Dallas,65.89
+Alabama,01049 AL DeKalb,42.74
+Alabama,01051 AL Elmore,58.47
+Alabama,01053 AL Escambia,66.27
+Alabama,01055 AL Etowah,51.29
+Alabama,01057 AL Fayette,72.51
+Alabama,01059 AL Franklin,57.58
+Alabama,01061 AL Geneva,48.93
+Alabama,01063 AL Greene,70.73
+Alabama,01065 AL Hale,64.6
+Alabama,01067 AL Henry,55.96
+Alabama,01069 AL Houston,40.75
+Alabama,01071 AL Jackson,55.77
+Alabama,01073 AL Jefferson,61.86
+Alabama,01075 AL Lamar,73.28
+Alabama,01077 AL Lauderdale,39.24
+Alabama,01079 AL Lawrence,44.37
+Alabama,01081 AL Lee,60.91
+Alabama,01083 AL Limestone,28.92
+Alabama,01085 AL Lowndes,61.43
+Alabama,01087 AL Macon,69.9
+Alabama,01089 AL Madison,36.99
+Alabama,01091 AL Marengo,70.33
+Alabama,01093 AL Marion,64.98
+Alabama,01095 AL Marshall,41.18
+Alabama,01097 AL Mobile,60.76
+Alabama,01099 AL Monroe,72.67
+Alabama,01101 AL Montgomery,49.61
+Alabama,01103 AL Morgan,45.47
+Alabama,01105 AL Perry,67.78
+Alabama,01107 AL Pickens,71.67
+Alabama,01109 AL Pike,62.54
+Alabama,01111 AL Randolph,60.05
+Alabama,01113 AL Russell,68.57
+Alabama,01115 AL St. Clair,62.04
+Alabama,01117 AL Shelby,60.25
+Alabama,01119 AL Sumter,70.15
+Alabama,01121 AL Talladega,56.3
+Alabama,01123 AL Tallapoosa,65.5
+Alabama,01125 AL Tuscaloosa,71.13
+Alabama,01127 AL Walker,70.37
+Alabama,01129 AL Washington,77.4
+Alabama,01131 AL Wilcox,76.06
+Alabama,01133 AL Winston,67.28
+Arizona,04001 AZ Apache,10.71
+Arizona,04003 AZ Cochise,8.71
+Arizona,04005 AZ Coconino,9.39
+Arizona,04007 AZ Gila,15.77
+Arizona,04009 AZ Graham,10.37
+Arizona,04011 AZ Greenlee,17.8
+Arizona,04012 AZ La Paz,0.6
+Arizona,04013 AZ Maricopa,2.72
+Arizona,04015 AZ Mohave,4.22
+Arizona,04017 AZ Navajo,6.42
+Arizona,04019 AZ Pima,5.81
+Arizona,04021 AZ Pinal,4.24
+Arizona,04023 AZ Santa Cruz,13.73
+Arizona,04025 AZ Yavapai,9.21
+Arizona,04027 AZ Yuma,0.81
+Arkansas,05001 AR Arkansas,33.84
+Arkansas,05003 AR Ashley,58.91
+Arkansas,05005 AR Baxter,53.5
+Arkansas,05007 AR Benton,36.55
+Arkansas,05009 AR Boone,41.45
+Arkansas,05011 AR Bradley,78.7
+Arkansas,05013 AR Calhoun,78.56
+Arkansas,05015 AR Carroll,46.21
+Arkansas,05017 AR Chicot,19.89
+Arkansas,05019 AR Clark,68.09
+Arkansas,05021 AR Clay,22.2
+Arkansas,05023 AR Cleburne,54.5
+Arkansas,05025 AR Cleveland,80.51
+Arkansas,05027 AR Columbia,76.14
+Arkansas,05029 AR Conway,46.3
+Arkansas,05031 AR Craighead,16.62
+Arkansas,05033 AR Crawford,54.98
+Arkansas,05035 AR Crittenden,14.63
+Arkansas,05037 AR Cross,19.11
+Arkansas,05039 AR Dallas,81.76
+Arkansas,05041 AR Desha,27.55
+Arkansas,05043 AR Drew,64.17
+Arkansas,05045 AR Faulkner,43.35
+Arkansas,05047 AR Franklin,51.17
+Arkansas,05049 AR Fulton,46.02
+Arkansas,05051 AR Garland,60.01
+Arkansas,05053 AR Grant,76.03
+Arkansas,05055 AR Greene,25.3
+Arkansas,05057 AR Hempstead,55.62
+Arkansas,05059 AR Hot Spring,65.08
+Arkansas,05061 AR Howard,55.5
+Arkansas,05063 AR Independence,48.21
+Arkansas,05065 AR Izard,54.19
+Arkansas,05067 AR Jackson,18.81
+Arkansas,05069 AR Jefferson,40.11
+Arkansas,05071 AR Johnson,62.89
+Arkansas,05073 AR Lafayette,56.58
+Arkansas,05075 AR Lawrence,28.26
+Arkansas,05077 AR Lee,20.69
+Arkansas,05079 AR Lincoln,42
+Arkansas,05081 AR Little River,51.15
+Arkansas,05083 AR Logan,53.34
+Arkansas,05085 AR Lonoke,28.88
+Arkansas,05087 AR Madison,59.2
+Arkansas,05089 AR Marion,50.4
+Arkansas,05091 AR Miller,46.33
+Arkansas,05093 AR Mississippi,11.25
+Arkansas,05095 AR Monroe,35.87
+Arkansas,05097 AR Montgomery,67.91
+Arkansas,05099 AR Nevada,69.38
+Arkansas,05101 AR Newton,73.62
+Arkansas,05103 AR Ouachita,78.64
+Arkansas,05105 AR Perry,65.16
+Arkansas,05107 AR Phillips,18.87
+Arkansas,05109 AR Pike,63.51
+Arkansas,05111 AR Poinsett,17.62
+Arkansas,05113 AR Polk,62.14
+Arkansas,05115 AR Pope,59.3
+Arkansas,05117 AR Prairie,29.61
+Arkansas,05119 AR Pulaski,50.36
+Arkansas,05121 AR Randolph,43.91
+Arkansas,05123 AR St. Francis,65.29
+Arkansas,05125 AR Saline,68.12
+Arkansas,05127 AR Scott,57.75
+Arkansas,05129 AR Searcy,43.65
+Arkansas,05131 AR Sebastian,57.9
+Arkansas,05133 AR Sevier,60.31
+Arkansas,05135 AR Sharp,23.76
+Arkansas,05137 AR Stone,64.36
+Arkansas,05139 AR Union,77.68
+Arkansas,05141 AR Van Buren,62.1
+Arkansas,05143 AR Washington,45.21
+Arkansas,05145 AR White,44.4
+Arkansas,05147 AR Woodruff,24.42
+Arkansas,05149 AR Yell,62.94
+California,06001 CA Alameda,11.98
+California,06003 CA Alpine,24.94
+California,06005 CA Amador,28.05
+California,06007 CA Butte,27.18
+California,06009 CA Calaveras,28.24
+California,06011 CA Colusa,13.26
+California,06013 CA Contra Costa,12.17
+California,06015 CA Del Norte,63.58
+California,06017 CA El Dorado,38.06
+California,06019 CA Fresno,11.27
+California,06021 CA Glenn,14.92
+California,06023 CA Humboldt,63.68
+California,06025 CA Imperial,0.92
+California,06027 CA Inyo,2.15
+California,06029 CA Kern,5.52
+California,06031 CA Kings,3.11
+California,06033 CA Lake,24.25
+California,06035 CA Lassen,14.66
+California,06037 CA Los Angeles,9.64
+California,06039 CA Madera,12.88
+California,06041 CA Marin,30.52
+California,06043 CA Mariposa,19.44
+California,06045 CA Mendocino,53.52
+California,06047 CA Merced,5.62
+California,06049 CA Modoc,11.93
+California,06051 CA Mono,10.92
+California,06053 CA Monterey,15.77
+California,06055 CA Napa,18.5
+California,06057 CA Nevada,41.29
+California,06059 CA Orange,12.95
+California,06061 CA Placer,34.3
+California,06063 CA Plumas,34.24
+California,06065 CA Riverside,3.63
+California,06067 CA Sacramento,7.05
+California,06069 CA San Benito,9.6
+California,06071 CA San Bernardino,1.73
+California,06073 CA San Diego,10.79
+California,06075 CA San Francisco,8.31
+California,06077 CA San Joaquin,10.33
+California,06079 CA San Luis Obispo,9.94
+California,06081 CA San Mateo,34.54
+California,06083 CA Santa Barbara,15.02
+California,06085 CA Santa Clara,20.39
+California,06087 CA Santa Cruz,46.69
+California,06089 CA Shasta,36.48
+California,06091 CA Sierra,43.42
+California,06093 CA Siskiyou,35.12
+California,06095 CA Solano,6.91
+California,06097 CA Sonoma,31.64
+California,06099 CA Stanislaus,9.37
+California,06101 CA Sutter,14.56
+California,06103 CA Tehama,19.55
+California,06105 CA Trinity,47.16
+California,06107 CA Tulare,14.91
+California,06109 CA Tuolumne,27.49
+California,06111 CA Ventura,13.29
+California,06113 CA Yolo,7.48
+California,06115 CA Yuba,29.24
+Colorado,08001 CO Adams,2.15
+Colorado,08003 CO Alamosa,6.46
+Colorado,08005 CO Arapahoe,4.11
+Colorado,08007 CO Archuleta,29.03
+Colorado,08009 CO Baca,1.45
+Colorado,08011 CO Bent,3.05
+Colorado,08013 CO Boulder,23.8
+Colorado,08014 CO Broomfield,6.87
+Colorado,08015 CO Chaffee,21.3
+Colorado,08017 CO Cheyenne,1.01
+Colorado,08019 CO Clear Creek,34.26
+Colorado,08021 CO Conejos,17.68
+Colorado,08023 CO Costilla,14.5
+Colorado,08025 CO Crowley,2.02
+Colorado,08027 CO Custer,21.7
+Colorado,08029 CO Delta,17.66
+Colorado,08031 CO Denver,6.95
+Colorado,08033 CO Dolores,23.63
+Colorado,08035 CO Douglas,17.38
+Colorado,08037 CO Eagle,31.19
+Colorado,08039 CO Elbert,8.06
+Colorado,08041 CO El Paso,2.98
+Colorado,08043 CO Fremont,19.29
+Colorado,08045 CO Garfield,24.34
+Colorado,08047 CO Gilpin,40.45
+Colorado,08049 CO Grand,25.61
+Colorado,08051 CO Gunnison,28.69
+Colorado,08053 CO Hinsdale,26.01
+Colorado,08055 CO Huerfano,14.41
+Colorado,08057 CO Jackson,20.7
+Colorado,08059 CO Jefferson,23.17
+Colorado,08061 CO Kiowa,1.11
+Colorado,08063 CO Kit Carson,1.6
+Colorado,08065 CO Lake,25.26
+Colorado,08067 CO La Plata,21.66
+Colorado,08069 CO Larimer,20.11
+Colorado,08071 CO Las Animas,8.15
+Colorado,08073 CO Lincoln,1.35
+Colorado,08075 CO Logan,2.07
+Colorado,08077 CO Mesa,16.77
+Colorado,08079 CO Mineral,25.71
+Colorado,08081 CO Moffat,7.29
+Colorado,08083 CO Montezuma,13.11
+Colorado,08085 CO Montrose,14.35
+Colorado,08087 CO Morgan,2.28
+Colorado,08089 CO Otero,1.77
+Colorado,08091 CO Ouray,27.36
+Colorado,08093 CO Park,18.66
+Colorado,08095 CO Phillips,2.38
+Colorado,08097 CO Pitkin,34.75
+Colorado,08099 CO Prowers,2.06
+Colorado,08101 CO Pueblo,5.47
+Colorado,08103 CO Rio Blanco,19.32
+Colorado,08105 CO Rio Grande,19.66
+Colorado,08107 CO Routt,27.81
+Colorado,08109 CO Saguache,18.04
+Colorado,08111 CO San Juan,25.7
+Colorado,08113 CO San Miguel,17.03
+Colorado,08115 CO Sedgwick,2.01
+Colorado,08117 CO Summit,30.47
+Colorado,08119 CO Teller,26.12
+Colorado,08121 CO Washington,1.5
+Colorado,08123 CO Weld,1.87
+Colorado,08125 CO Yuma,3.22
+Connecticut,09001 CT Fairfield,58.79
+Connecticut,09003 CT Hartford,54.25
+Connecticut,09005 CT Litchfield,68.53
+Connecticut,09007 CT Middlesex,66.03
+Connecticut,09009 CT New Haven,56.83
+Connecticut,09011 CT New London,66.93
+Connecticut,09013 CT Tolland,68.45
+Connecticut,09015 CT Windham,68.12
+Delaware,10001 DE Kent,37.03
+Delaware,10003 DE New Castle,39.73
+Delaware,10005 DE Sussex,40.28
+District of Columbia,District of Columbia,27.52
+Florida,12001 FL Alachua,50.07
+Florida,12003 FL Baker,67.44
+Florida,12005 FL Bay,47.8
+Florida,12007 FL Bradford,55.23
+Florida,12009 FL Brevard,35.56
+Florida,12011 FL Broward,14.59
+Florida,12013 FL Calhoun,46.93
+Florida,12015 FL Charlotte,35.3
+Florida,12017 FL Citrus,36.77
+Florida,12019 FL Clay,49.76
+Florida,12021 FL Collier,43.92
+Florida,12023 FL Columbia,56
+Florida,12025 FL Dade,29.94
+Florida,12027 FL DeSoto,69.06
+Florida,12029 FL Dixie,42.24
+Florida,12031 FL Duval,55.15
+Florida,12033 FL Escambia,60.92
+Florida,12035 FL Flagler,69.48
+Florida,12037 FL Franklin,60.63
+Florida,12039 FL Gadsden,39.71
+Florida,12041 FL Gilchrist,34.63
+Florida,12043 FL Glades,53.93
+Florida,12045 FL Gulf,56.03
+Florida,12047 FL Hamilton,34.88
+Florida,12049 FL Hardee,32.95
+Florida,12051 FL Hendry,41.28
+Florida,12053 FL Hernando,31.33
+Florida,12055 FL Highlands,32.46
+Florida,12057 FL Hillsborough,62.73
+Florida,12059 FL Holmes,24.76
+Florida,12061 FL Indian River,43.21
+Florida,12063 FL Jackson,66.2
+Florida,12065 FL Jefferson,68.13
+Florida,12067 FL Lafayette,40.41
+Florida,12069 FL Lake,33.26
+Florida,12071 FL Lee,56.19
+Florida,12073 FL Leon,50.6
+Florida,12075 FL Levy,69.52
+Florida,12077 FL Liberty,60.15
+Florida,12079 FL Madison,28.32
+Florida,12081 FL Manatee,44.84
+Florida,12083 FL Marion,18.68
+Florida,12085 FL Martin,14.22
+Florida,12087 FL Monroe,40.13
+Florida,12089 FL Nassau,57.94
+Florida,12091 FL Okaloosa,54.52
+Florida,12093 FL Okeechobee,24.86
+Florida,12095 FL Orange,35.05
+Florida,12097 FL Osceola,38.57
+Florida,12099 FL Palm Beach,19.09
+Florida,12101 FL Pasco,35.16
+Florida,12103 FL Pinellas,22.99
+Florida,12105 FL Polk,35.7
+Florida,12107 FL Putnam,53.06
+Florida,12109 FL St. Johns,55.93
+Florida,12111 FL St. Lucie,33.64
+Florida,12113 FL Santa Rosa,39.49
+Florida,12115 FL Sarasota,55.46
+Florida,12117 FL Seminole,19.17
+Florida,12119 FL Sumter,43.66
+Florida,12121 FL Suwannee,43.16
+Florida,12123 FL Taylor,70.79
+Florida,12125 FL Union,62.66
+Florida,12127 FL Volusia,52.41
+Florida,12129 FL Wakulla,65.34
+Florida,12131 FL Walton,61.58
+Florida,12133 FL Washington,57.15
+Georgia,13001 GA Appling,49.51
+Georgia,13003 GA Atkinson,56.84
+Georgia,13005 GA Bacon,46.25
+Georgia,13007 GA Baker,35.69
+Georgia,13009 GA Baldwin,61.74
+Georgia,13011 GA Banks,59.02
+Georgia,13013 GA Barrow,44.13
+Georgia,13015 GA Bartow,54.51
+Georgia,13017 GA Ben Hill,52.9
+Georgia,13019 GA Berrien,50.43
+Georgia,13021 GA Bibb,49.72
+Georgia,13023 GA Bleckley,45.33
+Georgia,13025 GA Brantley,65.02
+Georgia,13027 GA Brooks,50.37
+Georgia,13029 GA Bryan,59.3
+Georgia,13031 GA Bulloch,51.42
+Georgia,13033 GA Burke,52.9
+Georgia,13035 GA Butts,58.87
+Georgia,13037 GA Calhoun,44.49
+Georgia,13039 GA Camden,57.54
+Georgia,13043 GA Candler,48.51
+Georgia,13045 GA Carroll,54.12
+Georgia,13047 GA Catoosa,47.03
+Georgia,13049 GA Charlton,70.47
+Georgia,13051 GA Chatham,32.14
+Georgia,13053 GA Chattahoochee,67.45
+Georgia,13055 GA Chattooga,61.47
+Georgia,13057 GA Cherokee,61.35
+Georgia,13059 GA Clarke,49.39
+Georgia,13061 GA Clay,52.28
+Georgia,13063 GA Clayton,36.57
+Georgia,13065 GA Clinch,72.51
+Georgia,13067 GA Cobb,45.16
+Georgia,13069 GA Coffee,49.31
+Georgia,13071 GA Colquitt,41.69
+Georgia,13073 GA Columbia,61.66
+Georgia,13075 GA Cook,42.26
+Georgia,13077 GA Coweta,58.18
+Georgia,13079 GA Crawford,60.53
+Georgia,13081 GA Crisp,34.55
+Georgia,13083 GA Dade,63.38
+Georgia,13085 GA Dawson,70.96
+Georgia,13087 GA Decatur,42.63
+Georgia,13089 GA DeKalb,44.55
+Georgia,13091 GA Dodge,56.85
+Georgia,13093 GA Dooly,34.33
+Georgia,13095 GA Dougherty,41.72
+Georgia,13097 GA Douglas,58.12
+Georgia,13099 GA Early,42.46
+Georgia,13101 GA Echols,69.64
+Georgia,13103 GA Effingham,60.12
+Georgia,13105 GA Elbert,57.93
+Georgia,13107 GA Emanuel,60.3
+Georgia,13109 GA Evans,54.35
+Georgia,13111 GA Fannin,76.44
+Georgia,13113 GA Fayette,50.87
+Georgia,13115 GA Floyd,57.57
+Georgia,13117 GA Forsyth,43.42
+Georgia,13119 GA Franklin,44.89
+Georgia,13121 GA Fulton,49.79
+Georgia,13123 GA Gilmer,77.46
+Georgia,13125 GA Glascock,63.74
+Georgia,13127 GA Glynn,49.23
+Georgia,13129 GA Gordon,50.85
+Georgia,13131 GA Grady,49.95
+Georgia,13133 GA Greene,62.79
+Georgia,13135 GA Gwinnett,42.13
+Georgia,13137 GA Habersham,65.24
+Georgia,13139 GA Hall,50.14
+Georgia,13141 GA Hancock,69.63
+Georgia,13143 GA Haralson,64.52
+Georgia,13145 GA Harris,68.43
+Georgia,13147 GA Hart,37.81
+Georgia,13149 GA Heard,66.4
+Georgia,13151 GA Henry,46.24
+Georgia,13153 GA Houston,47.18
+Georgia,13155 GA Irwin,43.27
+Georgia,13157 GA Jackson,50.39
+Georgia,13159 GA Jasper,65.17
+Georgia,13161 GA Jeff Davis,53.38
+Georgia,13163 GA Jefferson,54.73
+Georgia,13165 GA Jenkins,53.75
+Georgia,13167 GA Johnson,57.93
+Georgia,13169 GA Jones,69.37
+Georgia,13171 GA Lamar,52.58
+Georgia,13173 GA Lanier,59.15
+Georgia,13175 GA Laurens,58.44
+Georgia,13177 GA Lee,39.79
+Georgia,13179 GA Liberty,56.83
+Georgia,13181 GA Lincoln,59.81
+Georgia,13183 GA Long,65.44
+Georgia,13185 GA Lowndes,58.1
+Georgia,13187 GA Lumpkin,75.8
+Georgia,13189 GA McDuffie,49.71
+Georgia,13191 GA McIntosh,48.07
+Georgia,13193 GA Macon,56.09
+Georgia,13195 GA Madison,62.81
+Georgia,13197 GA Marion,51.94
+Georgia,13199 GA Meriwether,62.29
+Georgia,13201 GA Miller,28.72
+Georgia,13205 GA Mitchell,33.82
+Georgia,13207 GA Monroe,64.67
+Georgia,13209 GA Montgomery,61.36
+Georgia,13211 GA Morgan,53.87
+Georgia,13213 GA Murray,62.94
+Georgia,13215 GA Muscogee,59.88
+Georgia,13217 GA Newton,53.59
+Georgia,13219 GA Oconee,50.14
+Georgia,13221 GA Oglethorpe,62.55
+Georgia,13223 GA Paulding,62.31
+Georgia,13225 GA Peach,39.39
+Georgia,13227 GA Pickens,70.97
+Georgia,13229 GA Pierce,50.46
+Georgia,13231 GA Pike,51.01
+Georgia,13233 GA Polk,57.54
+Georgia,13235 GA Pulaski,45.35
+Georgia,13237 GA Putnam,61.01
+Georgia,13239 GA Quitman,67.29
+Georgia,13241 GA Rabun,80.9
+Georgia,13243 GA Randolph,52.14
+Georgia,13245 GA Richmond,49.97
+Georgia,13247 GA Rockdale,52.61
+Georgia,13249 GA Schley,61.9
+Georgia,13251 GA Screven,56.69
+Georgia,13253 GA Seminole,24.83
+Georgia,13255 GA Spalding,50.24
+Georgia,13257 GA Stephens,60.43
+Georgia,13259 GA Stewart,68.94
+Georgia,13261 GA Sumter,45.75
+Georgia,13263 GA Talbot,68.41
+Georgia,13265 GA Taliaferro,70.75
+Georgia,13267 GA Tattnall,49.13
+Georgia,13269 GA Taylor,50.8
+Georgia,13271 GA Telfair,60.89
+Georgia,13273 GA Terrell,46.07
+Georgia,13275 GA Thomas,52.41
+Georgia,13277 GA Tift,38.29
+Georgia,13279 GA Toombs,51.27
+Georgia,13281 GA Towns,75.77
+Georgia,13283 GA Treutlen,62.66
+Georgia,13285 GA Troup,59.63
+Georgia,13287 GA Turner,39.34
+Georgia,13289 GA Twiggs,64
+Georgia,13291 GA Union,74.39
+Georgia,13293 GA Upson,62.34
+Georgia,13295 GA Walker,58.39
+Georgia,13297 GA Walton,50.69
+Georgia,13299 GA Ware,68.5
+Georgia,13301 GA Warren,66.36
+Georgia,13303 GA Washington,62.4
+Georgia,13305 GA Wayne,60.04
+Georgia,13307 GA Webster,55
+Georgia,13309 GA Wheeler,60.68
+Georgia,13311 GA White,70.99
+Georgia,13313 GA Whitfield,53.59
+Georgia,13315 GA Wilcox,50.36
+Georgia,13317 GA Wilkes,66.83
+Georgia,13319 GA Wilkinson,68.31
+Georgia,13321 GA Worth,41.26
+Idaho,16001 ID Ada,3.36
+Idaho,16003 ID Adams,31.8
+Idaho,16005 ID Bannock,16.74
+Idaho,16007 ID Bear Lake,17.27
+Idaho,16009 ID Benewah,42.7
+Idaho,16011 ID Bingham,6.17
+Idaho,16013 ID Blaine,11.45
+Idaho,16015 ID Boise,30.2
+Idaho,16017 ID Bonner,50.14
+Idaho,16019 ID Bonneville,20.46
+Idaho,16021 ID Boundary,53.07
+Idaho,16023 ID Butte,5.75
+Idaho,16025 ID Camas,13.92
+Idaho,16027 ID Canyon,6.63
+Idaho,16029 ID Caribou,21.96
+Idaho,16031 ID Cassia,7.26
+Idaho,16033 ID Clark,10.94
+Idaho,16035 ID Clearwater,58.08
+Idaho,16037 ID Custer,15.83
+Idaho,16039 ID Elmore,10.22
+Idaho,16041 ID Franklin,16.82
+Idaho,16043 ID Fremont,25.53
+Idaho,16045 ID Gem,12.24
+Idaho,16047 ID Gooding,3.91
+Idaho,16049 ID Idaho,41.82
+Idaho,16051 ID Jefferson,1.57
+Idaho,16053 ID Jerome,2.84
+Idaho,16055 ID Kootenai,46.65
+Idaho,16057 ID Latah,35.27
+Idaho,16059 ID Lemhi,21.08
+Idaho,16061 ID Lewis,17.06
+Idaho,16063 ID Lincoln,0.92
+Idaho,16065 ID Madison,15.36
+Idaho,16067 ID Minidoka,1.57
+Idaho,16069 ID Nez Perce,16.76
+Idaho,16071 ID Oneida,8.31
+Idaho,16073 ID Owyhee,3.44
+Idaho,16075 ID Payette,3.95
+Idaho,16077 ID Power,7.94
+Idaho,16079 ID Shoshone,61.76
+Idaho,16081 ID Teton,24.11
+Idaho,16083 ID Twin Falls,3.79
+Idaho,16085 ID Valley,27.76
+Idaho,16087 ID Washington,9.45
+Illinois,17001 IL Adams,22.95
+Illinois,17003 IL Alexander,43.29
+Illinois,17005 IL Bond,22.15
+Illinois,17007 IL Boone,12.46
+Illinois,17009 IL Brown,38.53
+Illinois,17011 IL Bureau,13.79
+Illinois,17013 IL Calhoun,47.47
+Illinois,17015 IL Carroll,20.07
+Illinois,17017 IL Cass,25.77
+Illinois,17019 IL Champaign,7.66
+Illinois,17021 IL Christian,11.47
+Illinois,17023 IL Clark,25.12
+Illinois,17025 IL Clay,22.99
+Illinois,17027 IL Clinton,17.45
+Illinois,17029 IL Coles,16.84
+Illinois,17031 IL Cook,17.81
+Illinois,17033 IL Crawford,25.28
+Illinois,17035 IL Cumberland,22.65
+Illinois,17037 IL DeKalb,11.52
+Illinois,17039 IL De Witt,7.47
+Illinois,17041 IL Douglas,8.04
+Illinois,17043 IL DuPage,19.12
+Illinois,17045 IL Edgar,12.9
+Illinois,17047 IL Edwards,20.15
+Illinois,17049 IL Effingham,21.62
+Illinois,17051 IL Fayette,25.12
+Illinois,17053 IL Ford,5.76
+Illinois,17055 IL Franklin,26.15
+Illinois,17057 IL Fulton,31.2
+Illinois,17059 IL Gallatin,26.62
+Illinois,17061 IL Greene,25.48
+Illinois,17063 IL Grundy,13.31
+Illinois,17065 IL Hamilton,24.18
+Illinois,17067 IL Hancock,18.64
+Illinois,17069 IL Hardin,60.33
+Illinois,17071 IL Henderson,18.82
+Illinois,17073 IL Henry,12.88
+Illinois,17075 IL Iroquois,7.96
+Illinois,17077 IL Jackson,40.41
+Illinois,17079 IL Jasper,20.06
+Illinois,17081 IL Jefferson,26.84
+Illinois,17083 IL Jersey,32.91
+Illinois,17085 IL Jo Daviess,33.58
+Illinois,17087 IL Johnson,53.53
+Illinois,17089 IL Kane,15.26
+Illinois,17091 IL Kankakee,9.7
+Illinois,17093 IL Kendall,11.34
+Illinois,17095 IL Knox,21.53
+Illinois,17097 IL Lake,25.16
+Illinois,17099 IL La Salle,12.2
+Illinois,17101 IL Lawrence,22.35
+Illinois,17103 IL Lee,9.71
+Illinois,17105 IL Livingston,7.04
+Illinois,17107 IL Logan,10.07
+Illinois,17109 IL McDonough,10.82
+Illinois,17111 IL McHenry,22.45
+Illinois,17113 IL McLean,22.93
+Illinois,17115 IL Macon,26.3
+Illinois,17117 IL Macoupin,17.52
+Illinois,17119 IL Madison,17.82
+Illinois,17121 IL Marion,34.13
+Illinois,17123 IL Marshall,16.77
+Illinois,17125 IL Mason,19.63
+Illinois,17127 IL Massac,8.4
+Illinois,17129 IL Menard,16.43
+Illinois,17131 IL Mercer,17.84
+Illinois,17133 IL Monroe,26.1
+Illinois,17135 IL Montgomery,16.95
+Illinois,17137 IL Morgan,17.11
+Illinois,17139 IL Moultrie,11.58
+Illinois,17141 IL Ogle,13.97
+Illinois,17143 IL Peoria,25.62
+Illinois,17145 IL Perry,25.15
+Illinois,17147 IL Piatt,8.95
+Illinois,17149 IL Pike,28.92
+Illinois,17151 IL Pope,63.12
+Illinois,17153 IL Pulaski,33.44
+Illinois,17155 IL Putnam,23.62
+Illinois,17157 IL Randolph,28.66
+Illinois,17159 IL Richland,20.7
+Illinois,17161 IL Rock Island,24.57
+Illinois,17163 IL St. Clair,33.13
+Illinois,17165 IL Saline,14.25
+Illinois,17167 IL Sangamon,36.39
+Illinois,17169 IL Schuyler,23.43
+Illinois,17171 IL Scott,17.17
+Illinois,17173 IL Shelby,23.11
+Illinois,17175 IL Stark,10.69
+Illinois,17177 IL Stephenson,14.84
+Illinois,17179 IL Tazewell,16.34
+Illinois,17181 IL Union,49.18
+Illinois,17183 IL Vermilion,13.86
+Illinois,17185 IL Wabash,18.97
+Illinois,17187 IL Warren,12.62
+Illinois,17189 IL Washington,16.65
+Illinois,17191 IL Wayne,21.59
+Illinois,17193 IL White,20.85
+Illinois,17195 IL Whiteside,13.55
+Illinois,17197 IL Will,16.47
+Illinois,17199 IL Williamson,41.31
+Illinois,17201 IL Winnebago,19.07
+Illinois,17203 IL Woodford,15.59
+Indiana,18001 IN Adams,8.99
+Indiana,18003 IN Allen,14.8
+Indiana,18005 IN Bartholomew,27.32
+Indiana,18007 IN Benton,6.18
+Indiana,18009 IN Blackford,12.33
+Indiana,18011 IN Boone,9.79
+Indiana,18013 IN Brown,72.19
+Indiana,18015 IN Carroll,15.01
+Indiana,18017 IN Cass,16.5
+Indiana,18019 IN Clark,40.72
+Indiana,18021 IN Clay,28.2
+Indiana,18023 IN Clinton,9.19
+Indiana,18025 IN Crawford,64.1
+Indiana,18027 IN Daviess,20.76
+Indiana,18029 IN Dearborn,47.19
+Indiana,18031 IN Decatur,17.99
+Indiana,18033 IN De Kalb,17.9
+Indiana,18035 IN Delaware,12.97
+Indiana,18037 IN Dubois,36.25
+Indiana,18039 IN Elkhart,18.37
+Indiana,18041 IN Fayette,25.76
+Indiana,18043 IN Floyd,47.33
+Indiana,18045 IN Fountain,21.34
+Indiana,18047 IN Franklin,41.58
+Indiana,18049 IN Fulton,14.94
+Indiana,18051 IN Gibson,22.16
+Indiana,18053 IN Grant,12.13
+Indiana,18055 IN Greene,41.11
+Indiana,18057 IN Hamilton,14.09
+Indiana,18059 IN Hancock,10.17
+Indiana,18061 IN Harrison,47.72
+Indiana,18063 IN Hendricks,14.65
+Indiana,18065 IN Henry,13.55
+Indiana,18067 IN Howard,10.51
+Indiana,18069 IN Huntington,15.25
+Indiana,18071 IN Jackson,36.82
+Indiana,18073 IN Jasper,13.2
+Indiana,18075 IN Jay,10.78
+Indiana,18077 IN Jefferson,44.23
+Indiana,18079 IN Jennings,41.04
+Indiana,18081 IN Johnson,18.93
+Indiana,18083 IN Knox,17.26
+Indiana,18085 IN Kosciusko,18.89
+Indiana,18087 IN Lagrange,19.42
+Indiana,18089 IN Lake,19.98
+Indiana,18091 IN La Porte,22.97
+Indiana,18093 IN Lawrence,47.77
+Indiana,18095 IN Madison,11.44
+Indiana,18097 IN Marion,19.24
+Indiana,18099 IN Marshall,18.78
+Indiana,18101 IN Martin,59.46
+Indiana,18103 IN Miami,16.67
+Indiana,18105 IN Monroe,55.56
+Indiana,18107 IN Montgomery,14.87
+Indiana,18109 IN Morgan,39.17
+Indiana,18111 IN Newton,14.18
+Indiana,18113 IN Noble,21.59
+Indiana,18115 IN Ohio,48.29
+Indiana,18117 IN Orange,52.36
+Indiana,18119 IN Owen,52
+Indiana,18121 IN Parke,38.52
+Indiana,18123 IN Perry,61.51
+Indiana,18125 IN Pike,43.23
+Indiana,18127 IN Porter,23.11
+Indiana,18129 IN Posey,24.1
+Indiana,18131 IN Pulaski,15.09
+Indiana,18133 IN Putnam,33.27
+Indiana,18135 IN Randolph,9.29
+Indiana,18137 IN Ripley,35.88
+Indiana,18139 IN Rush,9.9
+Indiana,18141 IN St. Joseph,41.99
+Indiana,18143 IN Scott,11.54
+Indiana,18145 IN Shelby,30.84
+Indiana,18147 IN Spencer,21.77
+Indiana,18149 IN Starke,23.5
+Indiana,18151 IN Steuben,24.96
+Indiana,18153 IN Sullivan,28.89
+Indiana,18155 IN Switzerland,51.92
+Indiana,18157 IN Tippecanoe,17.83
+Indiana,18159 IN Tipton,6.58
+Indiana,18161 IN Union,20.95
+Indiana,18163 IN Vanderburgh,27.25
+Indiana,18165 IN Vermillion,27.3
+Indiana,18167 IN Vigo,30.55
+Indiana,18169 IN Wabash,17.74
+Indiana,18171 IN Warren,18.23
+Indiana,18173 IN Warrick,40.24
+Indiana,18175 IN Washington,42.11
+Indiana,18177 IN Wayne,18.76
+Indiana,18179 IN Wells,9.98
+Indiana,18181 IN White,9.7
+Indiana,18183 IN Whitley,16.98
+Iowa,19001 IA Adair,10.26
+Iowa,19003 IA Adams,13.09
+Iowa,19005 IA Allamakee,41.24
+Iowa,19007 IA Appanoose,25.26
+Iowa,19009 IA Audubon,11.93
+Iowa,19011 IA Benton,19.12
+Iowa,19013 IA Black Hawk,19.53
+Iowa,19015 IA Boone,19.41
+Iowa,19017 IA Bremer,20.73
+Iowa,19019 IA Buchanan,19
+Iowa,19021 IA Buena Vista,13.94
+Iowa,19023 IA Butler,19.57
+Iowa,19025 IA Calhoun,13.4
+Iowa,19027 IA Carroll,18.86
+Iowa,19029 IA Cass,11.02
+Iowa,19031 IA Cedar,12.73
+Iowa,19033 IA Cerro Gordo,15.99
+Iowa,19035 IA Cherokee,19.13
+Iowa,19037 IA Chickasaw,19.17
+Iowa,19039 IA Clarke,22.52
+Iowa,19041 IA Clay,14.38
+Iowa,19043 IA Clayton,37.06
+Iowa,19045 IA Clinton,13.71
+Iowa,19047 IA Crawford,23.63
+Iowa,19049 IA Dallas,14.65
+Iowa,19051 IA Davis,23.82
+Iowa,19053 IA Decatur,25.84
+Iowa,19055 IA Delaware,20.23
+Iowa,19057 IA Des Moines,22.51
+Iowa,19059 IA Dickinson,13.76
+Iowa,19061 IA Dubuque,24.34
+Iowa,19063 IA Emmet,15.98
+Iowa,19065 IA Fayette,24.35
+Iowa,19067 IA Floyd,17.34
+Iowa,19069 IA Franklin,16.72
+Iowa,19071 IA Fremont,15.53
+Iowa,19073 IA Greene,13.64
+Iowa,19075 IA Grundy,17.46
+Iowa,19077 IA Guthrie,15.99
+Iowa,19079 IA Hamilton,15.44
+Iowa,19081 IA Hancock,14.96
+Iowa,19083 IA Hardin,18.49
+Iowa,19085 IA Harrison,16.11
+Iowa,19087 IA Henry,20.13
+Iowa,19089 IA Howard,19.26
+Iowa,19091 IA Humboldt,12.26
+Iowa,19093 IA Ida,20.45
+Iowa,19095 IA Iowa,16.34
+Iowa,19097 IA Jackson,28.87
+Iowa,19099 IA Jasper,14.67
+Iowa,19101 IA Jefferson,19.93
+Iowa,19103 IA Johnson,18.29
+Iowa,19105 IA Jones,19.13
+Iowa,19107 IA Keokuk,16.18
+Iowa,19109 IA Kossuth,13.7
+Iowa,19111 IA Lee,26.48
+Iowa,19113 IA Linn,21.26
+Iowa,19115 IA Louisa,19.71
+Iowa,19117 IA Lucas,26.36
+Iowa,19119 IA Lyon,18.05
+Iowa,19121 IA Madison,20.05
+Iowa,19123 IA Mahaska,16.03
+Iowa,19125 IA Marion,22.79
+Iowa,19127 IA Marshall,19.59
+Iowa,19129 IA Mills,15.51
+Iowa,19131 IA Mitchell,16.51
+Iowa,19133 IA Monona,22.85
+Iowa,19135 IA Monroe,31.55
+Iowa,19137 IA Montgomery,13.59
+Iowa,19139 IA Muscatine,17.98
+Iowa,19141 IA O'Brien,17.93
+Iowa,19143 IA Osceola,16.2
+Iowa,19145 IA Page,15.26
+Iowa,19147 IA Palo Alto,12.94
+Iowa,19149 IA Plymouth,19.04
+Iowa,19151 IA Pocahontas,13.56
+Iowa,19153 IA Polk,16.92
+Iowa,19155 IA Pottawattamie,13.06
+Iowa,19157 IA Poweshiek,13.13
+Iowa,19159 IA Ringgold,18.65
+Iowa,19161 IA Sac,16.96
+Iowa,19163 IA Scott,15
+Iowa,19165 IA Shelby,11.12
+Iowa,19167 IA Sioux,18.83
+Iowa,19169 IA Story,16
+Iowa,19171 IA Tama,21.02
+Iowa,19173 IA Taylor,16.05
+Iowa,19175 IA Union,16.24
+Iowa,19177 IA Van Buren,28.73
+Iowa,19179 IA Wapello,23.73
+Iowa,19181 IA Warren,22.71
+Iowa,19183 IA Washington,16.27
+Iowa,19185 IA Wayne,17.44
+Iowa,19187 IA Webster,15.71
+Iowa,19189 IA Winnebago,14.84
+Iowa,19191 IA Winneshiek,28.22
+Iowa,19193 IA Woodbury,21.24
+Iowa,19195 IA Worth,14.47
+Iowa,19197 IA Wright,14.87
+Kansas,20001 KS Allen,10.97
+Kansas,20003 KS Anderson,12.46
+Kansas,20005 KS Atchison,17.43
+Kansas,20007 KS Barber,8.21
+Kansas,20009 KS Barton,3.15
+Kansas,20011 KS Bourbon,19.63
+Kansas,20013 KS Brown,14.16
+Kansas,20015 KS Butler,7.41
+Kansas,20017 KS Chase,8.28
+Kansas,20019 KS Chautauqua,22.83
+Kansas,20021 KS Cherokee,13.83
+Kansas,20023 KS Cheyenne,2.94
+Kansas,20025 KS Clark,5.08
+Kansas,20027 KS Clay,8.17
+Kansas,20029 KS Cloud,7.24
+Kansas,20031 KS Coffey,11.27
+Kansas,20033 KS Comanche,5.46
+Kansas,20035 KS Cowley,9.94
+Kansas,20037 KS Crawford,13.58
+Kansas,20039 KS Decatur,2.82
+Kansas,20041 KS Dickinson,6.09
+Kansas,20043 KS Doniphan,22.37
+Kansas,20045 KS Douglas,21.81
+Kansas,20047 KS Edwards,3.47
+Kansas,20049 KS Elk,17.5
+Kansas,20051 KS Ellis,3.96
+Kansas,20053 KS Ellsworth,5.45
+Kansas,20055 KS Finney,2.18
+Kansas,20057 KS Ford,2.1
+Kansas,20059 KS Franklin,16.7
+Kansas,20061 KS Geary,14.3
+Kansas,20063 KS Gove,2.14
+Kansas,20065 KS Graham,3.59
+Kansas,20067 KS Grant,1.95
+Kansas,20069 KS Gray,2.22
+Kansas,20071 KS Greeley,0.73
+Kansas,20073 KS Greenwood,12.36
+Kansas,20075 KS Hamilton,1.27
+Kansas,20077 KS Harper,4.15
+Kansas,20079 KS Harvey,4.57
+Kansas,20081 KS Haskell,2.79
+Kansas,20083 KS Hodgeman,2.39
+Kansas,20085 KS Jackson,18.46
+Kansas,20087 KS Jefferson,23.28
+Kansas,20089 KS Jewell,7.25
+Kansas,20091 KS Johnson,21.99
+Kansas,20093 KS Kearny,2.12
+Kansas,20095 KS Kingman,4.86
+Kansas,20097 KS Kiowa,4.19
+Kansas,20099 KS Labette,12.16
+Kansas,20101 KS Lane,1.43
+Kansas,20103 KS Leavenworth,27.25
+Kansas,20105 KS Lincoln,5.25
+Kansas,20107 KS Linn,24.56
+Kansas,20109 KS Logan,1.85
+Kansas,20111 KS Lyon,10.51
+Kansas,20113 KS McPherson,4.75
+Kansas,20115 KS Marion,11.2
+Kansas,20117 KS Marshall,4.55
+Kansas,20119 KS Meade,3.22
+Kansas,20121 KS Miami,20.76
+Kansas,20123 KS Mitchell,4.46
+Kansas,20125 KS Montgomery,17.36
+Kansas,20127 KS Morris,7.46
+Kansas,20129 KS Morton,1.2
+Kansas,20131 KS Nemaha,11.7
+Kansas,20133 KS Neosho,12.85
+Kansas,20135 KS Ness,2
+Kansas,20137 KS Norton,4.36
+Kansas,20139 KS Osage,16
+Kansas,20141 KS Osborne,4.8
+Kansas,20143 KS Ottawa,5.74
+Kansas,20145 KS Pawnee,2.68
+Kansas,20147 KS Phillips,5.42
+Kansas,20149 KS Pottawatomie,15.35
+Kansas,20151 KS Pratt,4.1
+Kansas,20153 KS Rawlins,2.67
+Kansas,20155 KS Reno,4.75
+Kansas,20157 KS Republic,9.1
+Kansas,20159 KS Rice,3.44
+Kansas,20161 KS Riley,15.58
+Kansas,20163 KS Rooks,4.23
+Kansas,20165 KS Rush,2.44
+Kansas,20167 KS Russell,4.97
+Kansas,20169 KS Saline,5.59
+Kansas,20171 KS Scott,1.33
+Kansas,20173 KS Sedgwick,5.67
+Kansas,20175 KS Seward,2.01
+Kansas,20177 KS Shawnee,21.01
+Kansas,20179 KS Sheridan,3.18
+Kansas,20181 KS Sherman,2.37
+Kansas,20183 KS Smith,5.58
+Kansas,20185 KS Stafford,3.95
+Kansas,20187 KS Stanton,1.39
+Kansas,20189 KS Stevens,2.11
+Kansas,20191 KS Sumner,4.28
+Kansas,20193 KS Thomas,2.18
+Kansas,20195 KS Trego,2.7
+Kansas,20197 KS Wabaunsee,13.51
+Kansas,20199 KS Wallace,1.77
+Kansas,20201 KS Washington,9.27
+Kansas,20203 KS Wichita,1.03
+Kansas,20205 KS Wilson,15.6
+Kansas,20207 KS Woodson,12.86
+Kansas,20209 KS Wyandotte,30.89
+Kentucky,21001 KY Adair,47.05
+Kentucky,21003 KY Allen,42.58
+Kentucky,21005 KY Anderson,48.23
+Kentucky,21007 KY Ballard,30
+Kentucky,21009 KY Barren,27.3
+Kentucky,21011 KY Bath,46.4
+Kentucky,21013 KY Bell,78.97
+Kentucky,21015 KY Boone,39.95
+Kentucky,21017 KY Bourbon,17.07
+Kentucky,21019 KY Boyd,60.4
+Kentucky,21021 KY Boyle,30.71
+Kentucky,21023 KY Bracken,53.32
+Kentucky,21025 KY Breathitt,79.65
+Kentucky,21027 KY Breckinridge,46.23
+Kentucky,21029 KY Bullitt,56.12
+Kentucky,21031 KY Butler,53.4
+Kentucky,21033 KY Caldwell,40.45
+Kentucky,21035 KY Calloway,33.99
+Kentucky,21037 KY Campbell,45.89
+Kentucky,21039 KY Carlisle,31.33
+Kentucky,21041 KY Carroll,49.02
+Kentucky,21043 KY Carter,68.26
+Kentucky,21045 KY Casey,54.36
+Kentucky,21047 KY Christian,32.18
+Kentucky,21049 KY Clark,30.33
+Kentucky,21051 KY Clay,79.05
+Kentucky,21053 KY Clinton,50.3
+Kentucky,21055 KY Crittenden,45.93
+Kentucky,21057 KY Cumberland,66.49
+Kentucky,21059 KY Daviess,23.87
+Kentucky,21061 KY Edmonson,57.24
+Kentucky,21063 KY Elliott,72.52
+Kentucky,21065 KY Estill,67.81
+Kentucky,21067 KY Fayette,16.92
+Kentucky,21069 KY Fleming,40.67
+Kentucky,21071 KY Floyd,76.45
+Kentucky,21073 KY Franklin,46.23
+Kentucky,21075 KY Fulton,25.47
+Kentucky,21077 KY Gallatin,49.97
+Kentucky,21079 KY Garrard,35.26
+Kentucky,21081 KY Grant,52.77
+Kentucky,21083 KY Graves,28.04
+Kentucky,21085 KY Grayson,46.15
+Kentucky,21087 KY Green,41.05
+Kentucky,21089 KY Greenup,65.74
+Kentucky,21091 KY Hancock,47.62
+Kentucky,21093 KY Hardin,40.28
+Kentucky,21095 KY Harlan,80.36
+Kentucky,21097 KY Harrison,35.54
+Kentucky,21099 KY Hart,46.43
+Kentucky,21101 KY Henderson,22.16
+Kentucky,21103 KY Henry,38.57
+Kentucky,21105 KY Hickman,27.38
+Kentucky,21107 KY Hopkins,45.02
+Kentucky,21109 KY Jackson,71.31
+Kentucky,21111 KY Jefferson,31.12
+Kentucky,21113 KY Jessamine,26.67
+Kentucky,21115 KY Johnson,74.22
+Kentucky,21117 KY Kenton,42.86
+Kentucky,21119 KY Knott,77.83
+Kentucky,21121 KY Knox,73.31
+Kentucky,21123 KY Larue,33.85
+Kentucky,21125 KY Laurel,56.28
+Kentucky,21127 KY Lawrence,76.11
+Kentucky,21129 KY Lee,74.79
+Kentucky,21131 KY Leslie,81.54
+Kentucky,21133 KY Letcher,78.99
+Kentucky,21135 KY Lewis,68.21
+Kentucky,21137 KY Lincoln,35.66
+Kentucky,21139 KY Livingston,40.57
+Kentucky,21141 KY Logan,28.25
+Kentucky,21143 KY Lyon,49
+Kentucky,21145 KY McCracken,36.44
+Kentucky,21147 KY McCreary,76.34
+Kentucky,21149 KY McLean,40.02
+Kentucky,21151 KY Madison,38.81
+Kentucky,21153 KY Magoffin,78.08
+Kentucky,21155 KY Marion,35.18
+Kentucky,21157 KY Marshall,33.68
+Kentucky,21159 KY Martin,78.9
+Kentucky,21161 KY Mason,23.51
+Kentucky,21163 KY Meade,41.24
+Kentucky,21165 KY Menifee,73.56
+Kentucky,21167 KY Mercer,28.54
+Kentucky,21169 KY Metcalfe,46.81
+Kentucky,21171 KY Monroe,44.26
+Kentucky,21173 KY Montgomery,35.49
+Kentucky,21175 KY Morgan,70.58
+Kentucky,21177 KY Muhlenberg,49.71
+Kentucky,21179 KY Nelson,39.65
+Kentucky,21181 KY Nicholas,43.87
+Kentucky,21183 KY Ohio,50.85
+Kentucky,21185 KY Oldham,37.34
+Kentucky,21187 KY Owen,54.32
+Kentucky,21189 KY Owsley,76.82
+Kentucky,21191 KY Pendleton,52.29
+Kentucky,21193 KY Perry,74.56
+Kentucky,21195 KY Pike,76.52
+Kentucky,21197 KY Powell,69.66
+Kentucky,21199 KY Pulaski,48.71
+Kentucky,21201 KY Robertson,55.94
+Kentucky,21203 KY Rockcastle,64.59
+Kentucky,21205 KY Rowan,69.76
+Kentucky,21207 KY Russell,41.46
+Kentucky,21209 KY Scott,35.2
+Kentucky,21211 KY Shelby,30.02
+Kentucky,21213 KY Simpson,15.96
+Kentucky,21215 KY Spencer,41.61
+Kentucky,21217 KY Taylor,40.68
+Kentucky,21219 KY Todd,27.69
+Kentucky,21221 KY Trigg,49.17
+Kentucky,21223 KY Trimble,49.62
+Kentucky,21225 KY Union,22.09
+Kentucky,21227 KY Warren,33.54
+Kentucky,21229 KY Washington,37.13
+Kentucky,21231 KY Wayne,60.38
+Kentucky,21233 KY Webster,33.7
+Kentucky,21235 KY Whitley,68.87
+Kentucky,21237 KY Wolfe,73.38
+Kentucky,21239 KY Woodford,22.51
+Louisiana,22001 LA Acadia,25.98
+Louisiana,22003 LA Allen,69.99
+Louisiana,22005 LA Ascension,45
+Louisiana,22007 LA Assumption,52.09
+Louisiana,22009 LA Avoyelles,39.48
+Louisiana,22011 LA Beauregard,68.58
+Louisiana,22013 LA Bienville,76.42
+Louisiana,22015 LA Bossier,61.14
+Louisiana,22017 LA Caddo,49.89
+Louisiana,22019 LA Calcasieu,44.92
+Louisiana,22021 LA Caldwell,67.45
+Louisiana,22023 LA Cameron,23.11
+Louisiana,22025 LA Catahoula,42.87
+Louisiana,22027 LA Claiborne,77.36
+Louisiana,22029 LA Concordia,35.51
+Louisiana,22031 LA De Soto,66.27
+Louisiana,22033 LA East Baton Rouge,44.65
+Louisiana,22035 LA East Carroll,19.87
+Louisiana,22037 LA East Feliciana,69.67
+Louisiana,22039 LA Evangeline,50.04
+Louisiana,22041 LA Franklin,28.06
+Louisiana,22043 LA Grant,75.76
+Louisiana,22045 LA Iberia,33.29
+Louisiana,22047 LA Iberville,60.79
+Louisiana,22049 LA Jackson,76.82
+Louisiana,22051 LA Jefferson,26.8
+Louisiana,22053 LA Jefferson Davis,25.91
+Louisiana,22055 LA Lafayette,18.94
+Louisiana,22057 LA Lafourche,30.81
+Louisiana,22059 LA La Salle,69.71
+Louisiana,22061 LA Lincoln,72.89
+Louisiana,22063 LA Livingston,70.96
+Louisiana,22065 LA Madison,34.02
+Louisiana,22067 LA Morehouse,38.28
+Louisiana,22069 LA Natchitoches,65.77
+Louisiana,22071 LA Orleans,22.67
+Louisiana,22073 LA Ouachita,56.45
+Louisiana,22075 LA Plaquemines,18.65
+Louisiana,22077 LA Pointe Coupee,35.94
+Louisiana,22079 LA Rapides,62.51
+Louisiana,22081 LA Red River,54.87
+Louisiana,22083 LA Richland,28.31
+Louisiana,22085 LA Sabine,62.79
+Louisiana,22087 LA St. Bernard,18.51
+Louisiana,22089 LA St. Charles,42.62
+Louisiana,22091 LA St. Helena,74.02
+Louisiana,22093 LA St. James,54.66
+Louisiana,22095 LA St. John the Baptist,56.02
+Louisiana,22097 LA St. Landry,35.97
+Louisiana,22099 LA St. Martin,59.06
+Louisiana,22101 LA St. Mary,49.05
+Louisiana,22103 LA St. Tammany,61.69
+Louisiana,22105 LA Tangipahoa,64.99
+Louisiana,22107 LA Tensas,35.33
+Louisiana,22109 LA Terrebonne,28.15
+Louisiana,22111 LA Union,74.96
+Louisiana,22113 LA Vermilion,20.87
+Louisiana,22115 LA Vernon,73.75
+Louisiana,22117 LA Washington,67.12
+Louisiana,22119 LA Webster,70.92
+Louisiana,22121 LA West Baton Rouge,44.43
+Louisiana,22123 LA West Carroll,27.58
+Louisiana,22125 LA West Feliciana,64.82
+Louisiana,22127 LA Winn,80.7
+Maine,23001 ME Androscoggin,62.84
+Maine,23003 ME Aroostook,69.81
+Maine,23005 ME Cumberland,60.06
+Maine,23007 ME Franklin,75.42
+Maine,23009 ME Hancock,68.03
+Maine,23011 ME Kennebec,61.83
+Maine,23013 ME Knox,65.59
+Maine,23015 ME Lincoln,69.02
+Maine,23017 ME Oxford,72.35
+Maine,23019 ME Penobscot,70.54
+Maine,23021 ME Piscataquis,70.19
+Maine,23023 ME Sagadahoc,66.97
+Maine,23025 ME Somerset,72.59
+Maine,23027 ME Waldo,69.23
+Maine,23029 ME Washington,69.36
+Maine,23031 ME York,67.74
+Maryland,24001 MD Allegany,68.97
+Maryland,24003 MD Anne Arundel,50.92
+Maryland,24005 MD Baltimore,21
+Maryland,24009 MD Calvert,46.64
+Maryland,24011 MD Caroline,62.15
+Maryland,24013 MD Carroll,37.06
+Maryland,24015 MD Cecil,38.52
+Maryland,24017 MD Charles,46
+Maryland,24019 MD Dorchester,61.86
+Maryland,24021 MD Frederick,40.12
+Maryland,24023 MD Garrett,41.9
+Maryland,24025 MD Harford,65.99
+Maryland,24027 MD Howard,50.34
+Maryland,24029 MD Kent,47.1
+Maryland,24031 MD Montgomery,35.22
+Maryland,24033 MD Prince George's,46.49
+Maryland,24035 MD Queen Anne's,49.04
+Maryland,24037 MD St. Mary's,36.16
+Maryland,24039 MD Somerset,47.28
+Maryland,24041 MD Talbot,55.4
+Maryland,24043 MD Washington,36.85
+Maryland,24045 MD Wicomico,44.32
+Maryland,24047 MD Worcester,50.04
+Maryland,24510 MD Baltimore city,53.03
+Massachusetts,25001 MA Barnstable,53.09
+Massachusetts,25003 MA Berkshire,74.33
+Massachusetts,25005 MA Bristol,57.48
+Massachusetts,25007 MA Dukes,57.33
+Massachusetts,25009 MA Essex,53.93
+Massachusetts,25011 MA Franklin,72.26
+Massachusetts,25013 MA Hampden,64.04
+Massachusetts,25015 MA Hampshire,68.18
+Massachusetts,25017 MA Middlesex,56.09
+Massachusetts,25019 MA Nantucket,39.92
+Massachusetts,25021 MA Norfolk,55.51
+Massachusetts,25023 MA Plymouth,58.15
+Massachusetts,25025 MA Suffolk,21.34
+Massachusetts,25027 MA Worcester,65.67
+Michigan,26001 MI Alcona,58.16
+Michigan,26003 MI Alger,70.71
+Michigan,26005 MI Allegan,35.73
+Michigan,26007 MI Alpena,49.25
+Michigan,26009 MI Antrim,50.08
+Michigan,26011 MI Arenac,37.42
+Michigan,26013 MI Baraga,72.06
+Michigan,26015 MI Barry,39.25
+Michigan,26017 MI Bay,19.06
+Michigan,26019 MI Benzie,53.96
+Michigan,26021 MI Berrien,32
+Michigan,26023 MI Branch,21.88
+Michigan,26025 MI Calhoun,31.83
+Michigan,26027 MI Cass,30.95
+Michigan,26029 MI Charlevoix,57.93
+Michigan,26031 MI Cheboygan,56.11
+Michigan,26033 MI Chippewa,58.3
+Michigan,26035 MI Clare,49.08
+Michigan,26037 MI Clinton,20.35
+Michigan,26039 MI Crawford,48.79
+Michigan,26041 MI Delta,61.55
+Michigan,26043 MI Dickinson,63.66
+Michigan,26045 MI Eaton,25.08
+Michigan,26047 MI Emmet,58.28
+Michigan,26049 MI Genesee,28.42
+Michigan,26051 MI Gladwin,48.51
+Michigan,26053 MI Gogebic,72.86
+Michigan,26055 MI Grand Traverse,45
+Michigan,26057 MI Gratiot,15.9
+Michigan,26059 MI Hillsdale,25.8
+Michigan,26061 MI Houghton,72.96
+Michigan,26063 MI Huron,13.13
+Michigan,26065 MI Ingham,25
+Michigan,26067 MI Ionia,24.74
+Michigan,26069 MI Iosco,48.78
+Michigan,26071 MI Iron,68.12
+Michigan,26073 MI Isabella,27.53
+Michigan,26075 MI Jackson,34.53
+Michigan,26077 MI Kalamazoo,34.9
+Michigan,26079 MI Kalkaska,53.5
+Michigan,26081 MI Kent,35.15
+Michigan,26083 MI Keweenaw,71.78
+Michigan,26085 MI Lake,60.25
+Michigan,26087 MI Lapeer,31.96
+Michigan,26089 MI Leelanau,49.28
+Michigan,26091 MI Lenawee,17.5
+Michigan,26093 MI Livingston,36.62
+Michigan,26095 MI Luce,63.53
+Michigan,26097 MI Mackinac,63.31
+Michigan,26099 MI Macomb,19.25
+Michigan,26101 MI Manistee,56.03
+Michigan,26103 MI Marquette,66.08
+Michigan,26105 MI Mason,48.41
+Michigan,26107 MI Mecosta,40.56
+Michigan,26109 MI Menominee,57.82
+Michigan,26111 MI Midland,44.89
+Michigan,26113 MI Missaukee,46
+Michigan,26115 MI Monroe,17.01
+Michigan,26117 MI Montcalm,30.62
+Michigan,26119 MI Montmorency,57.39
+Michigan,26121 MI Muskegon,43.72
+Michigan,26123 MI Newaygo,47.99
+Michigan,26125 MI Oakland,34.56
+Michigan,26127 MI Oceana,46.52
+Michigan,26129 MI Ogemaw,48.24
+Michigan,26131 MI Ontonagon,74.17
+Michigan,26133 MI Osceola,44.52
+Michigan,26135 MI Oscoda,58.15
+Michigan,26137 MI Otsego,53.35
+Michigan,26139 MI Ottawa,27.19
+Michigan,26141 MI Presque Isle,53.66
+Michigan,26143 MI Roscommon,49.74
+Michigan,26145 MI Saginaw,22.81
+Michigan,26147 MI St. Clair,16.12
+Michigan,26149 MI St. Joseph,59.4
+Michigan,26151 MI Sanilac,18.98
+Michigan,26153 MI Schoolcraft,28.93
+Michigan,26155 MI Shiawassee,22.85
+Michigan,26157 MI Tuscola,24.12
+Michigan,26159 MI Van Buren,37.82
+Michigan,26161 MI Washtenaw,30.8
+Michigan,26163 MI Wayne,20.94
+Michigan,26165 MI Wexford,54
+Minnesota,27001 MN Aitkin,50.05
+Minnesota,27003 MN Anoka,27.71
+Minnesota,27005 MN Becker,34.35
+Minnesota,27007 MN Beltrami,37.57
+Minnesota,27009 MN Benton,19.87
+Minnesota,27011 MN Big Stone,11.61
+Minnesota,27013 MN Blue Earth,20.81
+Minnesota,27015 MN Brown,16.71
+Minnesota,27017 MN Carlton,56.24
+Minnesota,27019 MN Carver,24.15
+Minnesota,27021 MN Cass,46.86
+Minnesota,27023 MN Chippewa,14.76
+Minnesota,27025 MN Chisago,31.86
+Minnesota,27027 MN Clay,10.57
+Minnesota,27029 MN Clearwater,43.87
+Minnesota,27031 MN Cook,67.06
+Minnesota,27033 MN Cottonwood,16.88
+Minnesota,27035 MN Crow Wing,43.99
+Minnesota,27037 MN Dakota,23
+Minnesota,27039 MN Dodge,18.85
+Minnesota,27041 MN Douglas,19.07
+Minnesota,27043 MN Faribault,15.25
+Minnesota,27045 MN Fillmore,32.16
+Minnesota,27047 MN Freeborn,15.69
+Minnesota,27049 MN Goodhue,29.21
+Minnesota,27051 MN Grant,14.38
+Minnesota,27053 MN Hennepin,24.32
+Minnesota,27055 MN Houston,48.06
+Minnesota,27057 MN Hubbard,48.34
+Minnesota,27059 MN Isanti,28.97
+Minnesota,27061 MN Itasca,57.4
+Minnesota,27063 MN Jackson,14.54
+Minnesota,27065 MN Kanabec,43.1
+Minnesota,27067 MN Kandiyohi,17.9
+Minnesota,27069 MN Kittson,16
+Minnesota,27071 MN Koochiching,56.63
+Minnesota,27073 MN Lac qui Parle,12.87
+Minnesota,27075 MN Lake,59.34
+Minnesota,27077 MN Lake of the Woods,33.79
+Minnesota,27079 MN Le Sueur,21.86
+Minnesota,27081 MN Lincoln,10.97
+Minnesota,27083 MN Lyon,12.57
+Minnesota,27085 MN McLeod,28.75
+Minnesota,27087 MN Mahnomen,15.17
+Minnesota,27089 MN Marshall,16.99
+Minnesota,27091 MN Martin,16.54
+Minnesota,27093 MN Meeker,18.11
+Minnesota,27095 MN Mille Lacs,34.75
+Minnesota,27097 MN Morrison,31.03
+Minnesota,27099 MN Mower,15.55
+Minnesota,27101 MN Murray,13.09
+Minnesota,27103 MN Nicollet,22.34
+Minnesota,27105 MN Nobles,13.94
+Minnesota,27107 MN Norman,9.06
+Minnesota,27109 MN Olmsted,26.31
+Minnesota,27111 MN Otter Tail,22.52
+Minnesota,27113 MN Pennington,10.06
+Minnesota,27115 MN Pine,51.38
+Minnesota,27117 MN Pipestone,8.96
+Minnesota,27119 MN Polk,10.09
+Minnesota,27121 MN Pope,15.42
+Minnesota,27123 MN Ramsey,24.78
+Minnesota,27125 MN Red Lake,11.09
+Minnesota,27127 MN Redwood,15.49
+Minnesota,27129 MN Renville,14.26
+Minnesota,27131 MN Rice,22.66
+Minnesota,27133 MN Rock,15.67
+Minnesota,27135 MN Roseau,23.39
+Minnesota,27137 MN St. Louis,25.13
+Minnesota,27139 MN Scott,29.03
+Minnesota,27141 MN Sherburne,18.66
+Minnesota,27143 MN Sibley,55.27
+Minnesota,27145 MN Stearns,20.14
+Minnesota,27147 MN Steele,16.65
+Minnesota,27149 MN Stevens,11.71
+Minnesota,27151 MN Swift,13.94
+Minnesota,27153 MN Todd,26.47
+Minnesota,27155 MN Traverse,9.2
+Minnesota,27157 MN Wabasha,33.79
+Minnesota,27159 MN Wadena,30
+Minnesota,27161 MN Waseca,17.68
+Minnesota,27163 MN Washington,31.54
+Minnesota,27165 MN Watonwan,17.85
+Minnesota,27167 MN Wilkin,6.91
+Minnesota,27169 MN Winona,43.02
+Minnesota,27171 MN Wright,22.93
+Minnesota,27173 MN Yellow Medicine,13.31
+Mississippi,28001 MS Adams,63.31
+Mississippi,28003 MS Alcorn,59.57
+Mississippi,28005 MS Amite,74.72
+Mississippi,28007 MS Attala,73.64
+Mississippi,28009 MS Benton,65.38
+Mississippi,28011 MS Bolivar,18.05
+Mississippi,28013 MS Calhoun,59.66
+Mississippi,28015 MS Carroll,67.85
+Mississippi,28017 MS Chickasaw,52.08
+Mississippi,28019 MS Choctaw,73.64
+Mississippi,28021 MS Claiborne,71.56
+Mississippi,28023 MS Clarke,74.1
+Mississippi,28025 MS Clay,57.16
+Mississippi,28027 MS Coahoma,20.63
+Mississippi,28029 MS Copiah,74.83
+Mississippi,28031 MS Covington,63.34
+Mississippi,28033 MS DeSoto,41.09
+Mississippi,28035 MS Forrest,66.21
+Mississippi,28037 MS Franklin,80.3
+Mississippi,28039 MS George,68.2
+Mississippi,28041 MS Greene,74.2
+Mississippi,28043 MS Grenada,61.91
+Mississippi,28045 MS Hancock,59.6
+Mississippi,28047 MS Harrison,59.92
+Mississippi,28049 MS Hinds,62.6
+Mississippi,28051 MS Holmes,60.98
+Mississippi,28053 MS Humphreys,23.64
+Mississippi,28055 MS Issaquena,42.56
+Mississippi,28057 MS Itawamba,66.24
+Mississippi,28059 MS Jackson,61.99
+Mississippi,28061 MS Jasper,72.7
+Mississippi,28063 MS Jefferson,74.23
+Mississippi,28065 MS Jefferson Davis,70.11
+Mississippi,28067 MS Jones,64.06
+Mississippi,28069 MS Kemper,72.9
+Mississippi,28071 MS Lafayette,68.34
+Mississippi,28073 MS Lamar,64.87
+Mississippi,28075 MS Lauderdale,70.11
+Mississippi,28077 MS Lawrence,73.54
+Mississippi,28079 MS Leake,68.99
+Mississippi,28081 MS Lee,44.65
+Mississippi,28083 MS Leflore,23.85
+Mississippi,28085 MS Lincoln,67.98
+Mississippi,28087 MS Lowndes,50.05
+Mississippi,28089 MS Madison,61.5
+Mississippi,28091 MS Marion,70.04
+Mississippi,28093 MS Marshall,61.39
+Mississippi,28095 MS Monroe,56.46
+Mississippi,28097 MS Montgomery,69.79
+Mississippi,28099 MS Neshoba,66.38
+Mississippi,28101 MS Newton,69.09
+Mississippi,28103 MS Noxubee,54.85
+Mississippi,28105 MS Oktibbeha,65.47
+Mississippi,28107 MS Panola,50.45
+Mississippi,28109 MS Pearl River,66.44
+Mississippi,28111 MS Perry,75.94
+Mississippi,28113 MS Pike,67.65
+Mississippi,28115 MS Pontotoc,54.65
+Mississippi,28117 MS Prentiss,58.6
+Mississippi,28119 MS Quitman,24.08
+Mississippi,28121 MS Rankin,64.59
+Mississippi,28123 MS Scott,68.33
+Mississippi,28125 MS Sharkey,38.92
+Mississippi,28127 MS Simpson,70.75
+Mississippi,28129 MS Smith,72.57
+Mississippi,28131 MS Stone,72.4
+Mississippi,28133 MS Sunflower,14.11
+Mississippi,28135 MS Tallahatchie,34.68
+Mississippi,28137 MS Tate,48.21
+Mississippi,28139 MS Tippah,61.98
+Mississippi,28141 MS Tishomingo,63.55
+Mississippi,28143 MS Tunica,21.84
+Mississippi,28145 MS Union,58.44
+Mississippi,28147 MS Walthall,66.21
+Mississippi,28149 MS Warren,61.44
+Mississippi,28151 MS Washington,18.86
+Mississippi,28153 MS Wayne,74.47
+Mississippi,28155 MS Webster,68.07
+Mississippi,28157 MS Wilkinson,75.6
+Mississippi,28159 MS Winston,71.81
+Mississippi,28161 MS Yalobusha,65.75
+Mississippi,28163 MS Yazoo,52.14
+Missouri,29001 MO Adair,29.99
+Missouri,29003 MO Andrew,21.78
+Missouri,29005 MO Atchison,15.31
+Missouri,29007 MO Audrain,12.55
+Missouri,29009 MO Barry,39.95
+Missouri,29011 MO Barton,14.78
+Missouri,29013 MO Bates,18.53
+Missouri,29015 MO Benton,42.71
+Missouri,29017 MO Bollinger,50.1
+Missouri,29019 MO Boone,34.33
+Missouri,29021 MO Buchanan,24.96
+Missouri,29023 MO Butler,33.41
+Missouri,29025 MO Caldwell,20.75
+Missouri,29027 MO Callaway,35.99
+Missouri,29029 MO Camden,51.08
+Missouri,29031 MO Cape Girardeau,31.38
+Missouri,29033 MO Carroll,19.57
+Missouri,29035 MO Carter,69.12
+Missouri,29037 MO Cass,19.2
+Missouri,29039 MO Cedar,32.73
+Missouri,29041 MO Chariton,21.18
+Missouri,29043 MO Christian,41.53
+Missouri,29045 MO Clark,26.38
+Missouri,29047 MO Clay,25.6
+Missouri,29049 MO Clinton,19.81
+Missouri,29051 MO Cole,35.81
+Missouri,29053 MO Cooper,24.46
+Missouri,29055 MO Crawford,58.19
+Missouri,29057 MO Dade,22.87
+Missouri,29059 MO Dallas,36.48
+Missouri,29061 MO Daviess,22.17
+Missouri,29063 MO DeKalb,19.04
+Missouri,29065 MO Dent,55.44
+Missouri,29067 MO Douglas,48.8
+Missouri,29069 MO Dunklin,9.88
+Missouri,29071 MO Franklin,47.72
+Missouri,29073 MO Gasconade,48.71
+Missouri,29075 MO Gentry,21.62
+Missouri,29077 MO Greene,24.77
+Missouri,29079 MO Grundy,21.05
+Missouri,29081 MO Harrison,24.22
+Missouri,29083 MO Henry,26.16
+Missouri,29085 MO Hickory,41.95
+Missouri,29087 MO Holt,18.01
+Missouri,29089 MO Howard,30.98
+Missouri,29091 MO Howell,38.13
+Missouri,29093 MO Iron,69.61
+Missouri,29095 MO Jackson,26.98
+Missouri,29097 MO Jasper,18.11
+Missouri,29099 MO Jefferson,56.91
+Missouri,29101 MO Johnson,23.31
+Missouri,29103 MO Knox,20.12
+Missouri,29105 MO Laclede,40.04
+Missouri,29107 MO Lafayette,18.41
+Missouri,29109 MO Lawrence,19.95
+Missouri,29111 MO Lewis,23.34
+Missouri,29113 MO Lincoln,33.6
+Missouri,29115 MO Linn,22.33
+Missouri,29117 MO Livingston,22
+Missouri,29119 MO McDonald,27.91
+Missouri,29121 MO Macon,65.25
+Missouri,29123 MO Madison,41.43
+Missouri,29125 MO Maries,25.12
+Missouri,29127 MO Marion,48.08
+Missouri,29129 MO Mercer,28.35
+Missouri,29131 MO Miller,46.11
+Missouri,29133 MO Mississippi,10.48
+Missouri,29135 MO Moniteau,26.35
+Missouri,29137 MO Monroe,23.95
+Missouri,29139 MO Montgomery,31.04
+Missouri,29141 MO Morgan,43.82
+Missouri,29143 MO New Madrid,9.1
+Missouri,29145 MO Newton,28.48
+Missouri,29147 MO Nodaway,16.25
+Missouri,29149 MO Oregon,55.06
+Missouri,29151 MO Osage,42.06
+Missouri,29153 MO Ozark,48.64
+Missouri,29155 MO Pemiscot,9.7
+Missouri,29157 MO Perry,38.01
+Missouri,29159 MO Pettis,20.8
+Missouri,29161 MO Phelps,52.76
+Missouri,29163 MO Pike,30.96
+Missouri,29165 MO Platte,27.77
+Missouri,29167 MO Polk,28.47
+Missouri,29169 MO Pulaski,52.87
+Missouri,29171 MO Putnam,30.67
+Missouri,29173 MO Ralls,26.21
+Missouri,29175 MO Randolph,27.3
+Missouri,29177 MO Ray,23.97
+Missouri,29179 MO Reynolds,72.14
+Missouri,29181 MO Ripley,58.63
+Missouri,29183 MO St. Charles,20.76
+Missouri,29185 MO St. Clair,24.15
+Missouri,29186 MO Ste. Genevieve,21.64
+Missouri,29187 MO St. Francois,14.63
+Missouri,29189 MO St. Louis,68.84
+Missouri,29195 MO Saline,19.87
+Missouri,29197 MO Schuyler,32.7
+Missouri,29199 MO Scotland,37.94
+Missouri,29201 MO Scott,49.92
+Missouri,29203 MO Shannon,14.61
+Missouri,29205 MO Shelby,36.9
+Missouri,29207 MO Stoddard,53.26
+Missouri,29209 MO Stone,16.5
+Missouri,29211 MO Sullivan,46.34
+Missouri,29213 MO Taney,29.59
+Missouri,29215 MO Texas,53.69
+Missouri,29217 MO Vernon,45.81
+Missouri,29219 MO Warren,21.2
+Missouri,29221 MO Washington,46.95
+Missouri,29223 MO Wayne,67.05
+Missouri,29225 MO Webster,67.67
+Missouri,29227 MO Worth,33.6
+Missouri,29229 MO Wright,25.15
+Missouri,29510 MO St. Louis city,37.48
+Montana,30001 MT Beaverhead,18.37
+Montana,30003 MT Big Horn,7.99
+Montana,30005 MT Blaine,3.02
+Montana,30007 MT Broadwater,14.15
+Montana,30009 MT Carbon,10.1
+Montana,30011 MT Carter,2.35
+Montana,30013 MT Cascade,12.1
+Montana,30015 MT Chouteau,3.09
+Montana,30017 MT Custer,2.41
+Montana,30019 MT Daniels,1.44
+Montana,30021 MT Dawson,1.77
+Montana,30023 MT Deer Lodge,27.97
+Montana,30025 MT Fallon,1.45
+Montana,30027 MT Fergus,9.58
+Montana,30029 MT Flathead,44.44
+Montana,30031 MT Gallatin,26.16
+Montana,30033 MT Garfield,1.42
+Montana,30035 MT Glacier,13.15
+Montana,30037 MT Golden Valley,4.35
+Montana,30039 MT Granite,32.64
+Montana,30041 MT Hill,1.89
+Montana,30043 MT Jefferson,23.34
+Montana,30045 MT Judith Basin,15.04
+Montana,30047 MT Lake,30.5
+Montana,30049 MT Lewis and Clark,23.65
+Montana,30051 MT Liberty,1.35
+Montana,30053 MT Lincoln,56.07
+Montana,30055 MT McCone,18.76
+Montana,30057 MT Madison,1.1
+Montana,30059 MT Meagher,21.59
+Montana,30061 MT Mineral,53.19
+Montana,30063 MT Missoula,41.36
+Montana,30065 MT Musselshell,4.92
+Montana,30067 MT Park,24.86
+Montana,30069 MT Petroleum,2.33
+Montana,30071 MT Phillips,2.13
+Montana,30073 MT Pondera,5.41
+Montana,30075 MT Powder River,5.05
+Montana,30077 MT Powell,28.51
+Montana,30079 MT Prairie,1.54
+Montana,30081 MT Ravalli,29.88
+Montana,30083 MT Richland,2.1
+Montana,30085 MT Roosevelt,1.04
+Montana,30087 MT Rosebud,3.55
+Montana,30089 MT Sanders,43.09
+Montana,30091 MT Sheridan,1.68
+Montana,30093 MT Silver Bow,24.06
+Montana,30095 MT Stillwater,8.8
+Montana,30097 MT Sweet Grass,13.75
+Montana,30099 MT Teton,7.97
+Montana,30101 MT Toole,1.38
+Montana,30103 MT Treasure,4.58
+Montana,30105 MT Valley,1.11
+Montana,30107 MT Wheatland,5.27
+Montana,30109 MT Wibaux,2.33
+Montana,30111 MT Yellowstone,2.47
+Nebraska,31001 NE Adams,14.62
+Nebraska,31003 NE Antelope,8.46
+Nebraska,31005 NE Arthur,3.19
+Nebraska,31007 NE Banner,2.25
+Nebraska,31009 NE Blaine,2.63
+Nebraska,31011 NE Boone,15.77
+Nebraska,31013 NE Box Butte,1.24
+Nebraska,31015 NE Boyd,7.52
+Nebraska,31017 NE Brown,4.05
+Nebraska,31019 NE Buffalo,11.16
+Nebraska,31021 NE Burt,13.11
+Nebraska,31023 NE Butler,11.84
+Nebraska,31025 NE Cass,13.51
+Nebraska,31027 NE Cedar,11.09
+Nebraska,31029 NE Chase,5.01
+Nebraska,31031 NE Cherry,2.41
+Nebraska,31033 NE Cheyenne,1.48
+Nebraska,31035 NE Clay,15.32
+Nebraska,31037 NE Colfax,10.34
+Nebraska,31039 NE Cuming,12.61
+Nebraska,31041 NE Custer,8.67
+Nebraska,31043 NE Dakota,22.31
+Nebraska,31045 NE Dawes,3.4
+Nebraska,31047 NE Dawson,11.25
+Nebraska,31049 NE Deuel,1.55
+Nebraska,31051 NE Dixon,20.71
+Nebraska,31053 NE Dodge,8.18
+Nebraska,31055 NE Douglas,15.66
+Nebraska,31057 NE Dundy,3.3
+Nebraska,31059 NE Fillmore,15.37
+Nebraska,31061 NE Franklin,9.69
+Nebraska,31063 NE Frontier,5.98
+Nebraska,31065 NE Furnas,5.95
+Nebraska,31067 NE Gage,9.09
+Nebraska,31069 NE Garden,2.57
+Nebraska,31071 NE Garfield,4.84
+Nebraska,31073 NE Gosper,8.91
+Nebraska,31075 NE Grant,2.78
+Nebraska,31077 NE Greeley,10.28
+Nebraska,31079 NE Hall,13.47
+Nebraska,31081 NE Hamilton,18.25
+Nebraska,31083 NE Harlan,8.82
+Nebraska,31085 NE Hayes,4.74
+Nebraska,31087 NE Hitchcock,3.33
+Nebraska,31089 NE Holt,4.46
+Nebraska,31091 NE Hooker,2.23
+Nebraska,31093 NE Howard,10.91
+Nebraska,31095 NE Jefferson,10.45
+Nebraska,31097 NE Johnson,12.12
+Nebraska,31099 NE Kearney,13.34
+Nebraska,31101 NE Keith,4.21
+Nebraska,31103 NE Keya Paha,6.27
+Nebraska,31105 NE Kimball,1.27
+Nebraska,31107 NE Knox,10.5
+Nebraska,31109 NE Lancaster,11.39
+Nebraska,31111 NE Lincoln,6.28
+Nebraska,31113 NE Logan,3.99
+Nebraska,31115 NE Loup,3.47
+Nebraska,31117 NE McPherson,11.95
+Nebraska,31119 NE Madison,2.28
+Nebraska,31121 NE Merrick,12.14
+Nebraska,31123 NE Morrill,2.73
+Nebraska,31125 NE Nance,14.96
+Nebraska,31127 NE Nemaha,14.51
+Nebraska,31129 NE Nuckolls,11.28
+Nebraska,31131 NE Otoe,12.16
+Nebraska,31133 NE Pawnee,12.67
+Nebraska,31135 NE Perkins,4.07
+Nebraska,31137 NE Phelps,15.78
+Nebraska,31139 NE Pierce,7.54
+Nebraska,31141 NE Platte,18.85
+Nebraska,31143 NE Polk,17.18
+Nebraska,31145 NE Red Willow,4.64
+Nebraska,31147 NE Richardson,15.64
+Nebraska,31149 NE Rock,3.29
+Nebraska,31151 NE Saline,10.5
+Nebraska,31153 NE Sarpy,14.64
+Nebraska,31155 NE Saunders,9.51
+Nebraska,31157 NE Scotts Bluff,2.96
+Nebraska,31159 NE Seward,12.03
+Nebraska,31161 NE Sheridan,2.73
+Nebraska,31163 NE Sherman,9.46
+Nebraska,31165 NE Sioux,2.17
+Nebraska,31167 NE Stanton,12.97
+Nebraska,31169 NE Thayer,13.33
+Nebraska,31171 NE Thomas,3.12
+Nebraska,31173 NE Thurston,23.7
+Nebraska,31175 NE Valley,11.05
+Nebraska,31177 NE Washington,12.94
+Nebraska,31179 NE Wayne,12.47
+Nebraska,31181 NE Webster,8.82
+Nebraska,31183 NE Wheeler,4.28
+Nebraska,31185 NE York,17.25
+Nevada,32001 NV Churchill,11.35
+Nevada,32003 NV Clark,1.98
+Nevada,32005 NV Douglas,2.34
+Nevada,32007 NV Elko,9.12
+Nevada,32009 NV Esmeralda,4.93
+Nevada,32011 NV Eureka,2.02
+Nevada,32013 NV Humboldt,4.9
+Nevada,32015 NV Lander,1.99
+Nevada,32017 NV Lincoln,4.08
+Nevada,32019 NV Lyon,5.07
+Nevada,32021 NV Mineral,3.43
+Nevada,32023 NV Nye,3.71
+Nevada,32027 NV Pershing,4.31
+Nevada,32029 NV Storey,1.21
+Nevada,32031 NV Washoe,6.13
+Nevada,32033 NV White Pine,3.76
+Nevada,32510 NV Carson City,7.98
+New Hampshire,33001 NH Belknap,62.43
+New Hampshire,33003 NH Carroll,71.69
+New Hampshire,33005 NH Cheshire,73.65
+New Hampshire,33007 NH Coos,77.33
+New Hampshire,33009 NH Grafton,76.63
+New Hampshire,33011 NH Hillsborough,67.53
+New Hampshire,33013 NH Merrimack,70.45
+New Hampshire,33015 NH Rockingham,63.66
+New Hampshire,33017 NH Strafford,66.69
+New Hampshire,33019 NH Sullivan,74.35
+New Jersey,34001 NJ Atlantic,57.43
+New Jersey,34003 NJ Bergen,42.97
+New Jersey,34005 NJ Burlington,55.58
+New Jersey,34007 NJ Camden,43.67
+New Jersey,34009 NJ Cape May,45.94
+New Jersey,34011 NJ Cumberland,45.91
+New Jersey,34013 NJ Essex,34.99
+New Jersey,34015 NJ Gloucester,43.43
+New Jersey,34017 NJ Hudson,13.46
+New Jersey,34019 NJ Hunterdon,48.17
+New Jersey,34021 NJ Mercer,41.67
+New Jersey,34023 NJ Middlesex,36.73
+New Jersey,34025 NJ Monmouth,45.99
+New Jersey,34027 NJ Morris,58.19
+New Jersey,34029 NJ Ocean,55.99
+New Jersey,34031 NJ Passaic,56.85
+New Jersey,34033 NJ Salem,39.48
+New Jersey,34035 NJ Somerset,44.78
+New Jersey,34037 NJ Sussex,65.16
+New Jersey,34039 NJ Union,30.96
+New Jersey,34041 NJ Warren,57.75
+New Mexico,35001 NM Bernalillo,8.61
+New Mexico,35003 NM Catron,16.07
+New Mexico,35005 NM Chaves,4.69
+New Mexico,35006 NM Cibola,9.93
+New Mexico,35007 NM Colfax,13.2
+New Mexico,35009 NM Curry,1.39
+New Mexico,35011 NM DeBaca,3.25
+New Mexico,35013 NM Dona Ana,4.92
+New Mexico,35015 NM Eddy,5.94
+New Mexico,35017 NM Grant,13.18
+New Mexico,35019 NM Guadalupe,3.58
+New Mexico,35021 NM Harding,2.98
+New Mexico,35023 NM Hidalgo,5.47
+New Mexico,35025 NM Lea,3.3
+New Mexico,35027 NM Lincoln,7.4
+New Mexico,35028 NM Los Alamos,15.37
+New Mexico,35029 NM Luna,3.75
+New Mexico,35031 NM McKinley,6.15
+New Mexico,35033 NM Mora,12.41
+New Mexico,35035 NM Otero,9.15
+New Mexico,35037 NM Quay,3.39
+New Mexico,35039 NM Rio Arriba,16.81
+New Mexico,35041 NM Roosevelt,2
+New Mexico,35043 NM Sandoval,3.44
+New Mexico,35045 NM San Juan,9.93
+New Mexico,35047 NM San Miguel,9.86
+New Mexico,35049 NM Santa Fe,12.16
+New Mexico,35051 NM Sierra,7.44
+New Mexico,35053 NM Socorro,8.12
+New Mexico,35055 NM Taos,20.49
+New Mexico,35057 NM Torrance,5.5
+New Mexico,35059 NM Union,3.31
+New Mexico,35061 NM Valencia,3.04
+New York,36001 NY Albany,56.21
+New York,36003 NY Allegany,64.01
+New York,36005 NY Bronx,20.25
+New York,36007 NY Broome,62.16
+New York,36009 NY Cattaraugus,64.19
+New York,36011 NY Cayuga,37.39
+New York,36013 NY Chautauqua,52.79
+New York,36015 NY Chemung,59.04
+New York,36017 NY Chenango,63.87
+New York,36019 NY Clinton,61.61
+New York,36021 NY Columbia,61.13
+New York,36023 NY Cortland,58.48
+New York,36025 NY Delaware,73.22
+New York,36027 NY Dutchess,60.52
+New York,36029 NY Erie,40.32
+New York,36031 NY Essex,72.8
+New York,36033 NY Franklin,69.18
+New York,36035 NY Fulton,65.95
+New York,36037 NY Genesee,32.26
+New York,36039 NY Greene,72.54
+New York,36041 NY Hamilton,78.62
+New York,36043 NY Herkimer,67.77
+New York,36045 NY Jefferson,46.12
+New York,36047 NY Kings,10.43
+New York,36049 NY Lewis,67.32
+New York,36051 NY Livingston,37.66
+New York,36053 NY Madison,52.51
+New York,36055 NY Monroe,34.72
+New York,36057 NY Montgomery,41.81
+New York,36059 NY Nassau,30.05
+New York,36061 NY New York,13.75
+New York,36063 NY Niagara,29.4
+New York,36065 NY Oneida,55.5
+New York,36067 NY Onondaga,44.33
+New York,36069 NY Ontario,38.43
+New York,36071 NY Orange,57.21
+New York,36073 NY Orleans,32.82
+New York,36075 NY Oswego,61.1
+New York,36077 NY Otsego,62.76
+New York,36079 NY Putnam,68.58
+New York,36081 NY Queens,13.91
+New York,36083 NY Rensselaer,63.79
+New York,36085 NY Richmond,29.75
+New York,36087 NY Rockland,57.6
+New York,36089 NY St. Lawrence,61.29
+New York,36091 NY Saratoga,52.41
+New York,36093 NY Schenectady,64.86
+New York,36095 NY Schoharie,53.91
+New York,36097 NY Schuyler,24.86
+New York,36099 NY Seneca,63.61
+New York,36101 NY Steuben,55.19
+New York,36103 NY Suffolk,45.19
+New York,36105 NY Sullivan,71.96
+New York,36107 NY Tioga,59.4
+New York,36109 NY Tompkins,51.84
+New York,36111 NY Ulster,70.57
+New York,36113 NY Warren,71.02
+New York,36115 NY Washington,58.57
+New York,36117 NY Wayne,45.62
+New York,36119 NY Westchester,58.44
+New York,36121 NY Wyoming,42.49
+New York,36123 NY Yates,38.43
+North Carolina,37001 NC Alamance,48.06
+North Carolina,37003 NC Alexander,52.52
+North Carolina,37005 NC Alleghany,58.67
+North Carolina,37007 NC Anson,60.88
+North Carolina,37009 NC Ashe,68.64
+North Carolina,37011 NC Avery,74.64
+North Carolina,37013 NC Beaufort,53.56
+North Carolina,37015 NC Bertie,58.94
+North Carolina,37017 NC Bladen,56.17
+North Carolina,37019 NC Brunswick,56.38
+North Carolina,37021 NC Buncombe,66.67
+North Carolina,37023 NC Burke,67.21
+North Carolina,37025 NC Cabarrus,45.81
+North Carolina,37027 NC Caldwell,70.08
+North Carolina,37029 NC Camden,53.82
+North Carolina,37031 NC Carteret,46.42
+North Carolina,37033 NC Caswell,61.56
+North Carolina,37035 NC Catawba,42.96
+North Carolina,37037 NC Chatham,62.81
+North Carolina,37039 NC Cherokee,77.22
+North Carolina,37041 NC Chowan,44.48
+North Carolina,37043 NC Clay,75.19
+North Carolina,37045 NC Cleveland,46.82
+North Carolina,37047 NC Columbus,54.81
+North Carolina,37049 NC Craven,61.36
+North Carolina,37051 NC Cumberland,47.05
+North Carolina,37053 NC Currituck,44.59
+North Carolina,37055 NC Dare,58.91
+North Carolina,37057 NC Davidson,49.38
+North Carolina,37059 NC Davie,47.78
+North Carolina,37061 NC Duplin,45.69
+North Carolina,37063 NC Durham,59.24
+North Carolina,37065 NC Edgecombe,43.26
+North Carolina,37067 NC Forsyth,47.55
+North Carolina,37069 NC Franklin,57.77
+North Carolina,37071 NC Gaston,50.2
+North Carolina,37073 NC Gates,60.79
+North Carolina,37075 NC Graham,81.97
+North Carolina,37077 NC Granville,63.31
+North Carolina,37079 NC Greene,37.62
+North Carolina,37081 NC Guilford,43.9
+North Carolina,37083 NC Halifax,53.61
+North Carolina,37085 NC Harnett,51.28
+North Carolina,37087 NC Haywood,75.71
+North Carolina,37089 NC Henderson,65.16
+North Carolina,37091 NC Hertford,55.88
+North Carolina,37093 NC Hoke,46.53
+North Carolina,37095 NC Hyde,48.36
+North Carolina,37097 NC Iredell,44.13
+North Carolina,37099 NC Jackson,79.77
+North Carolina,37101 NC Johnston,46.1
+North Carolina,37103 NC Jones,61.46
+North Carolina,37105 NC Lee,62.05
+North Carolina,37107 NC Lenoir,41.13
+North Carolina,37109 NC Lincoln,44.87
+North Carolina,37111 NC McDowell,80.01
+North Carolina,37113 NC Macon,76.03
+North Carolina,37115 NC Madison,53.46
+North Carolina,37117 NC Martin,74.74
+North Carolina,37119 NC Mecklenburg,41.91
+North Carolina,37121 NC Mitchell,77.35
+North Carolina,37123 NC Montgomery,68.02
+North Carolina,37125 NC Moore,60.01
+North Carolina,37127 NC Nash,48.36
+North Carolina,37129 NC New Hanover,36.54
+North Carolina,37131 NC Northampton,50.63
+North Carolina,37133 NC Onslow,57.11
+North Carolina,37135 NC Orange,61.32
+North Carolina,37137 NC Pamlico,56.84
+North Carolina,37139 NC Pasquotank,34.79
+North Carolina,37141 NC Pender,64.9
+North Carolina,37143 NC Perquimans,40.77
+North Carolina,37145 NC Person,56.43
+North Carolina,37147 NC Pitt,42.37
+North Carolina,37149 NC Polk,67.38
+North Carolina,37151 NC Randolph,55.37
+North Carolina,37153 NC Richmond,54.98
+North Carolina,37155 NC Robeson,41.66
+North Carolina,37157 NC Rockingham,56.27
+North Carolina,37159 NC Rowan,44.98
+North Carolina,37161 NC Rutherford,63.77
+North Carolina,37163 NC Sampson,42.86
+North Carolina,37165 NC Scotland,48.27
+North Carolina,37167 NC Stanly,45.87
+North Carolina,37169 NC Stokes,60.87
+North Carolina,37171 NC Surry,54.92
+North Carolina,37173 NC Swain,83.72
+North Carolina,37175 NC Transylvania,78.66
+North Carolina,37177 NC Tyrrell,61.09
+North Carolina,37179 NC Union,36.47
+North Carolina,37181 NC Vance,55.45
+North Carolina,37183 NC Wake,49.9
+North Carolina,37185 NC Warren,64.03
+North Carolina,37187 NC Washington,43.63
+North Carolina,37189 NC Watauga,72.39
+North Carolina,37191 NC Wayne,36.19
+North Carolina,37193 NC Wilkes,66.68
+North Carolina,37195 NC Wilson,39.52
+North Carolina,37197 NC Yadkin,44.81
+North Carolina,37199 NC Yancey,77
+North Dakota,38001 ND Adams,1.55
+North Dakota,38003 ND Barnes,5.74
+North Dakota,38005 ND Benson,5.45
+North Dakota,38007 ND Billings,5.02
+North Dakota,38009 ND Bottineau,6.08
+North Dakota,38011 ND Bowman,1.21
+North Dakota,38013 ND Burke,4.37
+North Dakota,38015 ND Burleigh,4.03
+North Dakota,38017 ND Cass,7.54
+North Dakota,38019 ND Cavalier,7.72
+North Dakota,38021 ND Dickey,6.08
+North Dakota,38023 ND Divide,3.09
+North Dakota,38025 ND Dunn,6.33
+North Dakota,38027 ND Eddy,5.58
+North Dakota,38029 ND Emmons,2.72
+North Dakota,38031 ND Foster,4.73
+North Dakota,38033 ND Golden Valley,3.26
+North Dakota,38035 ND Grand Forks,6.22
+North Dakota,38037 ND Grant,2.47
+North Dakota,38039 ND Griggs,5.44
+North Dakota,38041 ND Hettinger,1.98
+North Dakota,38043 ND Kidder,4.09
+North Dakota,38045 ND LaMoure,5.81
+North Dakota,38047 ND Logan,4.2
+North Dakota,38049 ND McHenry,4.21
+North Dakota,38051 ND McIntosh,3.62
+North Dakota,38053 ND McKenzie,5.74
+North Dakota,38055 ND McLean,3.76
+North Dakota,38057 ND Mercer,4.09
+North Dakota,38059 ND Morton,4.05
+North Dakota,38061 ND Mountrail,3.56
+North Dakota,38063 ND Nelson,6.14
+North Dakota,38065 ND Oliver,4.06
+North Dakota,38067 ND Pembina,8.81
+North Dakota,38069 ND Pierce,3.36
+North Dakota,38071 ND Ramsey,5.46
+North Dakota,38073 ND Ransom,8.34
+North Dakota,38075 ND Renville,2.92
+North Dakota,38077 ND Richland,9.69
+North Dakota,38079 ND Rolette,12.88
+North Dakota,38081 ND Sargent,7.69
+North Dakota,38083 ND Sheridan,5.17
+North Dakota,38085 ND Sioux,2.87
+North Dakota,38087 ND Slope,2.09
+North Dakota,38089 ND Stark,2.09
+North Dakota,38091 ND Steele,6.11
+North Dakota,38093 ND Stutsman,5.95
+North Dakota,38095 ND Towner,4.69
+North Dakota,38097 ND Traill,6.22
+North Dakota,38099 ND Walsh,6.66
+North Dakota,38101 ND Ward,4.39
+North Dakota,38103 ND Wells,3.25
+North Dakota,38105 ND Williams,2.29
+Ohio,39001 OH Adams,54
+Ohio,39003 OH Allen,10.84
+Ohio,39005 OH Ashland,28.84
+Ohio,39007 OH Ashtabula,42
+Ohio,39009 OH Athens,65.24
+Ohio,39011 OH Auglaize,8.96
+Ohio,39013 OH Belmont,54
+Ohio,39015 OH Brown,30.44
+Ohio,39017 OH Butler,23.73
+Ohio,39019 OH Carroll,46.61
+Ohio,39021 OH Champaign,14.24
+Ohio,39023 OH Clark,14.31
+Ohio,39025 OH Clermont,37.97
+Ohio,39027 OH Clinton,14.38
+Ohio,39029 OH Columbiana,40.99
+Ohio,39031 OH Coshocton,52.85
+Ohio,39033 OH Crawford,11.39
+Ohio,39035 OH Cuyahoga,28.28
+Ohio,39037 OH Darke,8.38
+Ohio,39039 OH Defiance,12.69
+Ohio,39041 OH Delaware,20.76
+Ohio,39043 OH Erie,22.14
+Ohio,39045 OH Fairfield,26.74
+Ohio,39047 OH Fayette,8.26
+Ohio,39049 OH Franklin,18.95
+Ohio,39051 OH Fulton,10.88
+Ohio,39053 OH Gallia,59.26
+Ohio,39055 OH Geauga,48.13
+Ohio,39057 OH Greene,18.67
+Ohio,39059 OH Guernsey,54.89
+Ohio,39061 OH Hamilton,35.2
+Ohio,39063 OH Hancock,9.1
+Ohio,39065 OH Hardin,8.89
+Ohio,39067 OH Harrison,52.32
+Ohio,39069 OH Henry,7.39
+Ohio,39071 OH Highland,28.71
+Ohio,39073 OH Hocking,68.56
+Ohio,39075 OH Holmes,37.67
+Ohio,39077 OH Huron,17.76
+Ohio,39079 OH Jackson,58.26
+Ohio,39081 OH Jefferson,57.16
+Ohio,39083 OH Knox,32.02
+Ohio,39085 OH Lake,42.14
+Ohio,39087 OH Lawrence,68.65
+Ohio,39089 OH Licking,33.19
+Ohio,39091 OH Logan,16.99
+Ohio,39093 OH Lorain,25.68
+Ohio,39095 OH Lucas,21.42
+Ohio,39097 OH Madison,8.05
+Ohio,39099 OH Mahoning,31.13
+Ohio,39101 OH Marion,10.65
+Ohio,39103 OH Medina,29.29
+Ohio,39105 OH Meigs,62.72
+Ohio,39107 OH Mercer,7.42
+Ohio,39109 OH Miami,12.66
+Ohio,39111 OH Monroe,65.93
+Ohio,39113 OH Montgomery,19.28
+Ohio,39115 OH Morgan,63.11
+Ohio,39117 OH Morrow,22.73
+Ohio,39119 OH Muskingum,51.31
+Ohio,39121 OH Noble,60.84
+Ohio,39123 OH Ottawa,12.91
+Ohio,39125 OH Paulding,7.33
+Ohio,39127 OH Perry,51.79
+Ohio,39129 OH Pickaway,13.14
+Ohio,39131 OH Pike,59.85
+Ohio,39133 OH Portage,38.85
+Ohio,39135 OH Preble,16.41
+Ohio,39137 OH Putnam,6.2
+Ohio,39139 OH Richland,30.07
+Ohio,39141 OH Ross,43.94
+Ohio,39143 OH Sandusky,10.81
+Ohio,39145 OH Scioto,63.96
+Ohio,39147 OH Seneca,10.28
+Ohio,39149 OH Shelby,11.21
+Ohio,39151 OH Stark,27.72
+Ohio,39153 OH Summit,37
+Ohio,39155 OH Trumbull,37.23
+Ohio,39157 OH Tuscarawas,48.82
+Ohio,39159 OH Union,11.75
+Ohio,39161 OH Van Wert,5.81
+Ohio,39163 OH Vinton,69.69
+Ohio,39165 OH Warren,27.79
+Ohio,39167 OH Washington,59.09
+Ohio,39169 OH Wayne,19.49
+Ohio,39171 OH Williams,13.96
+Ohio,39173 OH Wood,7.72
+Ohio,39175 OH Wyandot,11.33
+Oklahoma,40001 OK Adair,45.59
+Oklahoma,40003 OK Alfalfa,3.82
+Oklahoma,40005 OK Atoka,35.92
+Oklahoma,40007 OK Beaver,3.4
+Oklahoma,40009 OK Beckham,6.23
+Oklahoma,40011 OK Blaine,8.09
+Oklahoma,40013 OK Bryan,21.77
+Oklahoma,40015 OK Caddo,8.99
+Oklahoma,40017 OK Canadian,6.82
+Oklahoma,40019 OK Carter,20.92
+Oklahoma,40021 OK Cherokee,43.16
+Oklahoma,40023 OK Choctaw,31.46
+Oklahoma,40025 OK Cimarron,1.59
+Oklahoma,40027 OK Cleveland,24.23
+Oklahoma,40029 OK Coal,29.3
+Oklahoma,40031 OK Comanche,8.51
+Oklahoma,40033 OK Cotton,5.91
+Oklahoma,40035 OK Craig,15.16
+Oklahoma,40037 OK Creek,33.8
+Oklahoma,40039 OK Custer,6.49
+Oklahoma,40041 OK Delaware,35.53
+Oklahoma,40043 OK Dewey,8.43
+Oklahoma,40045 OK Ellis,5.7
+Oklahoma,40047 OK Garfield,4.39
+Oklahoma,40049 OK Garvin,16.9
+Oklahoma,40051 OK Grady,10.12
+Oklahoma,40053 OK Grant,3.81
+Oklahoma,40055 OK Greer,6.21
+Oklahoma,40057 OK Harmon,5.19
+Oklahoma,40059 OK Harper,6.34
+Oklahoma,40061 OK Haskell,31.23
+Oklahoma,40063 OK Hughes,32.74
+Oklahoma,40065 OK Jackson,4.35
+Oklahoma,40067 OK Jefferson,10.34
+Oklahoma,40069 OK Johnston,25.97
+Oklahoma,40071 OK Kay,7.4
+Oklahoma,40073 OK Kingfisher,4.57
+Oklahoma,40075 OK Kiowa,4.82
+Oklahoma,40077 OK Latimer,52.25
+Oklahoma,40079 OK Le Flore,55.11
+Oklahoma,40081 OK Lincoln,27.19
+Oklahoma,40083 OK Logan,16.94
+Oklahoma,40085 OK Love,24.92
+Oklahoma,40087 OK McClain,8.47
+Oklahoma,40089 OK McCurtain,23.8
+Oklahoma,40091 OK McIntosh,25.5
+Oklahoma,40093 OK Major,14.98
+Oklahoma,40095 OK Marshall,57.17
+Oklahoma,40097 OK Mayes,27.78
+Oklahoma,40099 OK Murray,21.09
+Oklahoma,40101 OK Muskogee,23.96
+Oklahoma,40103 OK Noble,9.97
+Oklahoma,40105 OK Nowata,18.66
+Oklahoma,40107 OK Okfuskee,32.44
+Oklahoma,40109 OK Oklahoma,16.49
+Oklahoma,40111 OK Okmulgee,29.73
+Oklahoma,40113 OK Osage,22.57
+Oklahoma,40115 OK Ottawa,21.96
+Oklahoma,40117 OK Pawnee,26.85
+Oklahoma,40119 OK Payne,22.07
+Oklahoma,40121 OK Pittsburg,32.53
+Oklahoma,40123 OK Pontotoc,26.7
+Oklahoma,40125 OK Pottawatomie,27.97
+Oklahoma,40127 OK Pushmataha,56.73
+Oklahoma,40129 OK Roger Mills,6.85
+Oklahoma,40131 OK Rogers,23.34
+Oklahoma,40133 OK Seminole,32.28
+Oklahoma,40135 OK Sequoyah,39.88
+Oklahoma,40137 OK Stephens,12.7
+Oklahoma,40139 OK Texas,2
+Oklahoma,40141 OK Tillman,3.95
+Oklahoma,40143 OK Tulsa,20.8
+Oklahoma,40145 OK Wagoner,23.35
+Oklahoma,40147 OK Washington,19.94
+Oklahoma,40149 OK Washita,4.56
+Oklahoma,40151 OK Woods,7.31
+Oklahoma,40153 OK Woodward,8
+Oregon,41001 OR Baker,18.4
+Oregon,41003 OR Benton,54.23
+Oregon,41005 OR Clackamas,57.39
+Oregon,41007 OR Clatsop,64.35
+Oregon,41009 OR Columbia,62.13
+Oregon,41011 OR Coos,66.43
+Oregon,41013 OR Crook,12.85
+Oregon,41015 OR Curry,61.62
+Oregon,41017 OR Deschutes,22.45
+Oregon,41019 OR Douglas,61.2
+Oregon,41021 OR Gilliam,2.08
+Oregon,41023 OR Grant,28.93
+Oregon,41025 OR Harney,4.84
+Oregon,41027 OR Hood River,57.02
+Oregon,41029 OR Jackson,50.23
+Oregon,41031 OR Jefferson,17.08
+Oregon,41033 OR Josephine,54.45
+Oregon,41035 OR Klamath,27.98
+Oregon,41037 OR Lake,8.56
+Oregon,41039 OR Lane,63.9
+Oregon,41041 OR Lincoln,70.37
+Oregon,41043 OR Linn,51.3
+Oregon,41045 OR Malheur,1.77
+Oregon,41047 OR Marion,33.63
+Oregon,41049 OR Morrow,9.41
+Oregon,41051 OR Multnomah,46.5
+Oregon,41053 OR Polk,46.33
+Oregon,41055 OR Sherman,1.94
+Oregon,41057 OR Tillamook,67.94
+Oregon,41059 OR Umatilla,18.07
+Oregon,41061 OR Union,34.84
+Oregon,41063 OR Wallowa,28.48
+Oregon,41065 OR Wasco,18.61
+Oregon,41067 OR Washington,46.35
+Oregon,41069 OR Wheeler,15.81
+Oregon,41071 OR Yamhill,45.3
+Pennsylvania,42001 PA Adams,37.42
+Pennsylvania,42003 PA Allegheny,45.77
+Pennsylvania,42005 PA Armstrong,56.11
+Pennsylvania,42007 PA Beaver,53.3
+Pennsylvania,42009 PA Bedford,62.84
+Pennsylvania,42011 PA Berks,44.14
+Pennsylvania,42013 PA Blair,59.91
+Pennsylvania,42015 PA Bradford,53.76
+Pennsylvania,42017 PA Bucks,43.77
+Pennsylvania,42019 PA Butler,51.09
+Pennsylvania,42021 PA Cambria,59.87
+Pennsylvania,42023 PA Cameron,80.48
+Pennsylvania,42025 PA Carbon,69.65
+Pennsylvania,42027 PA Centre,64.3
+Pennsylvania,42029 PA Chester,44.61
+Pennsylvania,42031 PA Clarion,56.41
+Pennsylvania,42033 PA Clearfield,66.75
+Pennsylvania,42035 PA Clinton,74.19
+Pennsylvania,42037 PA Columbia,53.1
+Pennsylvania,42039 PA Crawford,49.14
+Pennsylvania,42041 PA Cumberland,39.62
+Pennsylvania,42043 PA Dauphin,48.03
+Pennsylvania,42045 PA Delaware,43.54
+Pennsylvania,42047 PA Elk,74.84
+Pennsylvania,42049 PA Erie,46.37
+Pennsylvania,42051 PA Fayette,60.44
+Pennsylvania,42053 PA Forest,75.53
+Pennsylvania,42055 PA Franklin,42.72
+Pennsylvania,42057 PA Fulton,63.26
+Pennsylvania,42059 PA Greene,63.46
+Pennsylvania,42061 PA Huntingdon,66.46
+Pennsylvania,42063 PA Indiana,57.5
+Pennsylvania,42065 PA Jefferson,60.85
+Pennsylvania,42067 PA Juniata,58.05
+Pennsylvania,42069 PA Lackawanna,60.44
+Pennsylvania,42071 PA Lancaster,29.8
+Pennsylvania,42073 PA Lawrence,41.18
+Pennsylvania,42075 PA Lebanon,39.51
+Pennsylvania,42077 PA Lehigh,38.94
+Pennsylvania,42079 PA Luzerne,63.27
+Pennsylvania,42081 PA Lycoming,66.93
+Pennsylvania,42083 PA McKean,74.12
+Pennsylvania,42085 PA Mercer,41.5
+Pennsylvania,42087 PA Mifflin,60.02
+Pennsylvania,42089 PA Monroe,69.52
+Pennsylvania,42091 PA Montgomery,40.51
+Pennsylvania,42093 PA Montour,38.41
+Pennsylvania,42095 PA Northampton,42.57
+Pennsylvania,42097 PA Northumberland,46.16
+Pennsylvania,42099 PA Perry,60.45
+Pennsylvania,42101 PA Philadelphia,20.25
+Pennsylvania,42103 PA Pike,76.17
+Pennsylvania,42105 PA Potter,74.22
+Pennsylvania,42107 PA Schuylkill,60.77
+Pennsylvania,42109 PA Snyder,50.13
+Pennsylvania,42111 PA Somerset,59.18
+Pennsylvania,42113 PA Sullivan,72.94
+Pennsylvania,42115 PA Susquehanna,60.13
+Pennsylvania,42117 PA Tioga,62.73
+Pennsylvania,42119 PA Union,53.1
+Pennsylvania,42121 PA Venango,66.38
+Pennsylvania,42123 PA Warren,70.92
+Pennsylvania,42125 PA Washington,51.18
+Pennsylvania,42127 PA Wayne,67.05
+Pennsylvania,42129 PA Westmoreland,53.56
+Pennsylvania,42131 PA Wyoming,62.45
+Pennsylvania,42133 PA York,39.92
+Rhode Island,44001 RI Bristol,41.23
+Rhode Island,44003 RI Kent,60.35
+Rhode Island,44005 RI Newport,46.2
+Rhode Island,44007 RI Providence,59.21
+Rhode Island,44009 RI Washington,61.24
+South Carolina,45001 SC Abbeville,61.13
+South Carolina,45003 SC Aiken,51.95
+South Carolina,45005 SC Allendale,54.45
+South Carolina,45007 SC Anderson,42.92
+South Carolina,45009 SC Bamberg,54.31
+South Carolina,45011 SC Barnwell,57.35
+South Carolina,45013 SC Beaufort,37
+South Carolina,45015 SC Berkeley,63.43
+South Carolina,45017 SC Calhoun,49.9
+South Carolina,45019 SC Charleston,48.92
+South Carolina,45021 SC Cherokee,57.74
+South Carolina,45023 SC Chester,66.46
+South Carolina,45025 SC Chesterfield,50.32
+South Carolina,45027 SC Clarendon,46.46
+South Carolina,45029 SC Colleton,62.01
+South Carolina,45031 SC Darlington,42.93
+South Carolina,45033 SC Dillon,49.27
+South Carolina,45035 SC Dorchester,63.73
+South Carolina,45037 SC Edgefield,69.31
+South Carolina,45039 SC Fairfield,69.78
+South Carolina,45041 SC Florence,52.18
+South Carolina,45043 SC Georgetown,62.11
+South Carolina,45045 SC Greenville,52.73
+South Carolina,45047 SC Greenwood,62.24
+South Carolina,45049 SC Hampton,56.84
+South Carolina,45051 SC Horry,52.33
+South Carolina,45053 SC Jasper,62.62
+South Carolina,45055 SC Kershaw,52.98
+South Carolina,45057 SC Lancaster,57.84
+South Carolina,45059 SC Laurens,61.03
+South Carolina,45061 SC Lee,42.93
+South Carolina,45063 SC Lexington,43.11
+South Carolina,45065 SC McCormick,59.62
+South Carolina,45067 SC Marion,52.2
+South Carolina,45069 SC Marlboro,71.43
+South Carolina,45071 SC Newberry,65.72
+South Carolina,45073 SC Oconee,59.79
+South Carolina,45075 SC Orangeburg,49.58
+South Carolina,45077 SC Pickens,59.65
+South Carolina,45079 SC Richland,55.2
+South Carolina,45081 SC Saluda,58.69
+South Carolina,45083 SC Spartanburg,49.53
+South Carolina,45085 SC Sumter,53.6
+South Carolina,45087 SC Union,71.38
+South Carolina,45089 SC Williamsburg,60.02
+South Carolina,45091 SC York,53.64
+South Dakota,46003 SD Aurora,1.86
+South Dakota,46005 SD Beadle,3.12
+South Dakota,46007 SD Bennett,3.35
+South Dakota,46009 SD Bon Homme,3.75
+South Dakota,46011 SD Brookings,9.72
+South Dakota,46013 SD Brown,5.57
+South Dakota,46015 SD Brule,2.91
+South Dakota,46017 SD Buffalo,2.5
+South Dakota,46019 SD Butte,1.38
+South Dakota,46021 SD Campbell,2.57
+South Dakota,46023 SD Charles Mix,4.7
+South Dakota,46025 SD Clark,5.91
+South Dakota,46027 SD Clay,9.26
+South Dakota,46029 SD Codington,6.86
+South Dakota,46031 SD Corson,2.53
+South Dakota,46033 SD Custer,12.96
+South Dakota,46035 SD Davison,2.89
+South Dakota,46037 SD Day,6.31
+South Dakota,46039 SD Deuel,8.6
+South Dakota,46041 SD Dewey,2.55
+South Dakota,46043 SD Douglas,2.77
+South Dakota,46045 SD Edmunds,2.96
+South Dakota,46047 SD Fall River,3.02
+South Dakota,46049 SD Faulk,2.53
+South Dakota,46051 SD Grant,8.86
+South Dakota,46053 SD Gregory,9.53
+South Dakota,46055 SD Haakon,2
+South Dakota,46057 SD Hamlin,8.17
+South Dakota,46059 SD Hand,2.73
+South Dakota,46061 SD Hanson,3.2
+South Dakota,46063 SD Harding,1.86
+South Dakota,46065 SD Hughes,1.67
+South Dakota,46067 SD Hutchinson,2.55
+South Dakota,46069 SD Hyde,1.8
+South Dakota,46071 SD Jackson,2.21
+South Dakota,46073 SD Jerauld,2.93
+South Dakota,46075 SD Jones,2.3
+South Dakota,46077 SD Kingsbury,4.59
+South Dakota,46079 SD Lake,8.05
+South Dakota,46081 SD Lawrence,31.92
+South Dakota,46083 SD Lincoln,9.54
+South Dakota,46085 SD Lyman,3.18
+South Dakota,46087 SD McCook,7.49
+South Dakota,46089 SD McPherson,4.04
+South Dakota,46091 SD Marshall,3.29
+South Dakota,46093 SD Meade,2.86
+South Dakota,46095 SD Mellette,3.11
+South Dakota,46097 SD Miner,3.06
+South Dakota,46099 SD Minnehaha,12.95
+South Dakota,46101 SD Moody,13.07
+South Dakota,46103 SD Pennington,3.33
+South Dakota,46105 SD Perkins,10.59
+South Dakota,46107 SD Potter,1.58
+South Dakota,46109 SD Roberts,1.84
+South Dakota,46111 SD Sanborn,10.39
+South Dakota,46113 SD Shannon,2.79
+South Dakota,46115 SD Spink,3.52
+South Dakota,46117 SD Stanley,2.2
+South Dakota,46119 SD Sully,1.09
+South Dakota,46121 SD Todd,3.46
+South Dakota,46123 SD Tripp,2.54
+South Dakota,46125 SD Turner,6.3
+South Dakota,46127 SD Union,12.73
+South Dakota,46129 SD Walworth,2.72
+South Dakota,46135 SD Yankton,6.65
+South Dakota,46137 SD Ziebach,1.87
+Tennessee,47001 TN Anderson,64.83
+Tennessee,47003 TN Bedford,32.6
+Tennessee,47005 TN Benton,58.85
+Tennessee,47007 TN Bledsoe,58.6
+Tennessee,47009 TN Blount,58.41
+Tennessee,47011 TN Bradley,46.12
+Tennessee,47013 TN Campbell,71.82
+Tennessee,47015 TN Cannon,53.8
+Tennessee,47017 TN Carroll,49.4
+Tennessee,47019 TN Carter,71.06
+Tennessee,47021 TN Cheatham,58.63
+Tennessee,47023 TN Chester,54.22
+Tennessee,47025 TN Claiborne,61.43
+Tennessee,47027 TN Clay,57.42
+Tennessee,47029 TN Cocke,67.81
+Tennessee,47031 TN Coffee,39.45
+Tennessee,47033 TN Crockett,18.94
+Tennessee,47035 TN Cumberland,60.39
+Tennessee,47037 TN Davidson,45.76
+Tennessee,47039 TN Decatur,56.72
+Tennessee,47041 TN DeKalb,52.41
+Tennessee,47043 TN Dickson,53.44
+Tennessee,47045 TN Dyer,21.5
+Tennessee,47047 TN Fayette,46.7
+Tennessee,47049 TN Fentress,65.62
+Tennessee,47051 TN Franklin,50.38
+Tennessee,47053 TN Gibson,24.37
+Tennessee,47055 TN Giles,48.58
+Tennessee,47057 TN Grainger,49.95
+Tennessee,47059 TN Greene,42.88
+Tennessee,47061 TN Grundy,68.07
+Tennessee,47063 TN Hamblen,31.35
+Tennessee,47065 TN Hamilton,49.48
+Tennessee,47067 TN Hancock,66.83
+Tennessee,47069 TN Hardeman,59.37
+Tennessee,47071 TN Hardin,56.47
+Tennessee,47073 TN Hawkins,55.47
+Tennessee,47075 TN Haywood,31.07
+Tennessee,47077 TN Henderson,52.64
+Tennessee,47079 TN Henry,44.15
+Tennessee,47081 TN Hickman,64.82
+Tennessee,47083 TN Houston,60.65
+Tennessee,47085 TN Humphreys,58.21
+Tennessee,47087 TN Jackson,67.21
+Tennessee,47089 TN Jefferson,33.9
+Tennessee,47091 TN Johnson,71.75
+Tennessee,47093 TN Knox,41.64
+Tennessee,47095 TN Lake,21.18
+Tennessee,47097 TN Lauderdale,34.63
+Tennessee,47099 TN Lawrence,43.37
+Tennessee,47101 TN Lewis,68.06
+Tennessee,47103 TN Lincoln,42.19
+Tennessee,47105 TN Loudon,39.51
+Tennessee,47107 TN McMinn,50.37
+Tennessee,47109 TN McNairy,44.23
+Tennessee,47111 TN Macon,67.97
+Tennessee,47113 TN Madison,43.42
+Tennessee,47115 TN Marion,44.29
+Tennessee,47117 TN Marshall,47.87
+Tennessee,47119 TN Maury,59.3
+Tennessee,47121 TN Meigs,48.57
+Tennessee,47123 TN Monroe,64.83
+Tennessee,47125 TN Montgomery,43.32
+Tennessee,47127 TN Moore,51.51
+Tennessee,47129 TN Morgan,71.96
+Tennessee,47131 TN Obion,29.75
+Tennessee,47133 TN Overton,57.47
+Tennessee,47135 TN Perry,69.36
+Tennessee,47137 TN Pickett,59.85
+Tennessee,47139 TN Polk,73.18
+Tennessee,47141 TN Putnam,54.47
+Tennessee,47143 TN Rhea,54.26
+Tennessee,47145 TN Roane,56.39
+Tennessee,47147 TN Robertson,27.52
+Tennessee,47149 TN Rutherford,36.81
+Tennessee,47151 TN Scott,77.14
+Tennessee,47153 TN Sequatchie,69.13
+Tennessee,47155 TN Sevier,67.85
+Tennessee,47157 TN Shelby,39.44
+Tennessee,47159 TN Smith,52.62
+Tennessee,47161 TN Stewart,64.21
+Tennessee,47163 TN Sullivan,48.84
+Tennessee,47165 TN Sumner,40.45
+Tennessee,47167 TN Tipton,29.74
+Tennessee,47169 TN Trousdale,43.7
+Tennessee,47171 TN Unicoi,78.1
+Tennessee,47173 TN Union,59.14
+Tennessee,47175 TN Van Buren,63.55
+Tennessee,47177 TN Warren,38.5
+Tennessee,47179 TN Washington,36.65
+Tennessee,47181 TN Wayne,65.14
+Tennessee,47183 TN Weakley,34.97
+Tennessee,47185 TN White,49.41
+Tennessee,47187 TN Williamson,45.29
+Tennessee,47189 TN Wilson,42.02
+Texas,48001 TX Anderson,51.2
+Texas,48003 TX Andrews,5.07
+Texas,48005 TX Angelina,60.14
+Texas,48007 TX Aransas,18.75
+Texas,48009 TX Archer,7.67
+Texas,48011 TX Armstrong,4.12
+Texas,48013 TX Atascosa,14.65
+Texas,48015 TX Austin,22.12
+Texas,48017 TX Bailey,1.43
+Texas,48019 TX Bandera,23.18
+Texas,48021 TX Bastrop,21.61
+Texas,48023 TX Baylor,7.85
+Texas,48025 TX Bee,14.8
+Texas,48027 TX Bell,14.5
+Texas,48029 TX Bexar,17.59
+Texas,48031 TX Blanco,16.28
+Texas,48033 TX Borden,5.66
+Texas,48035 TX Bosque,21.27
+Texas,48037 TX Bowie,47.75
+Texas,48039 TX Brazoria,21.88
+Texas,48041 TX Brazos,22.32
+Texas,48043 TX Brewster,4.62
+Texas,48045 TX Briscoe,5.7
+Texas,48047 TX Brooks,11.08
+Texas,48049 TX Brown,9.1
+Texas,48051 TX Burleson,19.68
+Texas,48053 TX Burnet,18.95
+Texas,48055 TX Caldwell,16.22
+Texas,48057 TX Calhoun,16.02
+Texas,48059 TX Callahan,11.47
+Texas,48061 TX Cameron,9.32
+Texas,48063 TX Camp,48.74
+Texas,48065 TX Carson,2.06
+Texas,48067 TX Cass,65.25
+Texas,48069 TX Castro,2.02
+Texas,48071 TX Chambers,21.91
+Texas,48073 TX Cherokee,56.27
+Texas,48075 TX Childress,5.83
+Texas,48077 TX Clay,9.34
+Texas,48079 TX Cochran,1.57
+Texas,48081 TX Coke,11.26
+Texas,48083 TX Coleman,8.3
+Texas,48085 TX Collin,14.73
+Texas,48087 TX Collingsworth,5.24
+Texas,48089 TX Colorado,20.09
+Texas,48091 TX Comal,23.81
+Texas,48093 TX Comanche,10.4
+Texas,48095 TX Concho,6.82
+Texas,48097 TX Cooke,18.31
+Texas,48099 TX Coryell,17.87
+Texas,48101 TX Cottle,7.87
+Texas,48103 TX Crane,5.41
+Texas,48105 TX Crockett,7.03
+Texas,48107 TX Crosby,2.62
+Texas,48109 TX Culberson,4.14
+Texas,48111 TX Dallam,1.23
+Texas,48113 TX Dallas,17.95
+Texas,48115 TX Dawson,2.29
+Texas,48117 TX Deaf Smith,1.32
+Texas,48119 TX Delta,20.07
+Texas,48121 TX Denton,13.59
+Texas,48123 TX De Witt,14.38
+Texas,48125 TX Dickens,5.52
+Texas,48127 TX Dimmit,9.6
+Texas,48129 TX Donley,4.54
+Texas,48131 TX Duval,18.1
+Texas,48133 TX Eastland,12.49
+Texas,48135 TX Ector,4.86
+Texas,48137 TX Edwards,13.64
+Texas,48139 TX Ellis,4.59
+Texas,48141 TX El Paso,14.83
+Texas,48143 TX Erath,15.65
+Texas,48145 TX Falls,9.77
+Texas,48147 TX Fannin,19.13
+Texas,48149 TX Fayette,16.4
+Texas,48151 TX Fisher,6.85
+Texas,48153 TX Floyd,1.93
+Texas,48155 TX Foard,8.25
+Texas,48157 TX Fort Bend,19.75
+Texas,48159 TX Franklin,38.42
+Texas,48161 TX Freestone,33.92
+Texas,48163 TX Frio,14.93
+Texas,48165 TX Gaines,2.62
+Texas,48167 TX Galveston,15.18
+Texas,48169 TX Garza,5.56
+Texas,48171 TX Gillespie,12.3
+Texas,48173 TX Glasscock,4.35
+Texas,48175 TX Goliad,16.24
+Texas,48177 TX Gonzales,16.14
+Texas,48179 TX Gray,3.05
+Texas,48181 TX Grayson,17.35
+Texas,48183 TX Gregg,48.39
+Texas,48185 TX Grimes,30.68
+Texas,48187 TX Guadalupe,12.33
+Texas,48189 TX Hale,1.38
+Texas,48191 TX Hall,6.62
+Texas,48193 TX Hamilton,13.79
+Texas,48195 TX Hansford,2.07
+Texas,48197 TX Hardeman,6.36
+Texas,48199 TX Hardin,74.42
+Texas,48201 TX Harris,21.47
+Texas,48203 TX Harrison,61.44
+Texas,48205 TX Hartley,2.02
+Texas,48207 TX Haskell,4.87
+Texas,48209 TX Hays,21.87
+Texas,48211 TX Hemphill,4.04
+Texas,48213 TX Henderson,33.37
+Texas,48215 TX Hidalgo,8.6
+Texas,48217 TX Hill,12.84
+Texas,48219 TX Hockley,1.4
+Texas,48221 TX Hood,17.81
+Texas,48223 TX Hopkins,26.4
+Texas,48225 TX Houston,52.19
+Texas,48227 TX Howard,5.88
+Texas,48229 TX Hudspeth,3.21
+Texas,48231 TX Hunt,18.37
+Texas,48233 TX Hutchinson,3.27
+Texas,48235 TX Irion,7.14
+Texas,48237 TX Jack,15.16
+Texas,48239 TX Jackson,16.29
+Texas,48241 TX Jasper,70.94
+Texas,48243 TX Jeff Davis,8.42
+Texas,48245 TX Jefferson,23.12
+Texas,48247 TX Jim Hogg,10.68
+Texas,48249 TX Jim Wells,13.84
+Texas,48251 TX Johnson,14.37
+Texas,48253 TX Jones,5.58
+Texas,48255 TX Karnes,13.38
+Texas,48257 TX Kaufman,18.79
+Texas,48259 TX Kendall,18.37
+Texas,48261 TX Kenedy,12
+Texas,48263 TX Kent,8.15
+Texas,48265 TX Kerr,15.65
+Texas,48267 TX Kimble,12.54
+Texas,48269 TX King,8.69
+Texas,48271 TX Kinney,11.38
+Texas,48273 TX Kleberg,11.58
+Texas,48275 TX Knox,7.25
+Texas,48277 TX Lamar,17.32
+Texas,48279 TX Lamb,23.68
+Texas,48281 TX Lampasas,1.54
+Texas,48283 TX La Salle,15.44
+Texas,48285 TX Lavaca,18.11
+Texas,48287 TX Lee,16.6
+Texas,48289 TX Leon,39.8
+Texas,48291 TX Liberty,50.38
+Texas,48293 TX Limestone,19.07
+Texas,48295 TX Lipscomb,3.03
+Texas,48297 TX Live Oak,17.89
+Texas,48299 TX Llano,12.9
+Texas,48301 TX Loving,3.44
+Texas,48303 TX Lubbock,1.75
+Texas,48305 TX Lynn,1.38
+Texas,48307 TX McCulloch,25.69
+Texas,48309 TX McLennan,67.7
+Texas,48311 TX McMullen,3.37
+Texas,48313 TX Madison,10.06
+Texas,48315 TX Marion,18.38
+Texas,48317 TX Martin,8.21
+Texas,48319 TX Mason,8.59
+Texas,48321 TX Matagorda,13.15
+Texas,48323 TX Maverick,20.07
+Texas,48325 TX Medina,15.02
+Texas,48327 TX Menard,7.86
+Texas,48329 TX Midland,4.89
+Texas,48331 TX Milam,15.65
+Texas,48333 TX Mills,10.97
+Texas,48335 TX Mitchell,7.69
+Texas,48337 TX Montague,16.92
+Texas,48339 TX Montgomery,51.45
+Texas,48341 TX Moore,2.09
+Texas,48343 TX Morris,53.06
+Texas,48345 TX Motley,6.07
+Texas,48347 TX Nacogdoches,58.17
+Texas,48349 TX Navarro,18.65
+Texas,48351 TX Newton,75.98
+Texas,48353 TX Nolan,10.25
+Texas,48355 TX Nueces,6.46
+Texas,48357 TX Ochiltree,1.74
+Texas,48359 TX Oldham,2.87
+Texas,48361 TX Orange,51.12
+Texas,48363 TX Palo Pinto,20.73
+Texas,48365 TX Panola,58.77
+Texas,48367 TX Parker,15.3
+Texas,48369 TX Parmer,1.26
+Texas,48371 TX Pecos,5.99
+Texas,48373 TX Polk,66.63
+Texas,48375 TX Potter,3.93
+Texas,48377 TX Presidio,4.73
+Texas,48379 TX Rains,26.71
+Texas,48381 TX Randall,2.63
+Texas,48383 TX Reagan,5.01
+Texas,48385 TX Real,22.88
+Texas,48387 TX Red River,43.3
+Texas,48389 TX Reeves,2.37
+Texas,48391 TX Refugio,16.57
+Texas,48393 TX Roberts,4.24
+Texas,48395 TX Robertson,22.98
+Texas,48397 TX Rockwall,11.14
+Texas,48399 TX Runnels,5.95
+Texas,48401 TX Rusk,54.05
+Texas,48403 TX Sabine,65.71
+Texas,48405 TX San Augustine,64.81
+Texas,48407 TX San Jacinto,62.74
+Texas,48409 TX San Patricio,8.03
+Texas,48411 TX San Saba,12.82
+Texas,48413 TX Schleicher,5.69
+Texas,48415 TX Scurry,6.35
+Texas,48417 TX Shackelford,11.3
+Texas,48419 TX Shelby,59.99
+Texas,48421 TX Sherman,1.86
+Texas,48423 TX Smith,47.79
+Texas,48425 TX Somervell,25.65
+Texas,48427 TX Starr,12.6
+Texas,48429 TX Stephens,13.13
+Texas,48431 TX Sterling,7.13
+Texas,48433 TX Stonewall,8.68
+Texas,48435 TX Sutton,7.71
+Texas,48437 TX Swisher,1.57
+Texas,48439 TX Tarrant,14.67
+Texas,48441 TX Taylor,12.54
+Texas,48443 TX Terrell,5.61
+Texas,48445 TX Terry,1.57
+Texas,48447 TX Throckmorton,9.02
+Texas,48449 TX Titus,42.57
+Texas,48451 TX Tom Green,6.89
+Texas,48453 TX Travis,22.08
+Texas,48455 TX Trinity,66.42
+Texas,48457 TX Tyler,73.16
+Texas,48459 TX Upshur,53.02
+Texas,48461 TX Upton,4.39
+Texas,48463 TX Uvalde,13.41
+Texas,48465 TX Val Verde,8.87
+Texas,48467 TX Van Zandt,26.85
+Texas,48469 TX Victoria,17.14
+Texas,48471 TX Walker,56.92
+Texas,48473 TX Waller,23.56
+Texas,48475 TX Ward,4.16
+Texas,48477 TX Washington,18.2
+Texas,48479 TX Webb,14.63
+Texas,48481 TX Wharton,13.79
+Texas,48483 TX Wheeler,4.17
+Texas,48485 TX Wichita,6.81
+Texas,48487 TX Wilbarger,5.74
+Texas,48489 TX Willacy,8.07
+Texas,48491 TX Williamson,11.09
+Texas,48493 TX Wilson,12.28
+Texas,48495 TX Winkler,4.56
+Texas,48497 TX Wise,15.2
+Texas,48499 TX Wood,46.14
+Texas,48501 TX Yoakum,2
+Texas,48503 TX Young,10.77
+Texas,48505 TX Zapata,12.38
+Texas,48507 TX Zavala,10.2
+Utah,49001 UT Beaver,10.92
+Utah,49003 UT Box Elder,2.61
+Utah,49005 UT Cache,20.65
+Utah,49007 UT Carbon,15.05
+Utah,49009 UT Daggett,21.25
+Utah,49011 UT Davis,6.83
+Utah,49013 UT Duchesne,14.05
+Utah,49015 UT Emery,4.25
+Utah,49017 UT Garfield,11.21
+Utah,49019 UT Grand,7.81
+Utah,49021 UT Iron,11.44
+Utah,49023 UT Juab,4.48
+Utah,49025 UT Kane,6.56
+Utah,49027 UT Millard,3.19
+Utah,49029 UT Morgan,24.06
+Utah,49031 UT Piute,16.07
+Utah,49033 UT Rich,10.2
+Utah,49035 UT Salt Lake,15.62
+Utah,49037 UT San Juan,5.71
+Utah,49039 UT Sanpete,15.97
+Utah,49041 UT Sevier,16.35
+Utah,49043 UT Summit,25.43
+Utah,49045 UT Tooele,2.29
+Utah,49047 UT Uintah,8.55
+Utah,49049 UT Utah,14.7
+Utah,49051 UT Wasatch,25.24
+Utah,49053 UT Washington,10.16
+Utah,49055 UT Wayne,6.23
+Utah,49057 UT Weber,15.72
+Vermont,50001 VT Addison,54.1
+Vermont,50003 VT Bennington,77.84
+Vermont,50005 VT Caledonia,69.84
+Vermont,50007 VT Chittenden,54.96
+Vermont,50009 VT Essex,77.87
+Vermont,50011 VT Franklin,55.17
+Vermont,50013 VT Grand Isle,18.28
+Vermont,50015 VT Lamoille,74.22
+Vermont,50017 VT Orange,72.82
+Vermont,50019 VT Orleans,67.31
+Vermont,50021 VT Rutland,71.48
+Vermont,50023 VT Washington,74.68
+Vermont,50025 VT Windham,76.05
+Vermont,50027 VT Windsor,75.14
+Virginia,51001 VA Accomack,38.36
+Virginia,51003 VA Albemarle,63.23
+Virginia,51510 VA Alexandria city,26.23
+Virginia,51005 VA Alleghany,78.28
+Virginia,51007 VA Amelia,61.69
+Virginia,51009 VA Amherst,68.6
+Virginia,51011 VA Appomattox,57.9
+Virginia,51013 VA Arlington,30.1
+Virginia,51015 VA Augusta,56.22
+Virginia,51017 VA Bath,78.82
+Virginia,51019 VA Bedford,56.72
+Virginia,51021 VA Bland,71.44
+Virginia,51023 VA Botetourt,68.24
+Virginia,51520 VA Bristol city,33.38
+Virginia,51025 VA Brunswick,66.17
+Virginia,51027 VA Buchanan,77.6
+Virginia,51029 VA Buckingham,65.13
+Virginia,51530 VA Buena Vista City,46.61
+Virginia,51031 VA Campbell,54.02
+Virginia,51033 VA Caroline,64.46
+Virginia,51035 VA Carroll,60.14
+Virginia,51036 VA Charles City,62.71
+Virginia,51037 VA Charlotte,61.16
+Virginia,51540 VA Charlottesville City,42.44
+Virginia,51550 VA Chesapeake city,52.53
+Virginia,51041 VA Chesterfield,60.52
+Virginia,51043 VA Clarke,43.17
+Virginia,51570 VA Colonial Heights City,36.47
+Virginia,51580 VA Covington City,45.32
+Virginia,51045 VA Craig,75.04
+Virginia,51047 VA Culpeper,47.38
+Virginia,51049 VA Cumberland,63.73
+Virginia,51590 VA Danville City,45.81
+Virginia,51051 VA Dickenson,75.67
+Virginia,51053 VA Dinwiddie,63.32
+Virginia,51595 VA Emporia City,41.76
+Virginia,51057 VA Essex,56.34
+Virginia,51600 VA Fairfax City,35.31
+Virginia,51059 VA Fairfax,50.95
+Virginia,51610 VA Falls Church City,34.85
+Virginia,51061 VA Fauquier,49.5
+Virginia,51063 VA Floyd,61.42
+Virginia,51065 VA Fluvanna,64.44
+Virginia,51620 VA Franklin City,43.02
+Virginia,51067 VA Franklin,59.04
+Virginia,51069 VA Frederick,53.13
+Virginia,51630 VA Fredericksburg city,38.78
+Virginia,51640 VA Galax city,38.41
+Virginia,51071 VA Giles,72.09
+Virginia,51073 VA Gloucester,62.84
+Virginia,51075 VA Goochland,60.82
+Virginia,51077 VA Grayson,62.87
+Virginia,51079 VA Greene,64.46
+Virginia,51081 VA Greensville,59.96
+Virginia,51083 VA Halifax,62.59
+Virginia,51650 VA Hampton City,29.64
+Virginia,51085 VA Hanover,57.75
+Virginia,51660 VA Harrisonburg City,22.81
+Virginia,51087 VA Henrico,47.16
+Virginia,51089 VA Henry,66.1
+Virginia,51091 VA Highland,71.78
+Virginia,51670 VA Hopewell City,36.5
+Virginia,51093 VA Isle Of Wight,50.1
+Virginia,51095 VA James City,61.18
+Virginia,51097 VA King And Queen,62.79
+Virginia,51099 VA King George,63.32
+Virginia,51101 VA King William,56.83
+Virginia,51103 VA Lancaster,60.11
+Virginia,51105 VA Lee,63.69
+Virginia,51678 VA Lexington City,30.42
+Virginia,51107 VA Loudoun,40.34
+Virginia,51109 VA Louisa,60.91
+Virginia,51111 VA Lunenburg,62.57
+Virginia,51680 VA Lynchburg City,47.44
+Virginia,51113 VA Madison,60.5
+Virginia,51683 VA Manassas city,26.33
+Virginia,51585 Va Manassas Park city,36.27
+Virginia,51690 VA Martinsville city,52.31
+Virginia,51115 VA Mathews,60.97
+Virginia,51117 VA Mecklenburg,55.22
+Virginia,51119 VA Middlesex,59.18
+Virginia,51121 VA Montgomery,59.91
+Virginia,51125 VA Nelson,70.37
+Virginia,51127 VA New Kent,62.47
+Virginia,51700 VA Newport News city,36.7
+Virginia,51710 VA Norfolk city,21.98
+Virginia,51131 VA Northampton,29.99
+Virginia,51133 VA Northumberland,54.65
+Virginia,51720 VA Norton City,65.03
+Virginia,51135 VA Nottoway,61.96
+Virginia,51137 VA Orange,53.64
+Virginia,51139 VA Page,62.13
+Virginia,51141 VA Patrick,70.21
+Virginia,51730 VA Petersburg City,44.43
+Virginia,51143 VA Pittsylvania,55.23
+Virginia,51735 VA Poquoson city,27.43
+Virginia,51740 VA Portsmouth city,23.66
+Virginia,51145 VA Powhatan,63.37
+Virginia,51147 VA Prince Edward,63.19
+Virginia,51149 VA Prince George,60.19
+Virginia,51153 VA Prince William,52.02
+Virginia,51155 VA Pulaski,55.84
+Virginia,51750 VA Radford City,43.54
+Virginia,51157 VA Rappahannock,65.58
+Virginia,51760 VA Richmond City,33.55
+Virginia,51159 VA Richmond,58.66
+Virginia,51770 VA Roanoke City,29.27
+Virginia,51161 VA Roanoke,67.13
+Virginia,51163 VA Rockbridge,65.15
+Virginia,51165 VA Rockingham,55.46
+Virginia,51167 VA Russell,59.63
+Virginia,51775 VA Salem City,31.07
+Virginia,51169 VA Scott,67.6
+Virginia,51171 VA Shenandoah,57.23
+Virginia,51173 VA Smyth,65.59
+Virginia,51175 VA Southampton,56.46
+Virginia,51177 VA Spotsylvania,60.71
+Virginia,51179 VA Stafford,62.34
+Virginia,51790 VA Staunton City,36
+Virginia,51800 VA Suffolk city,54.6
+Virginia,51181 VA Surry,59.74
+Virginia,51183 VA Sussex,63.3
+Virginia,51185 VA Tazewell,66.34
+Virginia,51810 VA Virginia Beach city,39.05
+Virginia,51187 VA Warren,62.17
+Virginia,51191 VA Washington,57.49
+Virginia,51820 VA Waynesboro City,35.21
+Virginia,51193 VA Westmoreland,56.08
+Virginia,51830 VA Williamsburg city,55.02
+Virginia,51840 VA Winchester city,23.56
+Virginia,51195 VA Wise,73.73
+Virginia,51197 VA Wythe,54.86
+Virginia,51199 VA York,60.84
+Washington,53001 WA Adams,2.33
+Washington,53003 WA Asotin,13.59
+Washington,53005 WA Benton,4.03
+Washington,53007 WA Chelan,36.95
+Washington,53009 WA Clallam,67.77
+Washington,53011 WA Clark,45.94
+Washington,53013 WA Columbia,21.15
+Washington,53015 WA Cowlitz,65.15
+Washington,53017 WA Douglas,2.53
+Washington,53019 WA Ferry,42.46
+Washington,53021 WA Franklin,5.56
+Washington,53023 WA Garfield,13.12
+Washington,53025 WA Grant,5.12
+Washington,53027 WA Grays Harbor,66.23
+Washington,53029 WA Island,44.16
+Washington,53031 WA Jefferson,65.74
+Washington,53033 WA King,56.89
+Washington,53035 WA Kitsap,55.7
+Washington,53037 WA Kittitas,28.99
+Washington,53039 WA Klickitat,22.75
+Washington,53041 WA Lewis,64.8
+Washington,53043 WA Lincoln,3.85
+Washington,53045 WA Mason,64.37
+Washington,53047 WA Okanagon,25.38
+Washington,53049 WA Pacific,65.75
+Washington,53051 WA Pend Oreille,57.61
+Washington,53053 WA Pierce,52.02
+Washington,53055 WA San Juan,55.3
+Washington,53057 WA Skagit,56.44
+Washington,53059 WA Skamania,68.66
+Washington,53061 WA Snohomish,57.47
+Washington,53063 WA Spokane,17.65
+Washington,53065 WA Stevens,42.84
+Washington,53067 WA Thurston,50.95
+Washington,53069 WA Wahkiakum,65.7
+Washington,53071 WA Walla Walla,7.4
+Washington,53073 WA Whatcom,50
+Washington,53075 WA Whitman,5.86
+Washington,53077 WA Yakima,24.69
+West Virginia,54001 WV Barbour,66.66
+West Virginia,54003 WV Berkeley,51.27
+West Virginia,54005 WV Boone,76.97
+West Virginia,54007 WV Braxton,76.56
+West Virginia,54009 WV Brooke,57.52
+West Virginia,54011 WV Cabell,65.93
+West Virginia,54013 WV Calhoun,76.31
+West Virginia,54015 WV Clay,79.17
+West Virginia,54017 WV Doddridge,75.8
+West Virginia,54019 WV Fayette,75.93
+West Virginia,54021 WV Gilmer,77.54
+West Virginia,54023 WV Grant,65.36
+West Virginia,54025 WV Greenbrier,69.15
+West Virginia,54027 WV Hampshire,67.29
+West Virginia,54029 WV Hancock,55.37
+West Virginia,54031 WV Hardy,70.34
+West Virginia,54033 WV Harrison,64.63
+West Virginia,54035 WV Jackson,63.14
+West Virginia,54037 WV Jefferson,38.58
+West Virginia,54039 WV Kanawha,74.04
+West Virginia,54041 WV Lewis,72.16
+West Virginia,54043 WV Lincoln,77.27
+West Virginia,54045 WV Logan,76.35
+West Virginia,54047 WV McDowell,67.11
+West Virginia,54049 WV Marion,63.19
+West Virginia,54051 WV Marshall,59.14
+West Virginia,54053 WV Mason,79.87
+West Virginia,54055 WV Mercer,71.02
+West Virginia,54057 WV Mineral,65.88
+West Virginia,54059 WV Mingo,76.89
+West Virginia,54061 WV Monongalia,63.67
+West Virginia,54063 WV Monroe,62.69
+West Virginia,54065 WV Morgan,69.37
+West Virginia,54067 WV Nicholas,74
+West Virginia,54069 WV Ohio,53.46
+West Virginia,54071 WV Pendleton,73.29
+West Virginia,54073 WV Pleasant,69.52
+West Virginia,54075 WV Pocahontas,78.68
+West Virginia,54077 WV Preston,66.75
+West Virginia,54079 WV Putnam,63.65
+West Virginia,54081 WV Raleigh,72.5
+West Virginia,54083 WV Randolph,77.88
+West Virginia,54085 WV Ritchie,73.6
+West Virginia,54087 WV Roane,72.4
+West Virginia,54089 WV Summers,71.7
+West Virginia,54091 WV Taylor,62.43
+West Virginia,54093 WV Tucker,74
+West Virginia,54095 WV Tyler,70.48
+West Virginia,54097 WV Upshur,67.65
+West Virginia,54099 WV Wayne,76.09
+West Virginia,54101 WV Webster,80.72
+West Virginia,54103 WV Wetzel,76.63
+West Virginia,54105 WV Wirt,72.19
+West Virginia,54107 WV Wood,58.28
+West Virginia,54109 WV Wyoming,78.61
+Wisconsin,55001 WI Adams,37.82
+Wisconsin,55003 WI Ashland,70.82
+Wisconsin,55005 WI Barron,38.94
+Wisconsin,55007 WI Bayfield,69.3
+Wisconsin,55009 WI Brown,21.79
+Wisconsin,55011 WI Buffalo,50.1
+Wisconsin,55013 WI Burnett,51.97
+Wisconsin,55015 WI Calumet,12.55
+Wisconsin,55017 WI Chippewa,41.46
+Wisconsin,55019 WI Clark,38.16
+Wisconsin,55021 WI Columbia,27.34
+Wisconsin,55023 WI Crawford,51.29
+Wisconsin,55025 WI Dane,23.71
+Wisconsin,55027 WI Dodge,16.85
+Wisconsin,55029 WI Door,39.54
+Wisconsin,55031 WI Douglas,63.78
+Wisconsin,55033 WI Dunn,39.99
+Wisconsin,55035 WI Eau Claire,44.33
+Wisconsin,55037 WI Florence,69.98
+Wisconsin,55039 WI Fond du Lac,16.33
+Wisconsin,55041 WI Forest,70.61
+Wisconsin,55043 WI Grant,33.6
+Wisconsin,55045 WI Green,22.11
+Wisconsin,55047 WI Green Lake,23.73
+Wisconsin,55049 WI Iowa,38.08
+Wisconsin,55051 WI Iron,67.67
+Wisconsin,55053 WI Jackson,50.18
+Wisconsin,55055 WI Jefferson,20.65
+Wisconsin,55057 WI Juneau,41.7
+Wisconsin,55059 WI Kenosha,18.75
+Wisconsin,55061 WI Kewaunee,24.27
+Wisconsin,55063 WI La Crosse,47.05
+Wisconsin,55065 WI Lafayette,20.69
+Wisconsin,55067 WI Langlade,59.71
+Wisconsin,55069 WI Lincoln,61.91
+Wisconsin,55071 WI Manitowoc,23.96
+Wisconsin,55073 WI Marathon,39.06
+Wisconsin,55075 WI Marinette,61.89
+Wisconsin,55077 WI Marquette,38.48
+Wisconsin,55078 WI Menominee,76.94
+Wisconsin,55079 WI Milwaukee,19.12
+Wisconsin,55081 WI Monroe,45.73
+Wisconsin,55083 WI Oconto,50.64
+Wisconsin,55085 WI Oneida,59.7
+Wisconsin,55087 WI Outagamie,21.98
+Wisconsin,55089 WI Ozaukee,24.01
+Wisconsin,55091 WI Pepin,40.58
+Wisconsin,55093 WI Pierce,36.31
+Wisconsin,55095 WI Polk,43.3
+Wisconsin,55097 WI Portage,32.6
+Wisconsin,55099 WI Price,63.03
+Wisconsin,55101 WI Racine,18.04
+Wisconsin,55103 WI Richland,51.94
+Wisconsin,55105 WI Rock,16.43
+Wisconsin,55107 WI Rusk,57.99
+Wisconsin,55109 WI St. Croix,41.11
+Wisconsin,55111 WI Sauk,65.55
+Wisconsin,55113 WI Sawyer,43.01
+Wisconsin,55115 WI Shawano,23.7
+Wisconsin,55117 WI Sheboygan,29.49
+Wisconsin,55119 WI Taylor,52.29
+Wisconsin,55121 WI Trempealeau,45.01
+Wisconsin,55123 WI Vernon,47.27
+Wisconsin,55125 WI Vilas,59.2
+Wisconsin,55127 WI Walworth,20.66
+Wisconsin,55129 WI Washburn,59.44
+Wisconsin,55131 WI Washington,26.15
+Wisconsin,55133 WI Waukesha,28.65
+Wisconsin,55135 WI Waupaca,40.25
+Wisconsin,55137 WI Waushara,36.15
+Wisconsin,55139 WI Winnebago,12.97
+Wisconsin,55141 WI Wood,36.62
+Wyoming,56001 WY Albany,6.99
+Wyoming,56003 WY Big Horn,6.37
+Wyoming,56005 WY Campbell,2.41
+Wyoming,56007 WY Carbon,8.4
+Wyoming,56009 WY Converse,4.02
+Wyoming,56011 WY Crook,12.68
+Wyoming,56013 WY Fremont,7.87
+Wyoming,56015 WY Goshen,1.53
+Wyoming,56017 WY Hot Springs,6.83
+Wyoming,56019 WY Johnson,8.62
+Wyoming,56021 WY Laramie,2.55
+Wyoming,56023 WY Lincoln,15.93
+Wyoming,56025 WY Natrona,3.5
+Wyoming,56027 WY Niobrara,1.73
+Wyoming,56029 WY Park,19.73
+Wyoming,56031 WY Platte,2.82
+Wyoming,56033 WY Sheridan,13.73
+Wyoming,56035 WY Sublette,13.05
+Wyoming,56037 WY Sweetwater,1.86
+Wyoming,56039 WY Teton,32.5
+Wyoming,56041 WY Uinta,7.62
+Wyoming,56043 WY Washakie,4.13
+Wyoming,56045 WY Weston,4.21
