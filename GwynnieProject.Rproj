@@ -1,5 +1,4 @@
 Version: 1.0
-ProjectId: 646180f8-5fdc-4437-8aa9-422d94472540
 
 RestoreWorkspace: Default
 SaveWorkspace: Default
@@ -12,5 +11,3 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
-
-ProjectName: Gwynnie and Aria's Data Science Projects
