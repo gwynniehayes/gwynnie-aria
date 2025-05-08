@@ -49,7 +49,12 @@ wildfires2024 <- read_html("https://en.wikipedia.org/wiki/Wildfires_in_the_Unite
 fires2024 <- html_table(wildfires2024, header = TRUE, fill = TRUE)[[3]]
 ```
 
-
+```{r}
+mutate(State = str_split(State, ","), County = str_split(County, ",")) |>
+  unnest(State) |>
+  unnest(County) |>
+  mutate(State = str_replace(State, " ", ""), County = str_replace(County, " ", "")) 
+```
 
 ```{r}
 fires <- fires2024 |>
@@ -58,11 +63,27 @@ fires <- fires2024 |>
   mutate(State = str_split(State, ","), County = str_split(County, ",")) |>
   unnest(State) |>
   unnest(County) |>
-  mutate(State = str_replace(State, " ", ""), County = str_replace(County, " ", "")) 
+  mutate(State = str_replace(State, " ", ""), County = str_replace(County, " ", "")) |>
+  filter(!(str_detect(County, "(OK)") & State == "Texas"))|>
+  filter(!(str_detect(County, "(TX)") & State == "Oklahoma")) |>  
+  filter(!(str_detect(County, "(WV)") & State == "Virginia")) |>
+  filter(!(str_detect(County, "(VA)") & State == "West Virginia")) |>
+  filter(!(str_detect(County, "(WY)") & State == "Montana")) |>
+  filter(!(str_detect(County, "(MT)") & State == "Wyoming")) |>
+  filter(!(str_detect(County, "(UT)") & State == "Colorado"))|>
+  filter(!(str_detect(County, "(CO)") & State == "Utah")) |>
+  mutate(County = str_remove(County, "[A-Z][A-Z]"), 
+         County = str_remove(County, "\\(\\)"), 
+         Acres = str_remove(Acres, ","),
+         Acres = str_remove(Acres, ","))
+```
 
+1,270
 
-states <- c("TX", "OK", "VA", "WV", "CO", "UT", "MT", "WY")
-
-please_work <- fires |>
-  filter(str_detect(County, "([A-Z][A-Z])")) 
+```{r}
+probably_notgood <- fires |>
+  mutate(Acres = ifelse(Name == "Smokehouse Creek" & State == "Oklahoma", 31596, Acres),
+         Acres = ifelse(Name == "Smokehouse Creek" & State == "Texas", 1026886, Acres),
+         Acres = ifelse(Name == "Line Creek" & State == "Montana", 1270, Acres),
+         Acres = ifelse(Name == "Line Creek" & State == "Wyoming", 1226, Acres))
 ```
