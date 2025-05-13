@@ -6,10 +6,9 @@ output:
     vertical_layout: scroll
     theme: paper
 runtime: shiny
-
 editor_options: 
-  chunk_output_type: console
   
+  chunk_output_type: console
 ---
 
 ```{r, warning= FALSE, echo=FALSE}
@@ -32,7 +31,7 @@ us_county <- map_data("county") |>
         county = str_to_title(county))
 
 
-fires <- read_csv("~/Desktop/15/SDS264/projects/Project_2/Final Project/final_fires.csv") |>
+fires <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/final_fires.csv") |>
   mutate(percent_burned = acres/county_size_acres * 100)
 
 states <- read_sf("https://rstudio.github.io/leaflet/json/us-states.geojson") |>
@@ -40,10 +39,10 @@ states <- read_sf("https://rstudio.github.io/leaflet/json/us-states.geojson") |>
   select("name", "geometry") |>
   rename(state = name)
 
-forests <- read.csv("~/Desktop/15/SDS264/data/forests.csv") |>
+forests <- read.csv("https://raw.githubusercontent.com/gwynniehayes/SDS264/refs/heads/main/data/forests.csv") |>
   mutate('forest_cover' = forest_area/land_area * 100) 
 
-forest_county <- read.csv("~/Desktop/15/SDS264/projects/Project_2/Final Project/forest_county.csv")
+forest_county <- read.csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/forest_county.csv")
 
 counties_sf <- counties(cb = TRUE, resolution = "5m") |> 
   st_transform(crs = 4326) |>
