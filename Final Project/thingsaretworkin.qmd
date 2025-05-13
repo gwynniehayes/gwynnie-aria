@@ -36,4 +36,55 @@ ggplot() +
 ```
 
 
+```{r}
+
+
+fires25 <- fires |> filter(str_detect(containment_date, "2025"))
+noend <- fires |> filter(str_detect(containment_date, "[^0,1,2,3,4,5,6,7,8,9]$"))
+
+end24 <- fires |> anti_join(fires25) |> anti_join(noend) |>
+  drop_na(containment_date) |>
+  filter(containment_date != "unknown",
+         containment_date != "2024") |>
+  mutate(containment_date = fct_recode(containment_date, "November 4" = "{November 4"))
+
+end25 <- fires25 |> 
+  mutate(containment_date = fct_recode(containment_date, 
+                                       "January 5, 2025" = "January 5 (2025)"),
+        containment_date = as.factor(containment_date))
+
+end24 <- end24 |>
+  mutate(containment_date = glue_data(end24, "{containment_date}, 2024"),
+         containment_date = as.factor(containment_date))
+
+end24 <- end24 |> full_join(end25) |> select(-start_date)
+
+start24 <- fires |>
+  mutate(start_date = glue_data(fires, "{start_date}, 2024")) |> select(-containment_date)
+
+dated_fires <- end24 |> left_join(start24) |> 
+  relocate(containment_date, .after = start_date)
+
+dated_fires <- dated_fires |>
+  mutate(start_date = mdy(start_date),
+         containment_date = mdy(containment_date),
+         duration = containment_date - start_date,
+         duration_cat = as.character(duration),
+         duration_num = parse_number(duration_cat),
+         acres_per_day = acres/duration_num) 
+
+
+# 
+# end24
+# 
+# 
+# 
+# 
+#   ifelse((containment_date != str_detect("2025")) 
+#          mutate(containment_date = containment_date),
+#          mutate(containment_date = glue_data(fires, "{containment_date}, 2024")))
+#          
+```
+
+
 
