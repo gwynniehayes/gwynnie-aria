@@ -112,9 +112,9 @@ Column
 ---------
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderPlot({
-forests |> full_join(us_county) |>
+forest_county |> full_join(us_county) |>
   ggplot(mapping = aes(x = long, y = lat, group = group)) + 
-  geom_polygon(aes(fill = forest_cover), color = "black", linewidth = 0.2) + 
+  geom_polygon(aes(fill = percent_forest_cover), color = "black", linewidth = 0.2) + 
   labs(fill = "% Forest Coverage", title = "Percent of Forest Coverage in each US State", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report") +
   coord_map() +
   scale_fill_viridis(option = "viridis", direction = -1) +
