@@ -11,7 +11,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, warning= FALSE, echo=FALSE}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 library(tidyverse)
 library(tmap)
 library(ggplot2)
@@ -57,7 +57,7 @@ So I heard you like Graphs??
 
 Inputs {.sidebar}
 -------------------------
-```{r}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 inputPanel(
   selectInput("state4", label = "Select a State",
               choices = c("None", fires$state)),
@@ -72,7 +72,7 @@ inputPanel(
 Column
 --------
 
-```{r}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderPlot({
   fires |>
     filter(state == input$state4) |>
@@ -87,7 +87,7 @@ Counties and their Forests
 
 Inputs {.sidebar}
 -------------------------
-```{r}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 inputPanel(
   selectInput("state", label = "Select a State",
               choices = c("None", states$state)))
@@ -96,7 +96,7 @@ inputPanel(
 Column 
 --------------------
 
-```{r}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderPlot({
   forest_county|> full_join(us_county) |>
     filter(state == input$state) |> 
@@ -110,7 +110,7 @@ renderPlot({
 
 Column 
 ---------
-```{r}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderPlot({
 forests |> full_join(us_county) |>
   ggplot(mapping = aes(x = long, y = lat, group = group)) + 
@@ -124,7 +124,7 @@ forests |> full_join(us_county) |>
 
 Fire!
 ===============
-```{r}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 inputPanel(
   selectInput("state2", label = "Select a State",
               choices = c("None", fires$state)))
@@ -132,7 +132,7 @@ inputPanel(
 
 Column 
 -------------
-```{r}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderPlot({
   fires |> full_join(us_county) |>
     filter(state == input$state2) |>
@@ -146,7 +146,7 @@ renderPlot({
 
 Column 
 ------------
-```{r}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderPlot({
 fires |> full_join(us_county) |>
   ggplot(mapping = aes(x = long, y = lat, group = group)) + 
@@ -161,7 +161,7 @@ fires |> full_join(us_county) |>
 Interactive Fire!!! 
 ==========
 
-```{r}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 inputPanel(
   selectInput("state3", label = "Select a State",
               choices = fires$state), value = "Minnesota")
@@ -169,7 +169,7 @@ inputPanel(
 
 ## Interactive Maps
 
-```{r}
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderLeaflet({
     fires_sf <- fires |>
       full_join(counties_sf) |>
