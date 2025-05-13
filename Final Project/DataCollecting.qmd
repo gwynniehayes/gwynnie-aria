@@ -36,6 +36,7 @@ percent_forest <- percent_forest |>
 forest_county <- percent_forest |>
   left_join(county_data) |>
   mutate(county_size_acres = sqmi * 640, forest_cover_acres = (percent_forest_cover / 100 * county_size_acres)) |> select(!sqmi)
+
 ```
 
 Fires 
@@ -47,13 +48,6 @@ is_valid_robotstxt("https://en.wikipedia.org/wiki/Wildfires_in_the_United_States
 wildfires2024 <- read_html("https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024")
 
 fires2024 <- html_table(wildfires2024, header = TRUE, fill = TRUE)[[3]]
-```
-
-```{r}
-mutate(State = str_split(State, ","), County = str_split(County, ",")) |>
-  unnest(State) |>
-  unnest(County) |>
-  mutate(State = str_replace(State, " ", ""), County = str_replace(County, " ", "")) 
 ```
 
 ```{r}
@@ -78,12 +72,36 @@ fires <- fires2024 |>
          Acres = str_remove(Acres, ","))
 ```
 
-1,270
+```{r}
+wildfires <- fires |>
+  mutate(Acres = ifelse(Name == "Smokehouse Creek" & State == "Oklahoma", 15798, Acres),
+         Acres = ifelse(Name == "Smokehouse Creek" & State == "Texas", 146698, Acres),
+         Acres = ifelse(Name == "Line Creek" & State == "Montana", 1270, Acres),
+         Acres = ifelse(Name == "Line Creek" & State == "Wyoming", 1226, Acres),
+         Acres = ifelse(Name == "Waites Run" & State == "West Virginia", 4361, Acres),
+         Acres = ifelse(Name == "Waites Run" & State == "Virginia", 1862, Acres),
+         Acres = ifelse(Name == "Rabbit Valley" & State == "Utah", 454, Acres),
+         Acres = ifelse(Name == "Rabbit Valley" & State == "Colorado", 414, Acres),
+         Acres = ifelse(Name == "Badger" & State == "Wyoming", 7175, Acres),
+         Acres = ifelse(Name == "Badger" & State == "Montana", 799, Acres),
+         Acres = ifelse(Name == "Remington" & State == "Wyoming", 18184, Acres),
+         Acres = ifelse(Name == "Remington" & State == "Montana", 80000, Acres)) |>
+  mutate(County = str_replace(County, "(?<=[a-z])(?=[A-Z])", " "),
+         State = str_replace(State, "(?<=[a-z])(?=[A-Z])", " "), 
+         County = str_replace(County, "Mc Kenzie", "McKenzie"),
+         County = str_replace(County, "Mc Intosh", "McIntosh")) |>
+  mutate(County = str_remove(County, "County")) |> 
+  janitor::clean_names() |>
+  filter(state != "Alaska", state != "Hawaii") |>
+  mutate(county = str_squish(county))
+```
 
 ```{r}
-probably_notgood <- fires |>
-  mutate(Acres = ifelse(Name == "Smokehouse Creek" & State == "Oklahoma", 31596, Acres),
-         Acres = ifelse(Name == "Smokehouse Creek" & State == "Texas", 1026886, Acres),
-         Acres = ifelse(Name == "Line Creek" & State == "Montana", 1270, Acres),
-         Acres = ifelse(Name == "Line Creek" & State == "Wyoming", 1226, Acres))
+final_fires <- wildfires |> left_join(forest_county) |>
+  na.omit()
 ```
+
+```{r}
+write.csv(final_fires, "~/Desktop/15/SDS264/projects/Project_2/Final Project/final_fires.csv")
+```
+

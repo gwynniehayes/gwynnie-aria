@@ -1,0 +1,210 @@
+---
+title: "Final Project"
+authors: "Gwynnie Hayes and Aria Whalen"
+output: 
+  flexdashboard::flex_dashboard:
+    vertical_layout: scroll
+    theme: paper
+runtime: shiny
+
+editor_options: 
+  chunk_output_type: console
+  
+---
+
+```{r, warning= FALSE, echo=FALSE}
+library(tidyverse)
+library(tmap)
+library(ggplot2)
+library(sf)
+library(maps)
+library(viridis)
+library(dplyr)
+library(htmltools)
+library(glue)
+library(leaflet)
+library(tigris)
+
+us_county <- map_data("county") |>
+  rename(state = region) |>
+  rename(county = subregion) |>
+  mutate(state = str_to_title(state),
+        county = str_to_title(county))
+
+
+fires <- read_csv("~/Desktop/15/SDS264/projects/Project_2/Final Project/final_fires.csv") |>
+  mutate(percent_burned = acres/county_size_acres * 100)
+
+states <- read_sf("https://rstudio.github.io/leaflet/json/us-states.geojson") |>
+  filter(!(name %in% c("Alaska", "Hawaii", "Puerto Rico", "District of Columbia"))) |>
+  select("name", "geometry") |>
+  rename(state = name)
+
+forests <- read.csv("~/Desktop/15/SDS264/data/forests.csv") |>
+  mutate('forest_cover' = forest_area/land_area * 100) 
+
+forest_county <- read.csv("~/Desktop/15/SDS264/projects/Project_2/Final Project/forest_county.csv")
+
+counties_sf <- counties(cb = TRUE, resolution = "5m") |> 
+  st_transform(crs = 4326) |>
+  select("NAME", "STATE_NAME", "geometry") |>
+  janitor::clean_names() |>
+  rename(state = state_name) |>
+  rename(county = name)
+```
+
+So I heard you like Graphs??
+======================
+
+Inputs {.sidebar}
+-------------------------
+```{r}
+inputPanel(
+  selectInput("state4", label = "Select a State",
+              choices = c("None", fires$state)),
+  
+  selectInput("var", label = "Select a Variable",
+              choices = c("% Forest Coverage" = "percent_forest_cover", 
+                          "Acres Burned" = "acres", 
+                          "County Size" = "county_size_acres",
+                          "Percent Burned" = "percent_burned")))
+```
+
+Column
+--------
+
+```{r}
+renderPlot({
+  fires |>
+    filter(state == input$state4) |>
+    ggplot(aes(y = .data[[input$var]], x = county, fill = county)) +
+    geom_col(show.legend = FALSE) 
+})
+```
+
+
+Counties and their Forests 
+=======================
+
+Inputs {.sidebar}
+-------------------------
+```{r}
+inputPanel(
+  selectInput("state", label = "Select a State",
+              choices = c("None", states$state)))
+```
+
+Column 
+--------------------
+
+```{r}
+renderPlot({
+  forest_county|> full_join(us_county) |>
+    filter(state == input$state) |> 
+    ggplot(mapping = aes(x = long, y = lat, group = group)) + 
+      geom_polygon(aes(fill = percent_forest_cover), color = "black") +
+      coord_map() +
+    scale_fill_viridis(option = "viridis", direction = -1) +
+    theme_linedraw()
+})
+```
+
+Column 
+---------
+```{r}
+renderPlot({
+forests |> full_join(us_county) |>
+  ggplot(mapping = aes(x = long, y = lat, group = group)) + 
+  geom_polygon(aes(fill = forest_cover), color = "black", linewidth = 0.2) + 
+  labs(fill = "% Forest Coverage", title = "Percent of Forest Coverage in each US State", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report") +
+  coord_map() +
+  scale_fill_viridis(option = "viridis", direction = -1) +
+  theme_linedraw()
+})
+```
+
+Fire!
+===============
+```{r}
+inputPanel(
+  selectInput("state2", label = "Select a State",
+              choices = c("None", fires$state)))
+```
+
+Column 
+-------------
+```{r}
+renderPlot({
+  fires |> full_join(us_county) |>
+    filter(state == input$state2) |>
+    ggplot(mapping = aes(x = long, y = lat, group = group)) + 
+      geom_polygon(aes(fill = acres), color = "black") +
+      coord_map() +
+    scale_fill_viridis(option = "magma", direction = -1) +
+    theme_linedraw()
+})
+```
+
+Column 
+------------
+```{r}
+renderPlot({
+fires |> full_join(us_county) |>
+  ggplot(mapping = aes(x = long, y = lat, group = group)) + 
+  geom_polygon(aes(fill = acres), color = "black", linewidth = 0.2) + 
+  labs(fill = "% Forest Coverage", title = "Percent of Forest Coverage in each US State", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report") +
+  coord_map() +
+  scale_fill_viridis(option = "magma", direction = -1) +
+  theme_linedraw()
+})
+```
+
+Interactive Fire!!! 
+==========
+
+```{r}
+inputPanel(
+  selectInput("state3", label = "Select a State",
+              choices = fires$state), value = "Minnesota")
+```
+
+## Interactive Maps
+
+```{r}
+renderLeaflet({
+    fires_sf <- fires |>
+      full_join(counties_sf) |>
+      filter(state == input$state3) |>
+      st_as_sf()
+    
+    pal <- colorNumeric("Reds", domain = fires_sf$acres)
+
+    fires_sf <- fires_sf |>
+      mutate(labels = str_c(state, ": ", " in " ,county, " county ", acres, " acres burned"))
+
+    labels <- lapply(fires_sf$labels, HTML)
+
+    leaflet(fires_sf) |>
+      setView(-97, 37.8, 4, 1) |>
+      addProviderTiles("Esri.WorldTopoMap") |>
+      addPolygons(
+        fillColor = ~pal(acres),
+        weight = 2,
+        opacity = 1,
+        color = "black",
+        fillOpacity = 0.6,
+        highlightOptions = highlightOptions(
+          weight = 3,
+          color = "magenta",
+          fillOpacity = 0.7,
+          bringToFront = TRUE),
+        label = labels,
+        labelOptions = labelOptions(
+          style = list("font-weight" = "normal", padding = "3px 8px"),
+          textsize = "12px",
+          direction = "auto")
+      )|>
+      addScaleBar(position = "bottomleft") 
+  })
+```
+
