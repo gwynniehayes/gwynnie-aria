@@ -1,0 +1,59 @@
+---
+title: "gwynnies super useful functions"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(stringr)
+library(rvest)
+library(polite)
+library(htmltools)
+library(robotstxt)
+```
+
+```{r}
+get_text_from_page <- function(page, css_selector) {
+  page |>
+    html_nodes(css_selector) |>
+    html_text()
+}
+
+scrape_countyname <- function(url) {
+    Sys.sleep(2)
+    page <- read_html(url)
+    county_name <- get_text_from_page(page, "b span , td~ td+ td a , td+ td b")
+    
+    tibble(county = county_name)
+}
+pages <- vector("list", length = 16)
+pos <- 0
+
+for (j in 1:16) {
+    pos <- pos + 1
+    url <- str_c("http://www.usa.com/rank/us--land-area--county-rank.htm?hl=&hlst=&wist=&yr=&dis=&sb=DESC&plow=&phigh=&ps=", j)
+    pages[[pos]] <- scrape_countyname(url)
+
+}
+county_names <- bind_rows(pages)
+```
+
+```{r}
+scrape_countyarea <- function(url) {
+    Sys.sleep(2)
+    page <- read_html(url)
+    county_area <- get_text_from_page(page, "b span , td:nth-child(2) , td b a")
+    
+    tibble(land_area = county_area)
+}
+page <- vector("list", length = 16)
+pos <- 0
+
+for (i in 1:16) {
+    pos <- pos + 1
+    url <- str_c("http://www.usa.com/rank/us--land-area--county-rank.htm?hl=&hlst=&wist=&yr=&dis=&sb=DESC&plow=&phigh=&ps=", i)
+    page[[pos]] <- scrape_countyarea(url)
+
+}
+county_areas <- bind_rows(page)
+```
