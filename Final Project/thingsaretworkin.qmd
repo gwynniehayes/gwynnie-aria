@@ -25,36 +25,45 @@ Sources:
 ```{r}
 county_point <- read_csv("https://raw.githubusercontent.com/StarryAri7/SDS264_F24/refs/heads/main/data/uscounties.csv") |> rename("state" = "state_name") |> select(county,state,lat,lng)
 
+county_point$Latitude <- jitter(county_point$lat, factor = 0.1)
+county_point$Longitude <- jitter(county_point$lng, factor = 0.1)
+
 county_sf <- st_as_sf(county_point, coords = c("lng", "lat"))
 
 county_sf <- st_set_crs(county_sf, 4326)
 
-test <- county_sf |> left_join(fires) |> drop_na(acres)
+test <- county_sf |> left_join(fires) |> drop_na(acres) %>% 
+  st_jitter(factor = 0.005) 
 
-test |>
-ggplot() +
-  ggspatial::annotation_map_tile(zoom = 5) +
-  geom_sf(aes(size = acres))
 
 firesmall <-  makeIcon(
   iconUrl = "https://github.com/StarryAri7/SDS264_F24/blob/main/data/fire.png?raw=true",
   iconWidth = 28, iconHeight = 20
   )
 
-
 firelarge <-  makeIcon(
   iconUrl = "https://github.com/StarryAri7/SDS264_F24/blob/main/data/fire.png?raw=true",
   iconWidth = 38, iconHeight = 28
   )
 
-test |> leaflet() |> addProviderTiles("OpenStreetMap") |>
-   addMarkers(icon = ~ firesmall, popup = ~htmlEscape(acres))
 
 test <- test |> 
-  mutate(acrespopup = str_glue("Fire Size: {acres} Acres"))
+  mutate(acrespopup = str_glue("The {name} Fire in {county} County burned {acres} Acres"))
 
-test |> leaflet() |> addProviderTiles("OpenStreetMap") |>
-   addMarkers(icon = ~ firesmall,  popup = ~htmlEscape(acrespopup))
+test |> leaflet() |> addProviderTiles("Stadia.StamenTerrain") |>
+   addMarkers(icon = ~ firesmall,  popup = ~paste(
+              "<strong> Name: </strong>", name, "Fire <br>",
+              "<strong> Area Burned: </strong>", acres, "Acres <br>",
+              "<strong> County: </strong>", county, "County <br>"
+   ))
+
+
+test |> leaflet() |> addProviderTiles("Stadia.StamenTerrain") |>
+   addCircleMarkers(radius = ~ acres/15000, color = "#F2572C", popup = ~paste(
+              "<strong> Name: </strong>", name, "Fire <br>",
+              "<strong> Area Burned: </strong>", acres, "Acres <br>",
+              "<strong> County: </strong>", county, "County <br>"
+   ))
 
 # 
 #   if(test$acres < 1000){

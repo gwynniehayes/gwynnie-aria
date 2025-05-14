@@ -44,12 +44,32 @@ forests <- read.csv("https://raw.githubusercontent.com/gwynniehayes/SDS264/refs/
 
 forest_county <- read.csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/forest_county.csv")
 
-counties_sf <- counties(cb = TRUE, resolution = "5m") |> 
+forest_county_oglala <- forest_county |> 
+  filter(state == "South Dakota", county == "Shannon") |>
+  mutate(county = fct_recode(county, "Oglala Lakota" = "Shannon")) 
+
+
+forest_county <- forest_county |> 
+  mutate(county = fct_recode(county, "Okanogan" = "Okanagon",
+                                     "De Baca" = "DeBaca",
+                                     "Doña Ana" = "Dona Ana",
+                                     "DeWitt" = "De Witt",
+                                     "LaSalle" = "La Salle", 
+                                     "LaPorte" = "La Porte",
+                                     "LaGrange" = "Lagrange",
+                                     "DeKalb" = "De Kalb",
+                                     "Pleasants" = "Pleasant")) |> slice(-2384)
+
+forest_county <- forest_county |> full_join(forest_county_oglala)
+
+counties_sf <- counties(cb = TRUE, resolution = "5m", year = 2021) |> 
   st_transform(crs = 4326) |>
   select("NAME", "STATE_NAME", "geometry") |>
   janitor::clean_names() |>
   rename(state = state_name) |>
-  rename(county = name)
+  rename(county = name) |>
+  mutate(county = fct_recode(county, "LaSalle" = "La Salle",
+                                     "DeWitt" = "De Witt"))
 
 county_point <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/cfips_location.csv") |> rename(county = name)
 ```
@@ -98,7 +118,7 @@ Column
 
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderPlot({
-  forest_county|> full_join(us_county) |>
+  forest_county |> full_join(us_county) |>
     filter(state == input$state) |> 
     ggplot(mapping = aes(x = long, y = lat, group = group)) + 
       geom_polygon(aes(fill = percent_forest_cover), color = "black") +
@@ -111,14 +131,21 @@ renderPlot({
 Column 
 ---------
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
+
+ee <- 
+
 renderPlot({
-forest_county |> full_join(us_county) |>
-  ggplot(mapping = aes(x = long, y = lat, group = group)) + 
-  geom_polygon(aes(fill = percent_forest_cover), color = "black", linewidth = 0.2) + 
-  labs(fill = "% Forest Coverage", title = "Percent of Forest Coverage in each US State", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report") +
-  coord_map() +
-  scale_fill_viridis(option = "viridis", direction = -1) +
-  theme_linedraw()
+counties_sf |> left_join(forest_county) |> drop_na(percent_forest_cover) |>
+    ggplot() + geom_sf(aes(fill = percent_forest_cover)) +
+    scale_fill_viridis(option = "viridis", direction = -1) 
+    
+    
+  3# ggplot(mapping = aes(x = long, y = lat, group = group)) + 
+  # geom_polygon(aes(fill = percent_forest_cover), color = "black", linewidth = 0.2) + 
+  # labs(fill = "% Forest Coverage", title = "Percent of Forest Coverage in each US State", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report") +
+  # coord_map() +
+  # scale_fill_viridis(option = "viridis", direction = -1) +
+  # theme_linedraw()
 })
 ```
 
