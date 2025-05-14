@@ -32,8 +32,7 @@ us_county <- map_data("county") |>
 
 
 fires <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/final_fires.csv") |>
-  mutate(percent_county_burned = acres/county_size_acres * 100,
-         percent_forest_burned = acres/forest_cover_acres * 100)
+  slice(-77)
 
 states <- read_sf("https://rstudio.github.io/leaflet/json/us-states.geojson") |>
   filter(!(name %in% c("Alaska", "Hawaii", "Puerto Rico", "District of Columbia"))) |>
@@ -115,6 +114,19 @@ dated_fires <- dated_fires |>
          duration_num = duration_num + 1,
          acres_per_day = acres/duration_num) 
 
+
+trueburn <- dated_fires |> group_by(name) |> 
+  reframe(n=n(),
+            true_acres = acres/n,
+          county = county) |> print(n=20)
+
+
+dated_fires <- dated_fires |> left_join(trueburn) 
+
+dated_fires <- dated_fires |>
+  mutate(percent_county_burned = true_acres/county_size_acres * 100,
+         percent_forest_burned = true_acres/forest_cover_acres * 100)
+
 ```
 
 So I heard you like Graphs??
@@ -137,6 +149,7 @@ inputPanel(
                           "Duration of Fire" = "duration_num",
                           "Rate of Burn" = "acres_per_day"))
 )
+
 ```
 Column
 --------
