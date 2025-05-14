@@ -19,21 +19,53 @@ library(leaflet)
 library(tigris)
 ```
 
+Sources:
+# https://simplemaps.com/data/us-counties
+# https://www.streamlinehq.com/emojis/download/fire--31878
 ```{r}
-county_point <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/cfips_location.csv")
+county_point <- read_csv("https://raw.githubusercontent.com/StarryAri7/SDS264_F24/refs/heads/main/data/uscounties.csv") |> rename("state" = "state_name") |> select(county,state,lat,lng)
 
-county_sf <- st_as_sf(county_point, coords = c("lng", "lat")) |>
-  rename("county" = "name")
+county_sf <- st_as_sf(county_point, coords = c("lng", "lat"))
 
 county_sf <- st_set_crs(county_sf, 4326)
 
-test <- county_sf |> left_join(fires) |> drop_na()
+test <- county_sf |> left_join(fires) |> drop_na(acres)
 
 test |>
 ggplot() +
   ggspatial::annotation_map_tile(zoom = 5) +
   geom_sf(aes(size = acres))
 
+firesmall <-  makeIcon(
+  iconUrl = "https://github.com/StarryAri7/SDS264_F24/blob/main/data/fire.png?raw=true",
+  iconWidth = 28, iconHeight = 20
+  )
+
+
+firelarge <-  makeIcon(
+  iconUrl = "https://github.com/StarryAri7/SDS264_F24/blob/main/data/fire.png?raw=true",
+  iconWidth = 38, iconHeight = 28
+  )
+
+test |> leaflet() |> addProviderTiles("OpenStreetMap") |>
+   addMarkers(icon = ~ firesmall, popup = ~htmlEscape(acres))
+
+test <- test |> 
+  mutate(acrespopup = str_glue("Fire Size: {acres} Acres"))
+
+test |> leaflet() |> addProviderTiles("OpenStreetMap") |>
+   addMarkers(icon = ~ firesmall,  popup = ~htmlEscape(acrespopup))
+
+# 
+#   if(test$acres < 1000){
+#     iconWidth = 15 & iconHeight = 10
+#   }else if(test$acres > 1000 & test$acres < 50000){
+#     iconWidth = 25 & iconHeight = 20
+#   } else if(test$acres > 50000 & test$acres < 100000){
+#     iconWidth = 35 & iconHeight = 30
+#   }else{
+#     iconWidth = 45 & iconHeight = 40
+#   }    
 
 ```
 
