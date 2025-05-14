@@ -32,7 +32,8 @@ us_county <- map_data("county") |>
 
 
 fires <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/final_fires.csv") |>
-  mutate(percent_burned = acres/county_size_acres * 100)
+  mutate(percent_county_burned = acres/county_size_acres * 100,
+         percent_forest_burned = acres/forest_cover_acres * 100)
 
 states <- read_sf("https://rstudio.github.io/leaflet/json/us-states.geojson") |>
   filter(!(name %in% c("Alaska", "Hawaii", "Puerto Rico", "District of Columbia"))) |>
@@ -69,9 +70,51 @@ counties_sf <- counties(cb = TRUE, resolution = "5m", year = 2021) |>
   rename(state = state_name) |>
   rename(county = name) |>
   mutate(county = fct_recode(county, "LaSalle" = "La Salle",
-                                     "DeWitt" = "De Witt"))
+                                     "DeWitt" = "De Witt",
+                                     "Dade" = "Miami-Dade"))
 
 county_point <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/cfips_location.csv") |> rename(county = name)
+
+fullcounty <- counties_sf |> left_join(forest_county) |> drop_na(percent_forest_cover)
+
+pal <- colorNumeric("viridis", domain = c(0,100), reverse = T)
+
+
+fires25 <- fires |> filter(str_detect(containment_date, "2025"))
+noend <- fires |> filter(str_detect(containment_date, "[^0,1,2,3,4,5,6,7,8,9]$"))
+
+end24 <- fires |> anti_join(fires25) |> anti_join(noend) |>
+  drop_na(containment_date) |>
+  filter(containment_date != "unknown",
+         containment_date != "2024") |>
+  mutate(containment_date = fct_recode(containment_date, "November 4" = "{November 4"))
+
+end25 <- fires25 |> 
+  mutate(containment_date = fct_recode(containment_date, 
+                                       "January 5, 2025" = "January 5 (2025)"),
+        containment_date = as.factor(containment_date))
+
+end24 <- end24 |>
+  mutate(containment_date = glue_data(end24, "{containment_date}, 2024"),
+         containment_date = as.factor(containment_date))
+
+end24 <- end24 |> full_join(end25) |> select(-start_date)
+
+start24 <- fires |>
+  mutate(start_date = glue_data(fires, "{start_date}, 2024")) |> select(-containment_date)
+
+dated_fires <- end24 |> left_join(start24) |> 
+  relocate(containment_date, .after = start_date)
+
+dated_fires <- dated_fires |>
+  mutate(start_date = mdy(start_date),
+         containment_date = mdy(containment_date),
+         duration = containment_date - start_date,
+         duration_cat = as.character(duration),
+         duration_num = parse_number(duration_cat),
+         duration_num = duration_num + 1,
+         acres_per_day = acres/duration_num) 
+
 ```
 
 So I heard you like Graphs??
@@ -82,20 +125,25 @@ Inputs {.sidebar}
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 inputPanel(
   selectInput("state4", label = "Select a State",
-              choices = c("None", fires$state)),
+              choices = c("None", fires$state),
+              selected = "Washington"),
   
   selectInput("var", label = "Select a Variable",
               choices = c("% Forest Coverage" = "percent_forest_cover", 
                           "Acres Burned" = "acres", 
                           "County Size" = "county_size_acres",
-                          "Percent Burned" = "percent_burned")))
+                          "Percent State Burned" = "percent_county_burned",
+                          "Percent Forest Burned" = "percent_forest_burned",
+                          "Duration of Fire" = "duration_num",
+                          "Rate of Burn" = "acres_per_day"))
+)
 ```
 Column
 --------
 
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderPlot({
-  fires |>
+  dated_fires |>
     filter(state == input$state4) |>
     ggplot(aes(y = .data[[input$var]], x = county, fill = county)) +
     geom_col(show.legend = FALSE) 
@@ -110,21 +158,45 @@ Inputs {.sidebar}
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 inputPanel(
   selectInput("state", label = "Select a State",
-              choices = c("None", states$state)))
+              choices = c(states$state),
+              selected = "Washington"))
 ```
 
 Column 
 --------------------
 
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
-renderPlot({
-  forest_county |> full_join(us_county) |>
-    filter(state == input$state) |> 
-    ggplot(mapping = aes(x = long, y = lat, group = group)) + 
-      geom_polygon(aes(fill = percent_forest_cover), color = "black") +
-      coord_map() +
-    scale_fill_viridis(option = "viridis", direction = -1) +
-    theme_linedraw()
+
+renderLeaflet({
+  # counties_sf |> left_join(forest_county) |> drop_na(percent_forest_cover) |>
+  #   filter(state == input$state) |> 
+  #   ggplot() + geom_sf(aes(fill = percent_forest_cover)) +
+  #   scale_fill_viridis(option = "viridis", direction = -1) +
+  #   theme_linedraw()
+
+fullcounty |> filter(state == input$state) |> leaflet() |> 
+  addPolygons(fillColor = ~pal(percent_forest_cover),
+              weight = 1,
+              opacity = 1,
+              # I really like the white dash outline
+              color = "black",
+              dashArray = "5",
+              # I wanted a little opacity so you can see the state names!
+              fillOpacity = 1,
+              
+              highlightOptions = highlightOptions(
+                weight = 5,
+                color = "#666",
+                dashArray = "",
+                fillOpacity = 0.7,
+                bringToFront = TRUE),
+              # Again I wanted to set custom clean labels, so I used this format
+              label = ~paste(county, "County has", percent_forest_cover, "% forest coverage"),
+    labelOptions = labelOptions(
+      style = list("font-weight" = "normal", padding = "3px 15px"),
+      textsize = "15px",
+      direction = "auto"))
+  
 })
 ```
 
@@ -132,15 +204,15 @@ Column
 ---------
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 
-ee <- 
 
 renderPlot({
 counties_sf |> left_join(forest_county) |> drop_na(percent_forest_cover) |>
     ggplot() + geom_sf(aes(fill = percent_forest_cover)) +
-    scale_fill_viridis(option = "viridis", direction = -1) 
+    scale_fill_viridis(option = "viridis", direction = -1) +
+    theme_linedraw()
     
     
-  3# ggplot(mapping = aes(x = long, y = lat, group = group)) + 
+  # ggplot(mapping = aes(x = long, y = lat, group = group)) + 
   # geom_polygon(aes(fill = percent_forest_cover), color = "black", linewidth = 0.2) + 
   # labs(fill = "% Forest Coverage", title = "Percent of Forest Coverage in each US State", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report") +
   # coord_map() +
