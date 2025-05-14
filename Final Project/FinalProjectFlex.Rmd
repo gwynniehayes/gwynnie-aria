@@ -10,7 +10,6 @@ editor_options:
   
   chunk_output_type: console
 ---
-
 ```{r, warning= FALSE, echo=FALSE, message=FALSE, include = FALSE}
 library(tidyverse)
 library(tmap)
@@ -23,6 +22,7 @@ library(htmltools)
 library(glue)
 library(leaflet)
 library(tigris)
+library(RColorBrewer)
 
 us_county <- map_data("county") |>
   rename(state = region) |>
@@ -50,6 +50,8 @@ counties_sf <- counties(cb = TRUE, resolution = "5m") |>
   janitor::clean_names() |>
   rename(state = state_name) |>
   rename(county = name)
+
+county_point <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/cfips_location.csv") |> rename(county = name)
 ```
 
 So I heard you like Graphs??
@@ -68,7 +70,6 @@ inputPanel(
                           "County Size" = "county_size_acres",
                           "Percent Burned" = "percent_burned")))
 ```
-
 Column
 --------
 
@@ -80,7 +81,6 @@ renderPlot({
     geom_col(show.legend = FALSE) 
 })
 ```
-
 
 Counties and their Forests 
 =======================
@@ -207,3 +207,31 @@ renderLeaflet({
   })
 ```
 
+
+Fire Sizes 
+=============
+
+```{r}
+county_sf <- st_as_sf(county_point, coords = c("lng", "lat"))
+
+nb.cols <- 23
+mycolors <- colorFactor(
+  palette = colorRampPalette(brewer.pal(8, "Dark2"), space = "Lab")(nb.cols),
+  domain = county_sf$state
+)
+county_sf <- st_set_crs(county_sf, 4326) |>
+  right_join(fires, relationship = "many-to-many") |>
+  mutate(acres = acres/10000)
+
+leaflet(county_sf) |>
+      setView(-97, 37.8, 4, 1) |>
+      addProviderTiles("Esri.WorldTopoMap") |>
+      addCircleMarkers(data = county_sf, 
+                       radius = ~acres, 
+                       color = "DarkRed",
+                       popup = ~paste("In ",county, " County ", round(acres * 10000), " Acres Burned."),
+                       weight = 3) |> 
+      addScaleBar(position = "bottomleft") 
+
+  
+```

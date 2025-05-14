@@ -20,7 +20,7 @@ library(tigris)
 ```
 
 ```{r}
-county_point <- read_csv("~/Desktop/15/SDS264/projects/Project_2/Final Project/cfips_location.csv")
+county_point <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/cfips_location.csv")
 
 county_sf <- st_as_sf(county_point, coords = c("lng", "lat")) |>
   rename("county" = "name")
@@ -33,12 +33,12 @@ test |>
 ggplot() +
   ggspatial::annotation_map_tile(zoom = 5) +
   geom_sf(aes(size = acres))
+
+
 ```
 
 
 ```{r}
-
-
 fires25 <- fires |> filter(str_detect(containment_date, "2025"))
 noend <- fires |> filter(str_detect(containment_date, "[^0,1,2,3,4,5,6,7,8,9]$"))
 
@@ -72,8 +72,6 @@ dated_fires <- dated_fires |>
          duration_cat = as.character(duration),
          duration_num = parse_number(duration_cat),
          acres_per_day = acres/duration_num) 
-
-
 # 
 # end24
 # 
