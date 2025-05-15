@@ -8,6 +8,7 @@ runtime: shiny
 editor_options: 
   chunk_output_type: console
 ---
+
 ```{r, warning= FALSE, echo=FALSE, message=FALSE, include = FALSE}
 library(tidyverse)
 library(tmap)
@@ -29,6 +30,8 @@ library(tidytext)
 library(textdata)
 library(wordcloud)
 library(wordcloud2)
+library(geos)
+library(PROJ)
 
 us_county <- map_data("county") |>
   rename(state = region) |>
@@ -258,7 +261,6 @@ Inputs {.sidebar}
 
 Summary Statistics my beloved!
 
-
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 inputPanel(
   selectInput("state4", label = "Select a State",
@@ -353,6 +355,7 @@ What about fire??
 
 Inputs {.sidebar}
 -------------------------
+
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 inputPanel(
   selectInput("state4", label = "Select a State",
@@ -408,20 +411,12 @@ Column
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 
 renderLeaflet({
-  # counties_sf |> left_join(forest_county) |> drop_na(percent_forest_cover) |>
-  #   filter(state == input$state) |> 
-  #   ggplot() + geom_sf(aes(fill = percent_forest_cover)) +
-  #   scale_fill_viridis(option = "viridis", direction = -1) +
-  #   theme_linedraw()
-
 fullcounty |> filter(state == input$state) |> leaflet() |> 
   addPolygons(fillColor = ~pal(percent_forest_cover),
               weight = 1,
               opacity = 1,
-              # I really like the white dash outline
               color = "black",
               dashArray = "5",
-              # I wanted a little opacity so you can see the state names!
               fillOpacity = 1,
               
               highlightOptions = highlightOptions(
@@ -430,7 +425,6 @@ fullcounty |> filter(state == input$state) |> leaflet() |>
                 dashArray = "",
                 fillOpacity = 0.7,
                 bringToFront = TRUE),
-              # Again I wanted to set custom clean labels, so I used this format
               label = ~paste(county, "County has", percent_forest_cover, "% forest coverage"),
     labelOptions = labelOptions(
       style = list("font-weight" = "normal", padding = "3px 15px"),
@@ -445,7 +439,6 @@ fullcounty |> filter(state == input$state) |> leaflet() |>
 ```{r}
 renderLeaflet({
   
-  
 counties_sf |> full_join(dated_fires) |>
   filter(state != "Alaska", state != "Hawaii", 
          state != "Commonwealth of the Northern Mariana Islands",
@@ -458,19 +451,15 @@ counties_sf |> full_join(dated_fires) |>
   addPolygons(fillColor = ~pal2(true_acres),
               weight = 1,
               opacity = 1,
-              # I really like the white dash outline
               color = "black",
-              dashArray = "5",
-              # I wanted a little opacity so you can see the state names!
+              dashArray = "5", 
               fillOpacity = 1,
-              
               highlightOptions = highlightOptions(
                 weight = 5,
                 color = "#666",
                 dashArray = "",
                 fillOpacity = 0.7,
                 bringToFront = TRUE),
-              # Again I wanted to set custom clean labels, so I used this format
               label = ~paste(county, "County has", true_acres, "Acres Burnt"),
     labelOptions = labelOptions(
       style = list("font-weight" = "normal", padding = "3px 15px"),
@@ -484,6 +473,7 @@ counties_sf |> full_join(dated_fires) |>
 
 Column 
 ---------
+
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 
 
@@ -513,12 +503,6 @@ counties_sf |> full_join(dated_fires) |>
   theme_linedraw() +
   labs(fill = "Acres Burned", title = "Acres Burned in each US County", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report")
     
-  # ggplot(mapping = aes(x = long, y = lat, group = group)) + 
-  # geom_polygon(aes(fill = percent_forest_cover), color = "black", linewidth = 0.2) + 
-  # labs(fill = "% Forest Coverage", title = "Percent of Forest Coverage in each US State", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report") +
-  # coord_map() +
-  # scale_fill_viridis(option = "viridis", direction = -1) +
-  # theme_linedraw()
 })
 ```
 
@@ -535,7 +519,6 @@ Ok so we already talked about fire, and we showed fire, but were you ever curiou
 inputPanel(
   selectInput("var2", label = "Select a Mapping Variable",
               choices = c("Acres Burned" = "acres", 
-                          "Percent County Burned" = "percent_county_burned",
                           "Duration of Fire" = "duration_num",
                           "Rate of Burn" = "acres_per_day")))
 
@@ -656,6 +639,7 @@ Fire has feelings too!
 
 Column
 ---------------
+
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 # is_valid_robotstxt("https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024")
 
@@ -696,22 +680,11 @@ wordcloud(
   rot.per = 0.15,
   scale = c(5.5, .75),
   colors = brewer.pal(8, "Dark2"))
-
-# words_df <- words |>
-#   data.frame()
-# 
-# wordcloud2(
-#   words_df, 
-#   size = 1.5, 
-#   shape = 'circle',
-#   minSize = 1,
-# )
-
-
 ```
 
 Column
 ---------------
+
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 
 fires2024 |> mutate(damage = str_extract(Notes, "\\$\\d.*"),
