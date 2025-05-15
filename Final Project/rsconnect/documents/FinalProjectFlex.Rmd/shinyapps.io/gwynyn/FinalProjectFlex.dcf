@@ -5,7 +5,7 @@ account: gwynyn
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 14760529
-bundleId: 10287723
+bundleId: 10287994
 url: https://gwynyn.shinyapps.io/FinalProjectFlex/
 version: 1
 asMultiple: FALSE

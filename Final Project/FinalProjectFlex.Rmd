@@ -251,7 +251,7 @@ In the fires data set there were a couple fires that crossed state lines and man
 Column 
 ------------
 
-![](image.png)
+![](https://github.com/gwynniehayes/gwynnie-aria/blob/main/Final%20Project/image.png?raw=true)
 
 
 Do you like County Graphs??
