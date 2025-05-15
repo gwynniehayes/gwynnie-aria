@@ -660,8 +660,7 @@ Column
 #reading the html of the website
 wildfires2024 <- read_html("https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024")
 
-fires2024 <- html_table(wildfires2024, header = TRUE, fill = TRUE)[[3]] |>
-  select(Name,Notes, State)
+fires2024 <- html_table(wildfires2024, header = TRUE, fill = TRUE)[[3]] |> select(-8,-9)
 
 tidy_fires <- fires2024 |>
   mutate(line = row_number()) |>
@@ -725,5 +724,57 @@ fires2024 |> mutate(damage = str_extract(Notes, "\\$\\d.*"),
   coord_flip() + theme_minimal() +
   labs(y = "Damage in Millions of Dollars", X = "Fire", title = "Most Expensive fires of 2024, by state", subtitle = "Note: Not a complete list, unlabeled fires not included")  +
  scale_y_continuous(n.breaks=10)
+```
+
+```{r}
+
+
+fires25_a <- fires2024 |> drop_na(`Containment date`) |> filter(str_detect(`Containment date`, "2025")) 
+noend_a <- fires2024 |> filter(str_detect(`Containment date`, "[^0,1,2,3,4,5,6,7,8,9]$"))
+
+end24_a <- fires2024 |> anti_join(fires25_a) |> anti_join(noend_a) |>
+  drop_na(`Containment date`) |>
+  filter(`Containment date` != "unknown",
+         `Containment date` != "2024") |>
+  mutate(`Containment date` = fct_recode(`Containment date`, "November 4" = "{November 4"))
+
+end25_a <- fires25_a |> 
+  mutate(`Containment date` = fct_recode(`Containment date`, 
+                                       "January 5, 2025" = "January 5 (2025)"),
+        `Containment date` = as.factor(`Containment date`))
+
+end24_a <- end24_a |>
+  mutate(`Containment date` = glue_data(end24_a, "{`Containment date`}, 2024"),
+         `Containment date` = as.factor(`Containment date`))
+
+end24_a <- end24_a |> full_join(end25_a) |> select(-`Start date`)
+
+start24_a <- fires2024 |>
+  mutate(`Start date` = glue_data(fires2024, "{`Start date`}, 2024")) |> select(-`Containment date`)
+
+dated_fires_a <- end24_a |> left_join(start24_a) |> 
+  relocate(`Containment date`, .after = `Start date`)
+
+dated_fires_a <- dated_fires_a |>
+  mutate(`Start date` = mdy(`Start date`),
+         `Containment date` = mdy(`Containment date`),
+         duration = `Containment date` - `Start date`,
+         duration_cat = as.character(duration),
+         duration_num = parse_number(duration_cat),
+         duration_num = duration_num + 1,
+         Acres = parse_number(Acres),
+         acres_per_day = Acres/duration_num) 
+
+
+  dated_fires_a |>
+  mutate(Cause = str_extract(Notes, "[hHLl][ui][mg].*-[Cc]aused"),
+         Cause = str_to_title(Cause)) |> drop_na(Cause) |>
+  filter(Cause != "Lighting-Caused") |>
+  group_by(Cause) |>
+  summarize(n=n(),
+            `Mean Size (Acres)` = mean(Acres),
+            `Median Size (Acres)` = median(Acres),
+            `Avg Length (Days)` = median(duration_num))  |>
+    kableExtra::kable() |> kableExtra::kable_styling(bootstrap_options = "striped", full_width = F)
 ```
 
