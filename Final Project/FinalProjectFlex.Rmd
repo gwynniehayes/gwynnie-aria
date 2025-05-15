@@ -241,6 +241,8 @@ In the fires data set there were a couple fires that crossed state lines and man
 
 -   [Fire Picture](https://suramericana.com/en/blog/habitat-2/qual-e-o-impacto-dos-incendios-florestais-no-ecossistema/)
 
+-   [Dashboard Code](https://github.com/gwynniehayes/gwynnie-aria/tree/main/Final%20Project)
+
 Column 
 ------------
 
