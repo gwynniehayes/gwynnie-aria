@@ -19,9 +19,10 @@ library(leaflet)
 library(tigris)
 ```
 
-Sources:
-# https://simplemaps.com/data/us-counties
-# https://www.streamlinehq.com/emojis/download/fire--31878
+
+
+Sources: \# https://simplemaps.com/data/us-counties \# https://www.streamlinehq.com/emojis/download/fire--31878
+
 ```{r}
 county_point <- read_csv("https://raw.githubusercontent.com/StarryAri7/SDS264_F24/refs/heads/main/data/uscounties.csv") |> rename("state" = "state_name") |> select(county,state,lat,lng)
 
@@ -38,8 +39,7 @@ test <- county_sf |> left_join(fires) |> drop_na(acres) %>%
 
 firesmall <-  makeIcon(
   iconUrl = "https://github.com/StarryAri7/SDS264_F24/blob/main/data/fire.png?raw=true",
-  iconWidth = 28, iconHeight = 20
-  )
+  iconWidth = 28, iconHeight = 20)
 
 firelarge <-  makeIcon(
   iconUrl = "https://github.com/StarryAri7/SDS264_F24/blob/main/data/fire.png?raw=true",
@@ -62,22 +62,8 @@ test |> leaflet() |> addProviderTiles("Stadia.StamenTerrain") |>
    addCircleMarkers(radius = ~ acres/15000, color = "#F2572C", popup = ~paste(
               "<strong> Name: </strong>", name, "Fire <br>",
               "<strong> Area Burned: </strong>", acres, "Acres <br>",
-              "<strong> County: </strong>", county, "County <br>"
-   ))
-
-# 
-#   if(test$acres < 1000){
-#     iconWidth = 15 & iconHeight = 10
-#   }else if(test$acres > 1000 & test$acres < 50000){
-#     iconWidth = 25 & iconHeight = 20
-#   } else if(test$acres > 50000 & test$acres < 100000){
-#     iconWidth = 35 & iconHeight = 30
-#   }else{
-#     iconWidth = 45 & iconHeight = 40
-#   }    
-
+              "<strong> County: </strong>", county, "County <br>"))
 ```
-
 
 ```{r}
 fires25 <- fires |> filter(str_detect(containment_date, "2025"))
@@ -124,6 +110,3 @@ dated_fires <- dated_fires |>
 #          mutate(containment_date = glue_data(fires, "{containment_date}, 2024")))
 #          
 ```
-
-
-

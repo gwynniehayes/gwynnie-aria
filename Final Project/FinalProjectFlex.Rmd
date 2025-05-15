@@ -1,13 +1,11 @@
 ---
 title: "Final Project"
 authors: "Gwynnie Hayes and Aria Whalen"
-output: 
+output:
   flexdashboard::flex_dashboard:
-    vertical_layout: scroll
-    theme: paper
+    css: styles.scss
 runtime: shiny
 editor_options: 
-  
   chunk_output_type: console
 ---
 ```{r, warning= FALSE, echo=FALSE, message=FALSE, include = FALSE}
@@ -188,14 +186,64 @@ dated_fires <- dated_fires |>
          percent_forest_burned = true_acres/forest_cover_acres * 100,
          percent_state_burned = true_acres/state_size * 100)
 
+county_point <- read_csv("https://raw.githubusercontent.com/StarryAri7/SDS264_F24/refs/heads/main/data/uscounties.csv") |> rename("state" = "state_name") |> select(county,state,lat,lng)
 
+firesmall <-  makeIcon(
+  iconUrl = "https://github.com/StarryAri7/SDS264_F24/blob/main/data/fire.png?raw=true",
+  iconWidth = 28, iconHeight = 20)
+
+firelarge <-  makeIcon(
+  iconUrl = "https://github.com/StarryAri7/SDS264_F24/blob/main/data/fire.png?raw=true",
+  iconWidth = 38, iconHeight = 28)
 ```
 
+Ahhh Fire!!
+=============
+
+Column
+----------
+
+**Authors**
+
+Gwynnie Hayes and Aria Whalen
+
+**Introduction**
+
+For our final project we found a data set of the wildfires in the United States in 2024. We scraped this table from this [Wikipedia page](https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024). We were interested in exploring how much land area was burned in each of these counties. Since these were forest fires and Aria and I both like forest we also were interested in looking at the amount of forested land in each state and specifically in each county. To do this we found a data set from [ArcGIS](https://www.arcgis.com/home/item.html?id=14c5450526a8430298b2fa74da12c2f4#data) that had the county size for each US county from. Then we found a data set that had the percent forest coverage in each county from [US Fish and Wildlife](https://www.fws.gov/sites/default/files/documents/2024-08/percent-forest-cover-by-county-update-2024.xlsx). Based on the county size and the forested percent we then made a column with the amount of forested acres in each state. We also both really like maps, as our favorite data science processor said "I'm excited to see what you two spatial whizzes can do" and so we wanted to map a lot of maps, one might say to many maps. But we say not enough maps!
+
+**Some Cleaning**
+
+In the fires data set there were a couple fires that crossed state lines and many that crossed county lines, one of the main cleaning things we did were was separate these into individual rows, an issue that led to was one of the largest fires was in texas the smokehouse road fire, it burned over a million acres. After separating this into one county per row there were now seemingly 7 million more acres of fire then in reality. To fix this we divided each of the acres of fire by the amount of counties it covered. 
+
+**Data!**
+
+-   [Wildfires](https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024)
+
+-   [County Sizes](https://www.arcgis.com/home/item.html?id=14c5450526a8430298b2fa74da12c2f4#data)
+
+-   [Forested Areas](https://www.fws.gov/sites/default/files/documents/2024-08/percent-forest-cover-by-county-update-2024.xlsx)
+
+-   [County points](https://simplemaps.com/data/us-counties)
+
+-   [Fire Icon](https://www.streamlinehq.com/emojis/download/fire--31878)
+
+-   [Fire Picture](https://suramericana.com/en/blog/habitat-2/qual-e-o-impacto-dos-incendios-florestais-no-ecossistema/)
+
+Column 
+------------
+
+![](image.png)
+
+
 So I heard you like Graphs??
-======================
+=========
 
 Inputs {.sidebar}
--------------------------
+----------
+
+GRAPHS! GRAPHS! GRAPHS! GRAPHS! GRAPHS! GRAPHS! GRAPHS! GRAPHS! GRAPHS! 
+(for if you don't like maps like a loser)
+
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 inputPanel(
   selectInput("state4", label = "Select a State",
@@ -208,12 +256,11 @@ inputPanel(
                           "Acres Burned" = "acres", 
                           "Percent County Burned" = "percent_county_burned",
                           "Duration of Fire" = "duration_num",
-                          "Rate of Burn" = "acres_per_day"))
-)
-
+                          "Rate of Burn" = "acres_per_day")))
 ```
+
 Column
---------
+-----------
 
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderPlot({
@@ -227,8 +274,6 @@ renderPlot({
 
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 renderPlot({
-
-  
 p1 <-  dated_fires |>
     mutate(state = fct_reorder(state, .data[[input$var]], .fun = sum, .desc = T)) |>
     ggplot(aes(y = .data[[input$var]], x = state, fill = state)) +
@@ -240,67 +285,85 @@ p2 <- dated_fires |>
     geom_col(show.legend = FALSE) 
 
 ifelse(input$var == "percent_county_burned", print(p2), print(p1))
-
 })
 ```
 
 
-Counties and their Forests 
-=======================
+Counties and their Forests... 
+============
 
 Inputs {.sidebar}
--------------------------
+-----------
+
+Were you ever curious how many acres of forested land were in you state for each county? Well today's your lucky day with this interactive map you can find out how much of your county is forested!
+
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 inputPanel(
   selectInput("state", label = "Select a State",
-              choices = c(states$state),
-              selected = "Washington"))
+              choices = c("None", states$state)))
 ```
 
-Column 
---------------------
+
+Column
+----------
+
 
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
 
 renderLeaflet({
-  # counties_sf |> left_join(forest_county) |> drop_na(percent_forest_cover) |>
-  #   filter(state == input$state) |> 
-  #   ggplot() + geom_sf(aes(fill = percent_forest_cover)) +
-  #   scale_fill_viridis(option = "viridis", direction = -1) +
-  #   theme_linedraw()
-
 fullcounty |> filter(state == input$state) |> leaflet() |> 
   addPolygons(fillColor = ~pal(percent_forest_cover),
               weight = 1,
               opacity = 1,
-              # I really like the white dash outline
               color = "black",
               dashArray = "5",
-              # I wanted a little opacity so you can see the state names!
               fillOpacity = 1,
-              
               highlightOptions = highlightOptions(
                 weight = 5,
                 color = "#666",
                 dashArray = "",
                 fillOpacity = 0.7,
                 bringToFront = TRUE),
-              # Again I wanted to set custom clean labels, so I used this format
               label = ~paste(county, "County has", percent_forest_cover, "% forest coverage"),
     labelOptions = labelOptions(
       style = list("font-weight" = "normal", padding = "3px 15px"),
       textsize = "15px",
       direction = "auto"))
-  
-  
 })
 ```
 
+Column
+--------
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+renderPlot({
+counties_sf |> left_join(forest_county) |> drop_na(percent_forest_cover) |>
+    ggplot() + geom_sf(aes(fill = percent_forest_cover)) +
+    scale_fill_viridis(option = "viridis", direction = -1) +
+    theme_linedraw() +
+    labs(fill = "% Forest Coverage", title = "Percentage of Forest Coverage in each US County", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report")
+})
+```
+
+Fire!
+===========
+
+Inputs {.sidebar}
+-----------
+
+Fires a scary thing and this world is just getting warmer. It important to keep with with the times and know how much fire was in your state. With this here map you can learn just how much fire was in each state and each county.
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+inputPanel(
+  selectInput("state2", label = "Select a State",
+              choices = c("None", fires$state)))
+```
+
+Column
+-------------
 
 ```{r}
 renderLeaflet({
-  
-  
 counties_sf |> full_join(dated_fires) |>
   filter(state != "Alaska", state != "Hawaii", 
          state != "Commonwealth of the Northern Mariana Islands",
@@ -308,7 +371,7 @@ counties_sf |> full_join(dated_fires) |>
          state != "United States Virgin Islands",
          state != "American Samoa",
          state != "Guam") |>
-   filter(state == input$state) |>
+   filter(state == input$state2) |>
     leaflet() |> 
   addPolygons(fillColor = ~pal2(true_acres),
               weight = 1,
@@ -331,28 +394,12 @@ counties_sf |> full_join(dated_fires) |>
       style = list("font-weight" = "normal", padding = "3px 15px"),
       textsize = "15px",
       direction = "auto"))
-  
 })
 ```
 
-
-
-Column 
----------
+Column
+-------------
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
-
-
-renderPlot({
-counties_sf |> left_join(forest_county) |> drop_na(percent_forest_cover) |>
-    ggplot() + geom_sf(aes(fill = percent_forest_cover)) +
-    scale_fill_viridis(option = "viridis", direction = -1) +
-    theme_linedraw() +
-    labs(fill = "% Forest Coverage", title = "Percentage of Forest Coverage in each US County", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report")
-})
-```    
-
-```{r, warning= FALSE, echo=FALSE, message=FALSE}
-
 renderPlot({
 counties_sf |> full_join(dated_fires) |>
   filter(state != "Alaska", state != "Hawaii", 
@@ -360,132 +407,138 @@ counties_sf |> full_join(dated_fires) |>
          state != "Puerto Rico",
          state != "United States Virgin Islands",
          state != "American Samoa",
-         state != "Guam"
-         ) |>
+         state != "Guam") |>
     ggplot() + geom_sf(aes(fill = true_acres)) +
     scale_fill_viridis(option = "magma", direction = -1) +
   theme_linedraw() +
-  labs(fill = "Acres Burned", title = "Acres Burned in each US County", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report")
-    
-  # ggplot(mapping = aes(x = long, y = lat, group = group)) + 
-  # geom_polygon(aes(fill = percent_forest_cover), color = "black", linewidth = 0.2) + 
-  # labs(fill = "% Forest Coverage", title = "Percent of Forest Coverage in each US State", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report") +
-  # coord_map() +
-  # scale_fill_viridis(option = "viridis", direction = -1) +
-  # theme_linedraw()
-})
+  labs(fill = "Acres Burned", title = "Acres Burned in each US County", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report")})
 ```
 
-Fire!
-===============
-```{r, warning= FALSE, echo=FALSE, message=FALSE}
-inputPanel(
-  selectInput("state2", label = "Select a State",
-              choices = c("None", fires$state)))
-```
+Woah More Fire?
+=========
 
-Column 
+Inputs {.sidebar}
 -------------
-```{r, warning= FALSE, echo=FALSE, message=FALSE}
-renderPlot({
-  fires |> full_join(us_county) |>
-    filter(state == input$state2) |>
-    ggplot(mapping = aes(x = long, y = lat, group = group)) + 
-      geom_polygon(aes(fill = acres), color = "black") +
-      coord_map() +
-    scale_fill_viridis(option = "magma", direction = -1) +
-    theme_linedraw()
-})
-```
 
-Column 
-------------
-```{r, warning= FALSE, echo=FALSE, message=FALSE}
-renderPlot({
-fires |> full_join(us_county) |>
-  ggplot(mapping = aes(x = long, y = lat, group = group)) + 
-  geom_polygon(aes(fill = acres), color = "black", linewidth = 0.2) + 
-  labs(fill = "Acres Burned", title = "Acres Burned in each US County", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report") +
-  coord_map() +
-  scale_fill_viridis(option = "magma", direction = -1) +
-  theme_linedraw()
-})
-```
+Ok so we already talked about fire, but were you ever curious to learn more about it? Well nows your chance, with this interactive map you can see how many acres were burned, how long the fire was, how much of the county was burned and the rate at which the fires burned.
 
-Interactive Fire!!! 
-==========
-
-```{r, warning= FALSE, echo=FALSE, message=FALSE}
+```{r}
 inputPanel(
-  selectInput("state3", label = "Select a State",
-              choices = fires$state), value = "Minnesota")
+  selectInput("var2", label = "Select a Mapping Variable",
+              choices = c("Acres Burned" = "acres", 
+                          "Percent County Burned" = "percent_county_burned",
+                          "Duration of Fire" = "duration_num",
+                          "Rate of Burn" = "acres_per_day")))
+
+var_labels <- c(
+  acres = "Acres Burned",
+  percent_county_burned = "Percent County Burned",
+  duration_num = "Duration of Fire",
+  acres_per_day = "Rate of Burn"
+)
+colors <- c(
+  acres = "#F2572C",
+  percent_county_burned = "#f3e422",
+  duration_num = "#F09222",
+  acres_per_day = "#A12344")
 ```
 
-## Interactive Maps
+Column
+---------------
 
-```{r, warning= FALSE, echo=FALSE, message=FALSE}
+```{r}
 renderLeaflet({
-    fires_sf <- fires |>
-      full_join(counties_sf) |>
-      filter(state == input$state3) |>
-      st_as_sf()
-    
-    pal <- colorNumeric("Reds", domain = fires_sf$acres)
 
-    fires_sf <- fires_sf |>
-      mutate(labels = str_c(state, ": ", " in " ,county, " county ", acres, " acres burned"))
+  county_point$Latitude <- jitter(county_point$lat, factor = 0.1)
+  county_point$Longitude <- jitter(county_point$lng, factor = 0.1)
+  
+  county_sf <- st_as_sf(county_point, coords = c("Longitude", "Latitude"), crs = 4326)
 
-    labels <- lapply(fires_sf$labels, HTML)
+  test <- county_sf |> left_join(dated_fires) |> drop_na(acres) |> 
+    st_jitter(factor = 0.005)
 
-    leaflet(fires_sf) |>
-      setView(-97, 37.8, 4, 1) |>
-      addProviderTiles("Esri.WorldTopoMap") |>
-      addPolygons(
-        fillColor = ~pal(acres),
-        weight = 2,
-        opacity = 1,
-        color = "black",
-        fillOpacity = 0.6,
-        highlightOptions = highlightOptions(
-          weight = 3,
-          color = "magenta",
-          fillOpacity = 0.7,
-          bringToFront = TRUE),
-        label = labels,
-        labelOptions = labelOptions(
-          style = list("font-weight" = "normal", padding = "3px 8px"),
-          textsize = "12px",
-          direction = "auto")
-      )|>
-      addScaleBar(position = "bottomleft") 
+  selected <- test[[input$var2]]
+  label <- var_labels[[input$var2]]
+  colors <- colors[[input$var2]]
+  
+  leaflet(test) |>
+    addProviderTiles("Stadia.StamenTerrain") |>
+    addCircleMarkers(
+      radius = ~ selected / max(selected) * 10,
+      fillOpacity = 0.5,
+      col = ~colors, 
+      popup = ~paste("<strong>Name: </strong>", name, " Fire<br>",
+                     "<strong>Area Burned: </strong>", acres, " Acres<br>",
+                     "<strong>County: </strong>", county, " County<br>",
+                     "<strong>", label, ": </strong>", selected))
   })
 ```
 
-
-Fire Sizes 
-=============
+Look if you dare!
+==========
 
 ```{r}
-county_sf <- st_as_sf(county_point, coords = c("lng", "lat"))
-
-nb.cols <- 23
-mycolors <- colorFactor(
-  palette = colorRampPalette(brewer.pal(8, "Dark2"), space = "Lab")(nb.cols),
-  domain = county_sf$state
+ui <- fluidPage(
+  inputPanel(
+    actionButton("start", "DON'T CLICK HERE!!!")
+  ),
+  leafletOutput("firemap", height = "600px")
 )
-county_sf <- st_set_crs(county_sf, 4326) |>
-  right_join(fires, relationship = "many-to-many") |>
-  mutate(acres = acres/10000)
 
-leaflet(county_sf) |>
-      setView(-97, 37.8, 4, 1) |>
-      addProviderTiles("Esri.WorldTopoMap") |>
-      addCircleMarkers(data = county_sf, 
-                       radius = ~acres, 
-                       color = "DarkRed",
-                       popup = ~paste("In ",county, " County ", round(acres * 10000), " Acres Burned."),
-                       weight = 3) |> 
-      addScaleBar(position = "bottomleft") 
+server <- function(input, output, session) {
+  county_point$Latitude <- jitter(county_point$lat, factor = 0.1)
+  county_point$Longitude <- jitter(county_point$lng, factor = 0.1)
 
-  
+  county_sf <- st_as_sf(county_point, coords = c("Longitude", "Latitude"), crs = 4326)
+
+  test <- county_sf |> 
+    left_join(fires) |> 
+    drop_na(acres) |> 
+    st_jitter(factor = 0.005)
+
+  firesmall <-  makeIcon(
+    iconUrl = "https://github.com/StarryAri7/SDS264_F24/blob/main/data/fire.png?raw=true",
+    iconWidth = 28, iconHeight = 20)
+
+  start_triggered <- reactiveVal(FALSE)
+  current_index <- reactiveVal(0)
+
+  output$firemap <- renderLeaflet({
+    leaflet(test) |>
+      addProviderTiles("Stadia.StamenTerrain") |>
+      setView(lng = -98.5795, lat = 39.8283, zoom = 4)
+  })
+
+  observeEvent(input$start, {
+    if (!start_triggered()) {
+      start_triggered(TRUE)
+      current_index(1)
+    }
+  })
+
+  observe({
+    req(start_triggered())
+
+    invalidateLater(100, session)
+
+    i <- current_index()
+    if (i <= nrow(test)) {
+      leafletProxy("firemap") |>
+        addMarkers(
+          data = slice(test, i),
+          icon = firesmall,
+          popup = ~paste(
+            "<strong> Name: </strong>", name, "Fire <br>",
+            "<strong> Area Burned: </strong>", acres, "Acres <br>",
+            "<strong> County: </strong>", county, "County <br>"
+          )
+        )
+      current_index(i + 1)
+    }
+  })
+}
+
+shinyApp(ui, server)
+
 ```
+
