@@ -19,23 +19,45 @@ library(robotstxt)
 ```
 
 ```{r}
-county_data <- read_csv("~/Desktop/15/SDS264/projects/Project_2/Final Project/COUNTYDATA.csv") |>
+county_data <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/COUNTYDATA.csv") |>
   janitor::clean_names() |>
   rename(state = state_name, county = name) |>
   select(c("county", "state", "population_2020", "sqmi"))
 
-percent_forest <- read_csv("~/Desktop/15/SDS264/projects/Project_2/Final Project/percentforestcover.csv") |>
+percent_forest <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/percentforestcover.csv") |>
   janitor::clean_names() 
 
 county_data <- county_data |>
-  mutate(county = str_remove(county, "\\sCounty"))
+  mutate(county = str_remove(county, "\\sCounty")) |> 
+  mutate(county = fct_recode(county, "Okanogan" = "Okanagon",
+                                     "De Baca" = "DeBaca",
+                                     "Doña Ana" = "Do├▒a Ana",
+                                     "DeWitt" = "De Witt",
+                                     "LaSalle" = "La Salle", 
+                                     "LaPorte" = "La Porte",
+                                     "LaGrange" = "Lagrange",
+                                     "DeKalb" = "De Kalb",
+                                     "Pleasants" = "Pleasant",
+                                     "Dade" = "Miami-Dade"))
 
 percent_forest <- percent_forest |>
-  mutate(county = str_remove(county, "\\d{5}\\s[A-Z][A-Z]\\s"))
+  mutate(county = str_remove(county, "\\d{5}\\s[A-Z][A-Z]\\s")) |> 
+  mutate(county = fct_recode(county, "Okanogan" = "Okanagon",
+                                     "De Baca" = "DeBaca",
+                                     "Doña Ana" = "Dona Ana",
+                                     "DeWitt" = "De Witt",
+                                     "LaSalle" = "La Salle", 
+                                     "LaPorte" = "La Porte",
+                                     "LaGrange" = "Lagrange",
+                                     "DeKalb" = "De Kalb",
+                                     "Pleasants" = "Pleasant",
+                                     "Dade" = "Miami-Dade"))
 
 forest_county <- percent_forest |>
   left_join(county_data) |>
   mutate(county_size_acres = sqmi * 640, forest_cover_acres = (percent_forest_cover / 100 * county_size_acres)) |> select(!sqmi)
+
+dated_fires |> filter(state == "Oregon") |>group_by(state) |> summarize(burnt = sum(true_acres))
 
 ```
 
