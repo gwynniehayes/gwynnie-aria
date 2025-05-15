@@ -2,7 +2,7 @@
 
 // Colors
 $orange: #272716;;
-$light-pink: #ae0d13;
+$light-pink: white;
 $magenta: #db6400;
 $green: black;
 $light-blue:#cc3f18;
@@ -24,6 +24,12 @@ body {
 }
 .navbar .navbar-nav > li > a:hover {
   color: $light-blue !important;
+}
+.navbar .navbar-nav > li.active > a,
+.navbar .nav-link:hover,
+.navbar .navbar-nav > li > a.active {
+  color: $light-blue !important; 
+  background-color: $magenta !important;
 }
 .footer {
   background-color: $magenta;
