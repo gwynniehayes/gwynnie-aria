@@ -21,6 +21,14 @@ library(glue)
 library(leaflet)
 library(tigris)
 library(RColorBrewer)
+library(rvest)
+library(polite)
+library(htmltools)
+library(robotstxt)
+library(tidytext)
+library(textdata)
+library(wordcloud)
+library(wordcloud2)
 
 us_county <- map_data("county") |>
   rename(state = region) |>
@@ -130,7 +138,8 @@ fires <- fires |> select(-9,-10,-11,-12) |> left_join(forest_county_seperate)
 county_point <- read_csv("https://raw.githubusercontent.com/gwynniehayes/gwynnie-aria/refs/heads/main/Final%20Project/cfips_location.csv") |> rename(county = name)
 
 pal <- colorNumeric("viridis", domain = c(0,100), reverse = T)
-pal2 <- colorNumeric("magma", domain = c(0,270000), reverse = T)
+pal2 <- colorBin("YlOrRd", domain = c(0,270000), reverse = F, 
+                  bins = c(0,100,1000,5000,10000,50000,100000,200000,300000))
 
 fires25 <- fires |> filter(str_detect(containment_date, "2025"))
 noend <- fires |> filter(str_detect(containment_date, "[^0,1,2,3,4,5,6,7,8,9]$"))
@@ -184,7 +193,8 @@ dated_fires <- dated_fires |> left_join(trueburn) |> left_join(state_size)
 dated_fires <- dated_fires |>
   mutate(percent_county_burned = true_acres/county_size_acres * 100,
          percent_forest_burned = true_acres/forest_cover_acres * 100,
-         percent_state_burned = true_acres/state_size * 100)
+         percent_state_burned = true_acres/state_size * 100) |>
+  mutate(duration_divided = duration_num/n)
 
 county_point <- read_csv("https://raw.githubusercontent.com/StarryAri7/SDS264_F24/refs/heads/main/data/uscounties.csv") |> rename("state" = "state_name") |> select(county,state,lat,lng)
 
@@ -195,6 +205,8 @@ firesmall <-  makeIcon(
 firelarge <-  makeIcon(
   iconUrl = "https://github.com/StarryAri7/SDS264_F24/blob/main/data/fire.png?raw=true",
   iconWidth = 38, iconHeight = 28)
+
+dated_fires <- dated_fires[order(dated_fires$state),]
 ```
 
 Ahhh Fire!!
@@ -381,9 +393,10 @@ Inputs {.sidebar}
 Were you ever curious how many acres of forested land were in you state for each county? Maybe you're on the hunt for where local fires have taken place? Well today's your lucky day with this interactive map you can find out how much of your county is forested and which parts caught on fire in 2024!
 
 ```{r, warning= FALSE, echo=FALSE, message=FALSE}
+
 inputPanel(
   selectInput("state", label = "Select a State",
-              choices = c(states$state),
+              choices = c(dated_fires$state),
               selected = "Washington"))
 ```
 
@@ -493,7 +506,8 @@ counties_sf |> full_join(dated_fires) |>
          state != "Guam"
          ) |>
     ggplot() + geom_sf(aes(fill = true_acres)) +
-    scale_fill_viridis(option = "magma", direction = -1) +
+    scale_fill_fermenter(palette = "YlOrRd", direction = 1,
+                         breaks=c(0,100,1000,5000,10000,50000,100000,200000,300000)) +
   theme_linedraw() +
   labs(fill = "Acres Burned", title = "Acres Burned in each US County", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report")
     
@@ -507,59 +521,13 @@ counties_sf |> full_join(dated_fires) |>
 ```
 
 
-
-
-Fire!
-===============
-```{r, warning= FALSE, echo=FALSE, message=FALSE}
-inputPanel(
-  selectInput("state2", label = "Select a State",
-              choices = c("None", fires$state)))
-```
-
-Column 
--------------
-```{r, warning= FALSE, echo=FALSE, message=FALSE}
-renderPlot({
-  fires |> full_join(us_county) |>
-    filter(state == input$state2) |>
-    ggplot(mapping = aes(x = long, y = lat, group = group)) + 
-      geom_polygon(aes(fill = acres), color = "black") +
-      coord_map() +
-    scale_fill_viridis(option = "magma", direction = -1) +
-    theme_linedraw()
-})
-```
-
-Column 
-------------
-```{r, warning= FALSE, echo=FALSE, message=FALSE}
-renderPlot({
-fires |> full_join(us_county) |>
-  ggplot(mapping = aes(x = long, y = lat, group = group)) + 
-  geom_polygon(aes(fill = acres), color = "black", linewidth = 0.2) + 
-  labs(fill = "Acres Burned", title = "Acres Burned in each US County", x = "Longitude", y = "Latitude", caption = "Data Source: USDA Forest Service FIA Annual Report") +
-  coord_map() +
-  scale_fill_viridis(option = "magma", direction = -1) +
-  theme_linedraw()
-})
-```
-
-Interactive Fire!!! 
-==========
-
-```{r, warning= FALSE, echo=FALSE, message=FALSE}
-inputPanel(
-  selectInput("state3", label = "Select a State",
-              choices = fires$state), value = "Minnesota")
-```
 Woah More Fire?
 =========
 
 Inputs {.sidebar}
 -------------
 
-Ok so we already talked about fire, but were you ever curious to learn more about it? Well nows your chance, with this interactive map you can see how many acres were burned, how long the fire was, how much of the county was burned and the rate at which the fires burned.
+Ok so we already talked about fire, and we showed fire, but were you ever curious to learn more about it? Well nows your chance, with this interactive map you can see the graphs come to life with how many acres were burned, how long the fire was around, and the rate at which the fires burned.
 
 ```{r}
 inputPanel(
@@ -571,7 +539,6 @@ inputPanel(
 
 var_labels <- c(
   acres = "Acres Burned",
-  percent_county_burned = "Percent County Burned",
   duration_num = "Duration of Fire",
   acres_per_day = "Rate of Burn"
 )
@@ -619,16 +586,15 @@ Look if you dare!
 ```{r}
 ui <- fluidPage(
   inputPanel(
-    actionButton("start", "DON'T CLICK HERE!!!")
+    actionButton("start", "I don't want to set the world on fiiiiire.... OOPS!
+")
   ),
   leafletOutput("firemap", height = "600px")
 )
 
 server <- function(input, output, session) {
-  county_point$Latitude <- jitter(county_point$lat, factor = 0.1)
-  county_point$Longitude <- jitter(county_point$lng, factor = 0.1)
-
-  county_sf <- st_as_sf(county_point, coords = c("Longitude", "Latitude"), crs = 4326)
+  
+  county_sf <- st_as_sf(county_point, coords = c("lng", "lat"), crs = 4326)
 
   test <- county_sf |> 
     left_join(fires) |> 
@@ -679,5 +645,85 @@ server <- function(input, output, session) {
 
 shinyApp(ui, server)
 
+```
+
+
+
+Fire has feelings too!
+=========
+
+Column
+---------------
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+# is_valid_robotstxt("https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024")
+
+#reading the html of the website
+wildfires2024 <- read_html("https://en.wikipedia.org/wiki/Wildfires_in_the_United_States_during_2024")
+
+fires2024 <- html_table(wildfires2024, header = TRUE, fill = TRUE)[[3]] |>
+  select(Name,Notes, State)
+
+tidy_fires <- fires2024 |>
+  mutate(line = row_number()) |>
+  unnest_tokens(word, Name, token = "words")
+
+
+tidy_fires |>
+  #anti_join(smart_stopwords) |>
+  count(word, sort = TRUE) |>
+  filter(word != "NA") |>
+  slice_max(n, n = 10) |>
+  ggplot(aes(fct_reorder(word, n), n)) +
+  geom_col() +
+  coord_flip() + theme_minimal() +
+  labs(x = "Count", y = "Word", title = "Top 10 most common words in Fire Names")
+```
+
+```{r}
+words <- tidy_fires |>
+  count(word) |>
+  filter(word != "NA") |>
+  arrange(desc(n))
+
+
+wordcloud(
+  words = words$word,
+  freq = words$n,
+  max.words = 400,
+  min.freq = 2,
+  random.order = FALSE,
+  rot.per = 0.15,
+  scale = c(5.5, .75),
+  colors = brewer.pal(8, "Dark2"))
+
+# words_df <- words |>
+#   data.frame()
+# 
+# wordcloud2(
+#   words_df, 
+#   size = 1.5, 
+#   shape = 'circle',
+#   minSize = 1,
+# )
+
+
+```
+
+Column
+---------------
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+
+fires2024 |> mutate(damage = str_extract(Notes, "\\$\\d.*"),
+                            damage = parse_number(damage)) |>
+  group_by(Name) |>
+  summarize(Damage = sum(damage),
+            Damage = Damage/1000000) |>
+  drop_na(Damage) |>
+  slice_max(Damage, n = 15) |>
+  ggplot(aes(fct_reorder(Name, Damage), Damage)) +
+  geom_col() +
+  coord_flip() + theme_minimal() +
+  labs(y = "Damage in Millions of Dollars", X = "Fire", title = "Most Expensive fires of 2024, by state", subtitle = "Note: Not a complete list, unlabeled fires not included")  +
+ scale_y_continuous(n.breaks=10)
 ```
 
