@@ -555,7 +555,7 @@ renderLeaflet({
   colors <- colors[[input$var2]]
   
   leaflet(test) |>
-    addProviderTiles("Stadia.StamenTerrain") |>
+    addProviderTiles("OpenStreetMap") |>
     addCircleMarkers(
       radius = ~ selected / max(selected) * 10,
       fillOpacity = 0.5,
@@ -596,7 +596,7 @@ server <- function(input, output, session) {
 
   output$firemap <- renderLeaflet({
     leaflet(test) |>
-      addProviderTiles("Stadia.StamenTerrain") |>
+      addProviderTiles("OpenStreetMap") |>
       setView(lng = -98.5795, lat = 39.8283, zoom = 4)
   })
 
