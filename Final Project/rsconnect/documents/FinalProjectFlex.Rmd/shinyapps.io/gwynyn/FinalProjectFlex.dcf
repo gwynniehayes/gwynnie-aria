@@ -1,0 +1,12 @@
+name: FinalProjectFlex
+title: FinalProjectFlex
+username: gwynyn
+account: gwynyn
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14760529
+bundleId: 10287723
+url: https://gwynyn.shinyapps.io/FinalProjectFlex/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

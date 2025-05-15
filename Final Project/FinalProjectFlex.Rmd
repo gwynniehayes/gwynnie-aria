@@ -32,6 +32,8 @@ library(wordcloud)
 library(wordcloud2)
 library(geos)
 library(PROJ)
+library(terra)
+
 
 us_county <- map_data("county") |>
   rename(state = region) |>
@@ -571,8 +573,7 @@ Look if you dare!
 ```{r}
 ui <- fluidPage(
   inputPanel(
-    actionButton("start", "I don't want to set the world on fiiiiire.... OOPS!
-")
+    actionButton("start", "dont press this button.")
   ),
   leafletOutput("firemap", height = "600px")
 )
